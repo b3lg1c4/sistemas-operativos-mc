@@ -1,0 +1,92 @@
+[
+    {
+        "id_pregunta": 0,
+        "pregunta": "¿Que diferencias hay entre Multiprogramacion y Multiprocesamiento?",
+        "respuestas": [
+            {
+                "respuesta": "Multiprogramación:\n\n Es la capacidad de ejecutar varios procesos que residen en memoria en forma concurrente repartiendo el uso de la CPU entre cada uno de ellos. Multiprocesamiento: Consiste en ejecutar varios procesos en forma simultánea a traves de varios\n\n procesadores trabajando a la vez.",
+                "esCorrecta": true
+            },
+            {
+                "respuesta": "Multiprogramación: Consiste en ejecutar varios procesos en forma simultanea a traves de varios procesadores trabajando a la vez. Multiprocesamiento: Es la capacidad de ejecutar varios procesos que residen en memoria en forma concurrente repartiendo el uso de la CPU entre cada uno de ellos.",
+                "esCorrecta": false
+            },
+            {
+                "respuesta": "Multiprogramación:\n\n Es la capacidad de ejecutar varios procesos que residen en la memoria auxiliar en forma concurrente repartiendo el uso de la CPU entre cada uno de ellos. Multiprocesamiento: Es la capacidad de ejecutar varios procesos que residen en memoria en forma concurrente repartiendo el uso de la CPU entre cada uno de ellos.",
+                "esCorrecta": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 1,
+        "pregunta": "Independientemente del SO, una estructura de subcolas permite clasificar programas dinámicamente según características intrínsecas de los mismos. ¿A qué características nos referimos?",
+        "respuestas": [
+            {
+                "respuesta": "1) Prioridad relativa. 2) Tiempo límite de inicio y fin. 3) Llenado de memoria 4) Recursos limites 5) Grado de avance",
+                "esCorrecta": true
+            },
+            {
+                "respuesta": "1) Prioridad relativa. 2) Grado de avance. 3) Recursos limites",
+                "esCorrecta": false
+            },
+            {
+                "respuesta": "1) Tiempo límite de inicio y fin. 2) Prioridad relativa. 3) Desbordamiento de pila 4) Memoria completa",
+                "esCorrecta": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 2,
+        "pregunta": "¿A qué se denomina TRASHING y cómo se soluciona?",
+        "respuestas": [
+            {
+                "respuesta": "Se denomina Trashing a la hiperpaginación. Ocurre cuando en un proceso se emplea mas tiempo paginando que ejecutando el proceso, los recursos del sistema están siendo utilizados por los mecanismos de paginación, no quedando disponibles (o quedando muy poco) tiempo asignado para el progreso de los programas. Se soluciona aplicando un algoritmo en forma local, es decir, ante la necesidad de un proceso de una nueva página debe elegirse la página víctima dentro de las de ese proceso. Las paginas de cada proceso se asignan basandose en el modelo de area activa. Tambien se puede solucionar reduciendo el nivel de multiprogramación.",
+                "esCorrecta": true
+            },
+            {
+                "respuesta": "Se denomina Trashing al proceso que se emplea mas tiempo paginando que ejecutando los recursos del sistema los cuales están siendo utilizados por los mecanismos de paginación, no quedando disponibles (o quedando muy poco) tiempo asignado para el progreso de los programas. Se soluciona aplicando un algoritmo en forma local, es decir, ante la necesidad de un proceso de una nueva página debe elegirse la página víctima dentro de las de ese proceso. Las paginas de cada proceso se asignan basandose en el modelo de area activa. Tambien se puede solucionar reduciendo el nivel de multiprogramación.",
+                "esCorrecta": false
+            },
+            {
+                "respuesta": "Se denomina Trashing al tiempo asignado para el progreso de los programas TRASH de la memoria de paginación. Se soluciona aplicando un algoritmo en forma local, es decir, ante la necesidad de un proceso de una nueva página debe elegirse la página víctima dentro de las de ese proceso. Las paginas de cada proceso se asignan basandose en el modelo de area activa. Tambien se puede solucionar reduciendo el nivel de multiprogramación.",
+                "esCorrecta": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 3,
+        "pregunta": "¿Cuál es la diferencia entre vecindad (o localidad) y C.P.T?",
+        "respuestas": [
+            {
+                "respuesta": "Vecindad o Localidad: Es el conjunto de páginas que se utilizan conjuntamente. Se considera que un programa está formado por un conjunto de vecindades, las cuales pueden superponerse. C.P.T.: Representación aproximada del tamaño de la vecindad de un programa. Se obtiene sobre el análisis del pasado reciente de un programa.",
+                "esCorrecta": true
+            },
+            {
+                "respuesta": "Vecindad o Localidad: Representación aproximada del tamaño de la vecindad de un programa. Se obtiene sobre el análisis del pasado reciente de un programa. C.P.T.: Es el conjunto de páginas que se utilizan conjuntamente. Se considera que un programa está formado por un conjunto de vecindades, las cuales pueden superponerse.",
+                "esCorrecta": false
+            },
+            {
+                "respuesta": "Vecindad o Localidad: Representación aproximada del tamaño de un marco de memoria principal. C.P.T. : Abreviación de cola de procesos trabados, se da cuando el proceso queda indefinidamente sin procesar por un error del procesador",
+                "esCorrecta": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 4,
+        "pregunta": "¿El ONI es un administrador de recursos? ¿El OAN? ¿Por qué?",
+        "respuestas": [
+            {
+                "respuesta": "El ONI es un recurso que está en la CPU al decidir qué trabajos van a correr en la mezcla. El OAN influye pero no toma ninguna decisión acerca de qué programas utilizará la CPU.",
+                "esCorrecta": false
+            },
+            {
+                "respuesta": "El ONI es una administrador de recursos porque está administrando la CPU al decidir qué trabajos van a correr en la mezcla. El OAN influye pero no toma ninguna decisión acerca de qué programas utilizará la CPU.",
+                "esCorrecta": true
+            },
+            {
+                "respuesta": "El ONI son conjuntos de trabajos los cuales administran los recursos del CPU. El OAN influye pero no toma ninguna decisión acerca de qué programas utilizará la CPU.",
+                "esCorrecta": false
+            }
+        ]
+    },
+]
