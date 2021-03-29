@@ -17,6 +17,7 @@
             }
         ]
     },
+
     {
         "id_pregunta": 1,
         "pregunta": "Independientemente del SO, una estructura de subcolas permite clasificar programas dinámicamente según características intrínsecas de los mismos. ¿A qué características nos referimos?",
@@ -35,6 +36,7 @@
             }
         ]
     },
+
     {
         "id_pregunta": 2,
         "pregunta": "¿A qué se denomina TRASHING y cómo se soluciona?",
@@ -53,6 +55,7 @@
             }
         ]
     },
+
     {
         "id_pregunta": 3,
         "pregunta": "¿Cuál es la diferencia entre vecindad (o localidad) y C.P.T?",
@@ -71,6 +74,7 @@
             }
         ]
     },
+
     {
         "id_pregunta": 4,
         "pregunta": "¿El ONI es un administrador de recursos? ¿El OAN? ¿Por qué?",
@@ -89,4 +93,62 @@
             }
         ]
     },
+
+	{
+		"id_pregunta": 5,
+		"pregunta": "Dado un sistema de multiprogramación avanzada que cuenta con estructuras de subcolas y en el que corre una mezcla heterogénea en el uso de recursos, ¿por qué puede producirse un desbalance en el uso de recursos?",
+		"respuestas": [
+			{
+				"respuesta": "Si se distribuyen los recursos de la memoria de un programa entre los distintos canales, el algoritmo de dispatching se distorsionara ('el mas corto primero'). Debido a este mal uso de los canales, que hace que los mismo esten frecuentemente ocupados, se producirán colas de espera, y por tanto, un desbalance de la mezcla.",
+				"esCorrecta": false
+			},
+			{
+				"respuesta": "Si se distribuyen los archivos de un programa entre los distintos canales, el algoritmo de dispatching se distorsionara ('el mas corto primero'). Debido a este mal uso de los canales, que hace que los mismo procesos frecuentemente ocupados, se producirán muchos gastos de recursos del sistema, y por tanto, un desbalance de la mezcla.", 
+				"esCorrecta": false
+			},
+			{
+				"respuesta": "Si se distribuyen los archivos de un programa entre los distintos canales, el algoritmo de dispatching se distorsionara ('el mas corto primero'). Debido a este mal uso de los canales, que hace que los mismo esten frecuentemente ocupados, se producirán colas de espera, y por tanto, un desbalance de la mezcla.",
+				"esCorrecta": true
+			}
+		]
+	},
+	{
+		"id_pregunta": 6,
+		"pregunta": "Definir: Tráfico de E/S, Driver de E/S, Planeador de E/S, Controlador de E/S.",
+		"respuestas": [
+			{
+				"respuesta": "1) Tráfico de E/S: rafagas de informacion entre dipositivos, canales y memoria. 2) Drivers de Dispositivos.: Módulo asociado a cada tipo de dispositivo, es el encargado de comunicarse con el canal de E/S ya que sabe como funciona y como proporcionarle u obtener informacion de el. Maneja las interrupciones. 3) Planeador de E/S: Módulo encargado de asignar una solicitud de E/S al controlador de E/S y establecer el camino al dispositivo. 4) Controlador de E/S: Es el encargado de transferir los datos entre el periferico que controla y su buffer local. En DMA transfiere los datos directamente a memoria.",
+				"esCorrecta": true
+			},
+			{
+				"respuesta": "1) Tráfico de E/S: rafagas de informacion entre dipositivos. 2) Drivers de Dispositivos.: programa asociado a cada tipo de dispositivo, es el encargado de comunicarse con el canal de E/S y CPU ya que sabe como funciona y como proporcionarle u obtener informacion de el. Maneja las interrupciones. 3) Planeador de E/S: Módulo encargado de asignar una solicitud de E/S al controlador de E/S y establecer el camino al dispositivo. 4) Controlador de E/S: Es el encargado de transferir los datos entre el periferico que controla y su buffer local. En Caché transfiere los datos directamente a memoria.",
+				"esCorrecta": false
+			},
+			{
+				"respuesta": "1) Tráfico de E/S: informacion entre dipositivos, buffer y memoria. 2) Drivers de Dispositivos: Módulo asociado a cada tipo de dispositivo, es el encargado de controlar el canal de E/S ya que sabe como funciona y como proporcionarle u obtener informacion de el. Maneja las interrupciones. 3) Planeador de E/S: Módulo encargado de asignar una solicitud de E/S al controlador de E/S. 4) Controlador de E/S: Es el encargado de transferir los datos entre el periferico que controla.",
+				"esCorrecta": false
+			}
+		]
+	},
+
+	{
+		"id_pregunta": 7,
+		"pregunta": "¿Qué introdujeron estos conceptos: Monitor simple, Operación Off-Line, Buffering, Spooling?",
+		"respuestas": [
+			{
+				"respuesta": "1) Monitor simple: un SO rudimentario. 2)Operación Off - line: independencia de dispositivos 3) Buffering: mecanismos de interrupciones 4) Spooling: pool de trabajos, multiprogramacion",
+				"esCorrecta": true
+			},
+			{
+				"respuesta": "1) Monitor simple: independencia de dispositivos. 2) Operación Off-line: mecanismos de interrupción. 3) Buffering: familia IA-32 4) Spooling: multiprogramacion",
+
+				"esCorrecta": false
+			},
+			{
+				"respuesta": "1) Monitor simple: multiprogramación. 2) Operación Off-line: interrupciones avanzadas 3) Buffering: pool de trabajos 4) Spooling: operaciones simultáneas on-line",
+
+				"esCorrecta": false
+			}
+		]
+	}
 ]
