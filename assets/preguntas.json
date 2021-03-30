@@ -17,7 +17,6 @@
             }
         ]
     },
-
     {
         "id_pregunta": 1,
         "pregunta": "Independientemente del SO, una estructura de subcolas permite clasificar programas dinámicamente según características intrínsecas de los mismos. ¿A qué características nos referimos?",
@@ -36,7 +35,6 @@
             }
         ]
     },
-
     {
         "id_pregunta": 2,
         "pregunta": "¿A qué se denomina TRASHING y cómo se soluciona?",
@@ -55,7 +53,6 @@
             }
         ]
     },
-
     {
         "id_pregunta": 3,
         "pregunta": "¿Cuál es la diferencia entre vecindad (o localidad) y C.P.T?",
@@ -74,7 +71,6 @@
             }
         ]
     },
-
     {
         "id_pregunta": 4,
         "pregunta": "¿El ONI es un administrador de recursos? ¿El OAN? ¿Por qué?",
@@ -93,62 +89,299 @@
             }
         ]
     },
+    {
+        "id_pregunta": 5,
+        "pregunta": "Dado un sistema de multiprogramación avanzada que cuenta con estructuras de subcolas y en el que corre una mezcla heterogénea en el uso de recursos, ¿por qué puede producirse un desbalance en el uso de recursos?",
+        "respuestas": [
+            {
+                "respuesta": "Si se distribuyen los recursos de la memoria de un programa entre los distintos canales, el algoritmo de dispatching se distorsionara ('el mas corto primero'). Debido a este mal uso de los canales, que hace que los mismo esten frecuentemente ocupados, se producirán colas de espera, y por tanto, un desbalance de la mezcla.",
+                "esCorrecta": false
+            },
+            {
+                "respuesta": "Si se distribuyen los archivos de un programa entre los distintos canales, el algoritmo de dispatching se distorsionara ('el mas corto primero'). Debido a este mal uso de los canales, que hace que los mismo procesos frecuentemente ocupados, se producirán muchos gastos de recursos del sistema, y por tanto, un desbalance de la mezcla.",
+                "esCorrecta": false
+            },
+            {
+                "respuesta": "Si se distribuyen los archivos de un programa entre los distintos canales, el algoritmo de dispatching se distorsionara ('el mas corto primero'). Debido a este mal uso de los canales, que hace que los mismo esten frecuentemente ocupados, se producirán colas de espera, y por tanto, un desbalance de la mezcla.",
+                "esCorrecta": true
+            }
+        ]
+    },
+    {
+        "id_pregunta": 6,
+        "pregunta": "Definir: Tráfico de E/S, Driver de E/S, Planeador de E/S, Controlador de E/S.",
+        "respuestas": [
+            {
+                "respuesta": "1) Tráfico de E/S: rafagas de informacion entre dipositivos, canales y memoria. 2) Drivers de Dispositivos.: Módulo asociado a cada tipo de dispositivo, es el encargado de comunicarse con el canal de E/S ya que sabe como funciona y como proporcionarle u obtener informacion de el. Maneja las interrupciones. 3) Planeador de E/S: Módulo encargado de asignar una solicitud de E/S al controlador de E/S y establecer el camino al dispositivo. 4) Controlador de E/S: Es el encargado de transferir los datos entre el periferico que controla y su buffer local. En DMA transfiere los datos directamente a memoria.",
+                "esCorrecta": true
+            },
+            {
+                "respuesta": "1) Tráfico de E/S: rafagas de informacion entre dipositivos. 2) Drivers de Dispositivos.: programa asociado a cada tipo de dispositivo, es el encargado de comunicarse con el canal de E/S y CPU ya que sabe como funciona y como proporcionarle u obtener informacion de el. Maneja las interrupciones. 3) Planeador de E/S: Módulo encargado de asignar una solicitud de E/S al controlador de E/S y establecer el camino al dispositivo. 4) Controlador de E/S: Es el encargado de transferir los datos entre el periferico que controla y su buffer local. En Caché transfiere los datos directamente a memoria.",
+                "esCorrecta": false
+            },
+            {
+                "respuesta": "1) Tráfico de E/S: informacion entre dipositivos, buffer y memoria. 2) Drivers de Dispositivos: Módulo asociado a cada tipo de dispositivo, es el encargado de controlar el canal de E/S ya que sabe como funciona y como proporcionarle u obtener informacion de el. Maneja las interrupciones. 3) Planeador de E/S: Módulo encargado de asignar una solicitud de E/S al controlador de E/S. 4) Controlador de E/S: Es el encargado de transferir los datos entre el periferico que controla.",
+                "esCorrecta": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 7,
+        "pregunta": "¿Qué introdujeron estos conceptos: Monitor simple, Operación Off-Line, Buffering, Spooling?",
+        "respuestas": [
+            {
+                "respuesta": "1) Monitor simple: un SO rudimentario. 2)Operación Off-line: independencia de dispositivos 3) Buffering: mecanismos de interrupciones 4) Spooling: pool de trabajos, multiprogramacion",
+                "esCorrecta": true
+            },
+            {
+                "respuesta": "1) Monitor simple: independencia de dispositivos. 2) Operación Off-line: mecanismos de interrupción. 3) Buffering: familia IA-32 4) Spooling: multiprogramacion",
+                "esCorrecta": false
+            },
+            {
+                "respuesta": "1) Monitor simple: multiprogramación. 2) Operación Off-line: interrupciones avanzadas 3) Buffering: pool de trabajos 4) Spooling: operaciones simultáneas on-line",
+                "esCorrecta": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 8,
+        "pregunta": "Definir y dar ejemplos de Event-Driven (o Queve-Driven) y Proccess-Driven.",
+        "respuestas": [
+            {
+                "respuesta": "1) Event - Driven: los procesos son disparados por eventos externos. Ej: Sistema de inyeccion de combustible, Control de estado de las funciones vitales de un paciente. 2) Proccess - Driven: los procesos son iniciados por sus características intrínsecas según la utilizacion que se le quiera dar al equipo. Ej: Procesos con prioridad, Procesos limitados por CPU para una mezcla limitada por E/S.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "1) Event - Driven: eventos externos disparados por los procesos. Ej: Sistema de inyeccion en procesos, Control de estado de las funciones vitales de un paciente. 2) Proccess - Driven: hilos iniciados por sus características intrínsecas según la utilizacion que se le quiera dar al equipo. Ej: Procesos con prioridad, Procesos limitados por CPU para una mezcla limitada por E/S.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "1) Event - Driven: procesos disparadores de eventos externos. 2) Proccess - Driven: los procesos son iniciados por sus características intrínsecas según la utilizacion que se le quiera dar al equipo. Ej: Procesos con prioridad, Procesos ilimitados por CPU para una mezcla limitada por E/S.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 9,
+        "pregunta": "¿Cómo justificaría la incorporación de un nuevo módulo administrador de recursos?",
+        "respuestas": [
+            {
+                "respuesta": "Cuando los trabajos no usan los recursos de manera eficiente teniendo en cuenta los objetivos, presentando mezclas no deseadas en la CPA. ",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Cuando los trabajos no usan los recursos de manera eficiente teniendo en cuenta los objetivos, presentando mezclas no deseadas en el bloque de control de proceso (PCB). ",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Cuando los trabajos no usan los recursos de manera eficiente teniendo en cuenta los objetivos, presentando mezclas no deseadas en un sistema de archivos NTFS. ",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 10,
+        "pregunta": "Los sistemas de multiprogramación avanzada poseen mecanismos elaborados de conmutación de la CPU. Dé un ejemplo de ello.",
+        "respuestas": [
+            {
+                "respuesta": "Utilizar colas cíclicas realimentadas, en donde se utiliza como política “el más corto primero”, es decir, se da prioridad a la aplicación que en el menor tiempo solicite una operación de E/S.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Utilizar planificación circular, en donde se utiliza como política “el qué primero llega”, es decir, se da prioridad a la primera aplicación qué realizó una petición",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "No existe aún hoy en día un mecanismo qué de manera eficiente conmute la CPU entre las diversas aplicaciones.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 11,
+        "pregunta": "¿Cuáles son los recursos críticos de los siguientes SOs: Multiprogramacion Básica, Multiprogramacion Avanzada, Tiempo Compartido, Tiempo Real?",
+        "respuestas": [
+            {
+                "respuesta": "1) Multiprogramación básica: Memoria 2) Multiprogramación avanzada: Canales 3) Tiempo compartido: CPU 4) Tiempo real: Según los procesos que se corren E/S o CPU",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "1) Multiprogramación básica: Memoria plana 2) Multiprogramación avanzada: Canales de comunicación 3) Tiempo compartido: CPU y Memoria 4) Tiempo real: Según los procesos que se corren E/S o CPU",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "1) Multiprogramación básica: Memoria segmentada 2) Multiprogramación avanzada: Canales  3) Tiempo compartido: CPU 4) Tiempo real: Según los procesos que se corren E/S o CPU",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 12,
+        "pregunta": "¿Qué implicancia tendría que la elección de la tabla de páginas sobre la cuál se elegirá la página víctima se efectúe probabilísticamente?",
+        "respuestas": [
+            {
+                "respuesta": "Si la página víctima se eligiera en forma probabilística habría más interrupciones por falla de página y por lo tanto alto ratio de paginación",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Si la página víctima se eligiera en forma probabilística habría menos interrupciones por falla de página y por lo tanto bajo ratio de paginación",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Si la página víctima se eligiera en forma probabilística habría más interrupciones por falla de página y por lo tanto bajo ratio de paginación",
+                "esCorrecto": false
+            }
+        ]
+    },
+    
+    {
+        "id_pregunta": 13,
+        "pregunta": "(SUBCOLA 1) N1 = 5 Q1 = 5 | (SUBCOLA 2) N2 = 10 Q2 = 10 | (SUBCOLA 3) N3 = [uInfinito] Q3 = 30, cuya regla de visita establece que: “Siempre que en la subcola derecha haya un proceso listo para correr será atendido”. ¿Qué conclusiones puede sacar?",
+        "respuestas": [
+            {
+                "respuesta": "Penaliza a los procesos cortos y favorece a los largos, los procesos cortos se ven penalizados ya que cada vez que se comience a ejecutar un proceso largo este sera atendido hasta su finalizacion y los cortos que lo siguen deberan esperar. Seria los mismo que un algoritmo FCFS con una sola cola.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Penaliza a los procesos largos y favorece a los cortos, los procesos largos se ven penalizados ya que cada vez que se comience a ejecutar un proceso corto este sera atendido hasta su finalizacion y los largos que lo siguen deberan esperar. Seria los mismo que un algoritmo FCFS con una sola cola.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "No penaliza a un proceso, ya qué el TAT es constante sin importar el tamaño del proceso en cuestión",
+                "esCorrecto": false
+            }
+        ]
+    },
 
-	{
-		"id_pregunta": 5,
-		"pregunta": "Dado un sistema de multiprogramación avanzada que cuenta con estructuras de subcolas y en el que corre una mezcla heterogénea en el uso de recursos, ¿por qué puede producirse un desbalance en el uso de recursos?",
-		"respuestas": [
-			{
-				"respuesta": "Si se distribuyen los recursos de la memoria de un programa entre los distintos canales, el algoritmo de dispatching se distorsionara ('el mas corto primero'). Debido a este mal uso de los canales, que hace que los mismo esten frecuentemente ocupados, se producirán colas de espera, y por tanto, un desbalance de la mezcla.",
-				"esCorrecta": false
-			},
-			{
-				"respuesta": "Si se distribuyen los archivos de un programa entre los distintos canales, el algoritmo de dispatching se distorsionara ('el mas corto primero'). Debido a este mal uso de los canales, que hace que los mismo procesos frecuentemente ocupados, se producirán muchos gastos de recursos del sistema, y por tanto, un desbalance de la mezcla.", 
-				"esCorrecta": false
-			},
-			{
-				"respuesta": "Si se distribuyen los archivos de un programa entre los distintos canales, el algoritmo de dispatching se distorsionara ('el mas corto primero'). Debido a este mal uso de los canales, que hace que los mismo esten frecuentemente ocupados, se producirán colas de espera, y por tanto, un desbalance de la mezcla.",
-				"esCorrecta": true
-			}
-		]
-	},
-	{
-		"id_pregunta": 6,
-		"pregunta": "Definir: Tráfico de E/S, Driver de E/S, Planeador de E/S, Controlador de E/S.",
-		"respuestas": [
-			{
-				"respuesta": "1) Tráfico de E/S: rafagas de informacion entre dipositivos, canales y memoria. 2) Drivers de Dispositivos.: Módulo asociado a cada tipo de dispositivo, es el encargado de comunicarse con el canal de E/S ya que sabe como funciona y como proporcionarle u obtener informacion de el. Maneja las interrupciones. 3) Planeador de E/S: Módulo encargado de asignar una solicitud de E/S al controlador de E/S y establecer el camino al dispositivo. 4) Controlador de E/S: Es el encargado de transferir los datos entre el periferico que controla y su buffer local. En DMA transfiere los datos directamente a memoria.",
-				"esCorrecta": true
-			},
-			{
-				"respuesta": "1) Tráfico de E/S: rafagas de informacion entre dipositivos. 2) Drivers de Dispositivos.: programa asociado a cada tipo de dispositivo, es el encargado de comunicarse con el canal de E/S y CPU ya que sabe como funciona y como proporcionarle u obtener informacion de el. Maneja las interrupciones. 3) Planeador de E/S: Módulo encargado de asignar una solicitud de E/S al controlador de E/S y establecer el camino al dispositivo. 4) Controlador de E/S: Es el encargado de transferir los datos entre el periferico que controla y su buffer local. En Caché transfiere los datos directamente a memoria.",
-				"esCorrecta": false
-			},
-			{
-				"respuesta": "1) Tráfico de E/S: informacion entre dipositivos, buffer y memoria. 2) Drivers de Dispositivos: Módulo asociado a cada tipo de dispositivo, es el encargado de controlar el canal de E/S ya que sabe como funciona y como proporcionarle u obtener informacion de el. Maneja las interrupciones. 3) Planeador de E/S: Módulo encargado de asignar una solicitud de E/S al controlador de E/S. 4) Controlador de E/S: Es el encargado de transferir los datos entre el periferico que controla.",
-				"esCorrecta": false
-			}
-		]
-	},
+    {
+        "id_pregunta": 14,
+        "pregunta": "¿Por qué la segmentación facilita la compartición de código?",
+        "respuestas": [
+            {
+                "respuesta": "Porque se puede asociar un mismo segmento a distintos procesos mediante la tabla de segmentos de cada proceso. Ademas cada segmento esta definido apoyado sobre la perspectiva del usuario semanticamente (codigo, funciones, variables) lo que facilita la comparticion. Por ejemplo se podria compartir entre varios procesos un segmento en el cual se encuentran funciones comunes a estos.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Porque se puede asociar un mismo segmento a distintos procesos mediante la tabla de paginación de cada proceso. Ademas cada segmento esta definido apoyado sobre la perspectiva del usuario semanticamente (codigo, funciones, variables) lo que facilita la comparticion de hilos. Por ejemplo se podria compartir entre varios procesos un segmento en el cual se encuentran funciones comunes a estos.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Porque se puede asociar un mismo paginado de distintos procesos mediante la tabla de segmentos de cada proceso. Ademas cada página esta definido apoyado sobre la perspectiva del usuario semanticamente (codigo, funciones, variables) lo que facilita la comparticion. Por ejemplo se podria compartir entre varios procesos un segmento en el cual se encuentran funciones comunes a estos.",
+                "esCorrecto": false
+            }
+        ]
+    },
 
-	{
-		"id_pregunta": 7,
-		"pregunta": "¿Qué introdujeron estos conceptos: Monitor simple, Operación Off-Line, Buffering, Spooling?",
-		"respuestas": [
-			{
-				"respuesta": "1) Monitor simple: un SO rudimentario. 2)Operación Off - line: independencia de dispositivos 3) Buffering: mecanismos de interrupciones 4) Spooling: pool de trabajos, multiprogramacion",
-				"esCorrecta": true
-			},
-			{
-				"respuesta": "1) Monitor simple: independencia de dispositivos. 2) Operación Off-line: mecanismos de interrupción. 3) Buffering: familia IA-32 4) Spooling: multiprogramacion",
+    {
+        "id_pregunta": 15,
+        "pregunta": "En un SO de 3 niveles, ¿qué cola tiene mayor capacidad, la del ONI o la del OBN? Justificar.",
+        "respuestas": [
+            {
+                "respuesta": "La cola que posee mayor capacidad es la del OBN, es conveniente que esta cola tenga mayor capacidad ya que almacena los procesos iniciados (recien llegados y parcialmente ejecutados) con los cuales el OBN efectuara las futuras mezclas (tomando el las decisiones evitando sobrecargar al ONI) de la CPA para mejorar el rendimiento del sistema con vista a los objetivos. Ademas como los procesos de esta cola reciden en memoria virtual el limite de capacidad que se le impone lo define el sistema lo cual no sucede con la cola del ONI.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Niguna de las 2 anteriores. La cola con mayor capacidad es la OAN (planificador a largo plazo)",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "La cola que posee mayor capacidad es la del ONI, es conveniente que esta cola tenga mayor capacidad ya que almacena los procesos iniciados (recien llegados y parcialmente ejecutados) con los cuales el ONI efectuara las futuras mezclas (tomando el las decisiones evitando sobrecargar al OBN) de la CPA para mejorar el rendimiento del sistema con vista a los objetivos. Ademas como los procesos de esta cola reciden en memoria virtual el limite de capacidad que se le impone lo define el sistema lo cual no sucede con la cola del OBN.",
+                "esCorrecto": true
+            }
+        ]
+    },
 
-				"esCorrecta": false
-			},
-			{
-				"respuesta": "1) Monitor simple: multiprogramación. 2) Operación Off-line: interrupciones avanzadas 3) Buffering: pool de trabajos 4) Spooling: operaciones simultáneas on-line",
+    {
+        "id_pregunta": 16,
+        "pregunta": "¿Por qué motivo en un sistema con memoria virtual es importante ante la solicitud de una nueva página por parte de un proceso, conocer si la vecindad cambia o crece? ¿Cómo actúa en cada caso?",
+        "respuestas": [
+            {
+                "respuesta": "Es importante porque en caso de que la vecindad crece en la proxima intervencion del ONI este le agrandara la vecindad para que pueda correr sin ocasionar falla de pagina. El sistema para discernir entre un cambio o crecimiento evalua el ratio de repaginacion. Si el mismo es elevado la vecindad crece y si es bajo cambia. Ante un crecimiento: le asigna mas marcos al proceso, si no hay marcos disponibles puede hacer tres cosas: sacarle paginas a otro proceso de menos prioridad o mal comportamiento, suspender un proceso de menos prioridad, suspender el proceso hasta que halla marcos disponibles para el CPT del mismo. Ante un cambio: aplicar el algoritmo de reemplazo de pagina en forma local",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Es importante porque en caso de que la vecindad crece en la proxima intervencion de la CPU, este le agrandara la vecindad para que pueda correr sin ocasionar falla de segmento. El sistema para discernir entre un cambio o crecimiento evalua el ratio de repaginacion. Si el mismo es elevado la vecindad crece y si es bajo cambia. Ante un crecimiento: le asigna mas marcos al proceso, si no hay marcos disponibles puede hacer tres cosas: sacarle paginas a otro proceso de menos prioridad o mal comportamiento, suspender un proceso de menos prioridad, suspender el proceso hasta que halla marcos disponibles para el CPT del mismo. Ante un cambio: aplicar el algoritmo de reemplazo de pagina en forma local",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Ninguna es correcta",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 17,
+        "pregunta": "¿Cuáles son las ventajas de construir una red de procesamiento?",
+        "respuestas": [
+            {
+                "respuesta": "Independizar las aplicaciones de la ubicación física de los datos y/o programas. Facilidad para comunicarse entre sistemas",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Independizar las aplicaciones de la ubicación lógica de los procesos. Facilidad para comunicarse entre sistemas",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Independizar las aplicaciones de la ubicación física de los registros físicos/lógicos. Facilidad para comunicarse entre sistemas",
+                "esCorrecto": false
+            }
+        ]
+    },
 
-				"esCorrecta": false
-			}
-		]
-	}
+    {
+        "id_pregunta": 18,
+        "pregunta": "¿Cuál es la diferencia entre red de procesamiento y procesamiento distribuido?",
+        "respuestas": [
+            {
+                "respuesta": "Red de Procesamiento: Considera que una aplicación ha sido desarrollada para trabajar en varios procesadores, de tal forma que en cada nodo se desarrollan determinadas funciones que en totalidad forman el sistema completo | Procesamiento Distribuido: Considera que una aplicación ha sido desarrollada para trabajar en varios procesadores, de tal forma que en cada nodo se desarrollan determinadas funciones que en totalidad forman el sistema completo. Ante un crecimiento: le asigna mas marcos al proceso, si no hay marcos disponibles puede hacer tres cosas: sacarle paginas a otro proceso de menos prioridad o mal comportamiento, suspender un proceso de menos prioridad, suspender el proceso hasta que halla marcos disponibles para el CPT del mismo.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Red de Procesamiento: cada nodo se lo considera como un sistema multipropósito capaz de: -ofrecer funciones y/o servicios a los usuarios -trabajar en forma independiente | Procesamiento Distribuido: Considera que una aplicación ha sido desarrollada para trabajar en varios procesadores, de tal forma que en cada nodo se desarrollan determinadas funciones que en totalidad forman el sistema completo",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Red de Procesamiento: cada nodo se lo considera como un sistema distribuido capaz de: -ofrecer rutinas del SO específicas -trabajar en relación de dependencia | Procesamiento Distribuido: Considera que una aplicación ha sido desarrollada para trabajar en sólo un procesador, de tal forma que en cada nodo se desarrollan determinadas funciones que en totalidad forman el sistema completo ",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 19,
+        "pregunta": "Dado un procesador determinado; ¿cómo se logra mayor capacidad de cálculo, agregando 3 procesadores iguales al existente o cambiando por uno 4 veces más potente? ¿Por qué?",
+        "respuestas": [
+            {
+                "respuesta": "Cambiando por uno 4 veces más potente, porque al aumentar la cantidad de procesadores en 3 no se va a cuadriplicar la capacidad de procesamiento debido a que hay cierta cantidad de tiempo de procesamiento requerido para mantener al conjunto funcionando correctamente",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Cambiando por uno 3 veces más potente, porque al aumentar la cantidad de procesadores en 4 no se va a cuadriplicar la capacidad de procesamiento debido a que hay cierta cantidad de tiempo de buffering requerido para mantener al conjunto funcionando correctamente",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Ninguna de las anteriores",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 20,
+        "pregunta": "Explique los pasos que sigue un sistema de 3 niveles para correr en una mezcla Batch un programa con tiempo límite de finalización.",
+        "respuestas": [
+            {
+                "respuesta": "1) El ONI calcula el total de recursos que va a utilizar el programa en unidades de servicio (mide el avance del programa en la mezcla) 2) Al final de cada período el ONI controla el grado de avance del programa y, según éste retrasado o adelantado se le modificara si es necesario la prioridad relativa",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "1) El OBN calcula el total de recursos que va a utilizar el programa en unidades de servicio (mide el avance del programa en la mezcla) 2) Al final de cada período el OBN controla el grado de avance del programa y, según éste retrasado o adelantado se le modificara si es necesario la prioridad relativa",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "1) El OAN calcula el total de recursos que va a utilizar el programa en unidades de servicio (mide el avance del programa en la mezcla) 2) Al final de cada período el OAN controla el grado de avance del programa y, según éste retrasado o adelantado se le modificara si es necesario la prioridad relativa",
+                "esCorrecto": false
+            }
+        ]
+    }
+
 ]
