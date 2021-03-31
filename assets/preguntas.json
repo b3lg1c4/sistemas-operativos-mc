@@ -233,7 +233,6 @@
             }
         ]
     },
-    
     {
         "id_pregunta": 13,
         "pregunta": "(SUBCOLA 1) N1 = 5 Q1 = 5 | (SUBCOLA 2) N2 = 10 Q2 = 10 | (SUBCOLA 3) N3 = [uInfinito] Q3 = 30, cuya regla de visita establece que: “Siempre que en la subcola derecha haya un proceso listo para correr será atendido”. ¿Qué conclusiones puede sacar?",
@@ -252,7 +251,6 @@
             }
         ]
     },
-
     {
         "id_pregunta": 14,
         "pregunta": "¿Por qué la segmentación facilita la compartición de código?",
@@ -271,7 +269,6 @@
             }
         ]
     },
-
     {
         "id_pregunta": 15,
         "pregunta": "En un SO de 3 niveles, ¿qué cola tiene mayor capacidad, la del ONI o la del OBN? Justificar.",
@@ -290,7 +287,6 @@
             }
         ]
     },
-
     {
         "id_pregunta": 16,
         "pregunta": "¿Por qué motivo en un sistema con memoria virtual es importante ante la solicitud de una nueva página por parte de un proceso, conocer si la vecindad cambia o crece? ¿Cómo actúa en cada caso?",
@@ -327,7 +323,6 @@
             }
         ]
     },
-
     {
         "id_pregunta": 18,
         "pregunta": "¿Cuál es la diferencia entre red de procesamiento y procesamiento distribuido?",
@@ -346,7 +341,6 @@
             }
         ]
     },
-
     {
         "id_pregunta": 19,
         "pregunta": "Dado un procesador determinado; ¿cómo se logra mayor capacidad de cálculo, agregando 3 procesadores iguales al existente o cambiando por uno 4 veces más potente? ¿Por qué?",
@@ -382,6 +376,275 @@
                 "esCorrecto": false
             }
         ]
+    },
+    {
+        "id_pregunta": 21,
+        "pregunta": "Imagine un proceso corriendo en un sistema de paginación; las páginas del mismo se identifican con una con una letra. Suponga que la secuencia con que referencia sus páginas en un intervalo del ONI es la siguiente: t = 0, A-B-C-E-F-D-E-F-K-L-M-D-E-F-N-O-P-D-E-F-Q-R-S-D-E-F-T-U-V, t = 1 El sistema dispone de una lista de 8 registros asociativos de hard para la asociación entre direcciones lógicas y ubicaciones físicas además, claro está, de la tabla de páginas. Esta lista se mantiene con un mecanismo LFU (bit de referencia). ¿Cuántas referencias del proceso en cuestión han podido ser validadas sin recurrir a otro mecanismo que no sea la lista?",
+        "respuestas": [
+            {
+                "respuesta": "DFDFFEEFDED",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "DFDEFFDFDEE",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "EFDEFDEFDEF",
+                "esCorrecto": true
+            }
+        ]
+    },
+    {
+        "id_pregunta": 22,
+        "pregunta": "¿Qué conclusiones pueden sacarse respecto de las caracteristicas de un programa conociendo su ratio de paginación? ¿Por qué?",
+        "respuestas": [
+            {
+                "respuesta": "Con su ratio de paginación no podemos sacar ninguna conclusión, porque el proceso puede producir una brusca variación de la vecindad, ya sea porque su localidad crece o cambia. En cambio, conociendo su ratio de repaginación, un proceso que crece tiene elevado ratio de repaginación y un proceso que cambia tendrá un pequeño ratio de repaginación.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Con su memoria de paginación no podemos sacar ninguna conclusión, porque el proceso puede producir una brusca variación de la vecindad, ya sea porque su localidad crece o cambia. En cambio, conociendo su ratio de repaginación, un proceso que crece tiene elevado ratio de repaginación y un proceso que cambia tendrá un pequeño ratio de repaginación.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Con su segmento de memoria no podemos sacar ninguna conclusión, porque el proceso puede producir una brusca vulnerabilidad de la vecindad, ya sea porque su localidad crece o cambia. En cambio, conociendo su memoria de repaginación, un proceso que crece tiene elevado ratio de repaginación y un proceso que cambia tendrá un pequeño ratio de repaginación.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 23,
+        "pregunta": "Imagine un proceso corriendo en un sistema de paginación; las páginas del mismo se identifican con una con una letra. Suponga que la secuencia con que referencia sus páginas en un intervalo del ONI es la siguiente: t = 0, A-B-C-E-F-D-E-F-K-L-M-D-E-F-N-O-P-D-E-F-Q-R-S-D-E-F-T-U-V, t = 1 El sistema dispone de una lista de 8 registros asociativos de hard para la asociación entre direcciones lógicas y ubicaciones físicas además, claro está, de la tabla de páginas. Esta lista se mantiene con un mecanismo LFU (bit de referencia). ¿Qué inconvenientes presenta?",
+        "respuestas": [
+            {
+                "respuesta": "Que puedo dar de baja una página que a continuación se vuelve a referenciar",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Que puedo dar de baja un marco que a continuación se vuelve a referenciar",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Que puedo dar de baja un proceso que a continuación se vuelve a referenciar",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 24,
+        "pregunta": "Explique y justifique cuáles son los objetivos comunes con los que se desarrollaron todos los algoritmos de reemplazo de páginas.",
+        "respuestas": [
+            {
+                "respuesta": "Que produzca el menor numero de fallas de páginas, porque se consumirá menos tiempo en procesar un programa ya que no se necesitan tantas secuencias de paginación. Esto incluye: -Evitar que se presente la anomalia de Belady. -Evitar el trashing. -Aproximarse al CPT",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Que produzca el mayor numero de fallas de páginas, porque se consumirá más tiempo en procesar un programa ya que no se necesitan tantas secuencias de segmentación. Esto incluye: -Evitar que se presente la anomalia de Belady. -Evitar el spooling. -Aproximarse al CTP",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Que produzca el mayor numero de fallas de segmentos, porque se consumirá más tiempo en procesar un programa ya que no se necesitan tantas secuencias. Esto incluye: -Evitar que se presente la anomalia de Belady. -Evitar el spooling. -Aproximarse al CTP",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 25,
+        "pregunta": "Explicar por que es frecuentemente necesario recurrir a un Cross-Compiler o a un Meta-Asembler para el desarrollo de estos sistemas.",
+        "respuestas": [
+            {
+                "respuesta": "El sistema es desarrollado en un hardware con un SO que soporta desarrollo de programas diferente al hardware en el que va a ejecutarse la aplicación de tiempo real (los sistemas estan desarrollados a medida solo pensado en el uso que le va a dar la aplicación) y el Cross-compiler o el Meta-assembler permiten que estando en una máquina se pueda crear código para una arquitectura distinta a la esta.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "El sistema es desarrollado en un hardware con un SO que soporta desarrollo de programas similares al hardware en el que va a ejecutarse la aplicación de tiempo real (los sistemas estan desarrollados a medida solo pensado en el uso de procesadores x86 que le va a dar la aplicación) y el Cross-compiler o el Meta-assembler permiten que estando en una máquina se pueda crear código para una arquitectura distinta a la esta.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "El sistema es desarrollado en un hardware muy específico con un SO que soporta desarrollo de programas diferente al hardware y multihilos en el que va a ejecutarse la aplicación de tiempo real (los sistemas estan desarrollados a medida solo pensado en el uso que le va a dar la aplicación) y el Cross-compiler o el Meta-assembler permiten que estando en una máquina se pueda crear código para una arquitectura distinta a la esta.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 26,
+        "pregunta": "¿Cuáles son los objetivos de explotación y describir las características de una mezcla ideal de procesos para: Sistemas Batch - Sistemas de Tiempo Compartido?",
+        "respuestas": [
+            {
+                "respuesta": "Sistemas Batch: Máximar la utilización del hard, trata de correr la mayor cantidad de trabajos por unidad de tiempo. Mezcla ideal: Heterogénea con respecto a los recursos, ya que si la aplicación de la mezcla utiliza distintos recursos se puede balancear el uso de los mismos. Tiempo Compartido: Pronta respuesta al usuario. Puede sacrificar el uso del hard, ya que se basa en brindar una respuesta rápida a los usuarios. Mezcla ideal: Homogénea en cuanto a las funciones utilizadas, si todas los procesos utilizan una misma función, se reduce el esfuerzo del sistema de traerla y dejarla disponible para su uso.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Sistemas Batch: Pronta respuesta al usuario. Puede sacrificar el uso del hard, ya que se basa en brindar una respuesta rápida a los usuarios. Mezcla ideal: Heterogénea con respecto a los recursos, ya que si la aplicación de la mezcla utiliza distintos recursos se puede balancear el uso de los mismos. Tiempo Compartido: Máximar la utilización del hard, trata de correr la mayor cantidad de trabajos por unidad de tiempo. Mezcla ideal: Heterogénea con respecto a los recursos, ya que si la aplicación de la mezcla utiliza distintos recursos se puede balancear el uso de los mismos.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Sistemas Batch: Pronta respuesta al usuario. Puede sacrificar el uso del hard, ya que se basa en brindar una respuesta rápida a los usuarios. Mezcla ideal: Homogénea en cuanto a las funciones utilizadas, si todas los procesos utilizan una misma función, se reduce el esfuerzo del sistema de traerla y dejarla disponible para su uso. Tiempo Compartido: Máximar la utilización del hard, trata de correr la mayor cantidad de trabajos por unidad de tiempo. Mezcla ideal: Homogénea en cuanto a las funciones utilizadas, si todas los procesos utilizan una misma función, se reduce el esfuerzo del sistema de traerla y dejarla disponible para su uso.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 27,
+        "pregunta": "En un medio de recursos compartidos, ¿puede el compilador generar todas las funciones en un proceso compilado? Explique.",
+        "respuestas": [
+            {
+                "respuesta": "No, no se permite porque la idea de ámbito de procesamiento contiene una idea interfases extendidas y una idea de coordinación  y control. Como muchos procesos necesitan funciones idénticas, se definen mecanismos que permitan compartir código y usar eficientemente la memoria. Cuando el  compilador necesita una de las interfases extendidas solo llama al modulo.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "No, no se permite porque el procesamiento contiene una idea de coordinación  y control. Como muchos espacios de memoria contigua necesitan funciones idénticas, se definen mecanismos que permitan compartir código y usar eficientemente la memoria. Cuando el  compilador necesita una de las interfases extendidas solo llama al modulo.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "No, no se permite porque la memoria contiene una idea de interfaces extendidas y una idea de coordinación  y control. Como muchos procesos necesitan funciones segmentadas, se definen mecanismos que permitan compartir código y usar eficientemente la memoria. Cuando el  compilador necesita una de las interfaces extendidas solo llama al modulo público.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 28,
+        "pregunta": "¿Cómo se aprovecha una estructura de subcolas en un sistema de Tiempo Compartido?",
+        "respuestas": [
+            {
+                "respuesta": "Una estructura de subcolas permite, en este tipo de sistemas, distinguir los programas largos de los cortos para privilegiar o beneficiar a estos ultimos repectos de los demas, y como consecuencia disminuir para los programas largos el TAT y el TIEMPO DE RESPUESTA. La regla de residencia esta dada por los golpes de la memoria auxiliar que recibe un proceso \"N\" y la de visita es la que penaliza a los programas largos.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Una estructura de subcolas permite, en este tipo de sistemas, distinguir lás páginas largas de los cortas para privilegiar o beneficiar a estas ultimas repectos de los demas, y como consecuencia disminuir para las páginas largas el numero efectivo de cargas y descargas en memoria. La regla de residencia esta dada por los golpes de CPU que recibe un proceso \"N\" y la de visita es la que penaliza a las páginas largas.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Una estructura de subcolas permite, en este tipo de sistemas, distinguir los programas largos de los cortos para privilegiar o beneficiar a estos ultimos repectos de los demas, y como consecuencia disminuir para los programas largos el numero efectivo de cargas y descargas en memoria. La regla de residencia esta dada por los golpes de CPU que recibe un proceso \"N\" y la de visita es la que penaliza a los programas largos.",
+                "esCorrecto": true
+            }
+        ]
+    },
+    {
+        "id_pregunta": 29,
+        "pregunta": "¿Cuáles son los fundamentos económicos de la administracion de recursos en un sistema de computación?",
+        "respuestas": [
+            {
+                "respuesta": "Costo: reside en el incremento de los beneficios economicos que obtiene una empresa debido a la incorporacion de un sistema de computacion. El valor puede derivar de la reduccion de los costos de creacion, manipulacion, clasificacion y almacenamiento de datos; del aumento de la productividad de los usuarios y profesionales ligados al sistema; de la provision de informacion de mejor calidad y en margen de tiempo mas conveniente proporcionando mayores posibilidades de correlacionar informacion; y proveyendo metodologias de planificacion de negocios mas sofisticadas. Debe ser medido por el valor de la informacion que el produce, un retardo en ella produce costo. Valor: incluye el costo del software, el costo del staff de profeionales derivados del desarrollo de aplicaciones y del mantenimiento de la informacion y de los programas, y de los costos derivados del efectivo uso del equipo.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Costo: incluye el costo del hardware, el costo del staff de profeionales derivados del desarrollo de aplicaciones y del mantenimiento de la informacion y de los programas, y de los costos derivados del efectivo uso del equipo. Valor: reside en el incremento de los beneficios economicos que obtiene una empresa debido a la incorporacion de un sistema de computacion. El valor puede derivar de la reduccion de los costos de creacion, manipulacion, clasificacion y almacenamiento de datos; del aumento de la productividad de los usuarios y profesionales ligados al sistema; de la provision de informacion de mejor calidad y en margen de tiempo mas conveniente proporcionando mayores posibilidades de correlacionar informacion; y proveyendo metodologias de planificacion de negocios mas sofisticadas. Debe ser medido por el valor de la informacion que el produce, un retardo en ella produce costo.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Costo: incluye el costo del software, el costo del staff de profeionales derivados del desarrollo de aplicaciones y del mantenimiento de la informacion y de los programas, y de los costos derivados del efectivo uso del equipo. Valor: reside en el incremento de los beneficios economicos que obtiene una empresa debido a la incorporacion de un sistema de computacion. El valor puede derivar de la reduccion de los costos de creacion, manipulacion, clasificacion y almacenamiento de datos; del aumento de la productividad de los usuarios y profesionales ligados al sistema; de la provision de informacion de mejor calidad y en margen de tiempo mas conveniente proporcionando mayores posibilidades de correlacionar informacion; y proveyendo metodologias de planificacion de negocios mas sofisticadas. Debe ser medido por el valor de la informacion que el produce, un retardo en ella produce costo.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 30,
+        "pregunta": "Explicar qué se entiende por máquinas virtuales.",
+        "respuestas": [
+            {
+                "respuesta": "Cuando en un mismo hardware pueden correr varios SO (llamados de produccion) y cada uno trabaja a nivel lógico como si fuera el único SO que está trabajando sobre ese hardware . Un SO corriendo en la maquina fisica  puede crear la ilusion de procesos multiples que se ejecutan  cada uno en su propio procesador con su propia memoria (virtual). Este SO planifica los recursos de la maquina fisica para compartirlos entre los distintos SO de produccion proporcionandoles una copia virtual del hardware fisico.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Cuando en un mismo hardware pueden correr varios SO y cada uno trabaja a nivel lógico como si fuera el único SO que está trabajando sobre ese hardware. Un SO corriendo en la maquina fisica  puede crear la ilusion de hilos multiples que se ejecutan  cada uno en su propio núcleo con su propia memoria paginada. Este SO planifica los recursos de la maquina fisica para compartirlos entre los distintos SO de produccion proporcionandoles una copia virtual del hardware fisico.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Ninguna de las anteriores",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 31,
+        "pregunta": "En un sistema de paginación. Existen procesos cuyo grado de avance depende del número de páginas que el sistema le permite cargar en el almacenamiento primario. Existen, por el contrario, otros cuyo grado de avance es relativamente insensible a este número.Los sistemas más desarrollados son capaces de diferenciar uno y otro tipo de procesos. ¿Qué parámetros evalúan estos sistemas para lograr establecer esta diferencia?",
+        "respuestas": [
+            {
+                "respuesta": "Evalúan la vecindad del programa, si esta crece es porque el programa depende del numero de paginas que el sistema le permite cargar (CPT) y si esta cambia el programa es insensible a dicho numero.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Evalúan la cantidad de memoria auxiliar y procesos qué pueden almacenarse en memoria principal, si esta crece es porque el programa depende del numero de paginas que el sistema le permite cargar (CPT) y si esta cambia el programa es insensible a dicho numero.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Evalúan la intensidad de comunicación entre procesos por medio de un buzón, si esta crece es porque el programa depende del numero de paginas que el sistema le permite cargar (CPT) y si esta cambia el programa es insensible a dicho numero.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 32,
+        "pregunta": "En una instalación por razones de evolución se verifica que la capacidad de CPU es insuficiente. Frente a esta situación: ¿Cuáles son las 2 posibles soluciones?",
+        "respuestas": [
+            {
+                "respuesta": "-Gama compatible de máquina, adaptable mediante cambio estándar de la unidad central. -Solución multiprocesador, adjudicación de 1 o más unidades centrales.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "-Gama compatible con memoria virtual de la máquina, adaptable mediante cambio estándar de la unidad central. -Solución multiprocesador, adjudicación de 1 o más unidades centrales.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "-Gama adaptable mediante cambio estándar de la unidad central. -Solución multiprocesador, adjudicación de 1 o más unidades centrales.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 33,
+        "pregunta": "¿Qué se entiende por Estado de Trabajo y Estado de Control?",
+        "respuestas": [
+            {
+                "respuesta": "Estado de Trabajo: Estado donde corren los procesos de usuarios. Cada vez que ocurre una trampa o interrupcion el SO pasa a estado de control. Solo pueden ejecutarse intrucciones no privilegiadas. Al ejecutarse una instrucción privilegiada se produce una interrupcion. Estado de Control: Se realizan instrucciones de trabajo y privilegiadas. El SO toma el control cada vez que se produce una trampa o interrupcion lo cual le permite al SO administrar al sistema informatico proporcionandole integridad y control apropiado sobre los recursos.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Estado de Trabajo: Se realizan instrucciones de trabajo y privilegiadas. El SO toma el control cada vez que se produce una trampa o interrupcion lo cual le permite al SO administrar al sistema informatico proporcionandole integridad y control apropiado sobre los recursos. Estado de Control: Estado donde corren los procesos de usuarios. Cada vez que ocurre una trampa o interrupcion el SO pasa a estado de control. Solo pueden ejecutarse intrucciones no privilegiadas. Al ejecutarse una instrucción privilegiada se produce una interrupcion.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Estado de Trabajo: Estado donde corren los procesos privilegiados del SO. Cada vez que ocurre una trampa o interrupcion el SO pasa a estado de control. Solo pueden ejecutarse intrucciones en modo usuario. Al ejecutarse una instrucción de usuario se produce una interrupcion. Estado de Control: Se realizan instrucciones de trabajo y modo usuario. El usuario toma el control cada vez que se produce una trampa o interrupcion lo cual le permite al SO administrar al sistema informatico proporcionandole integridad y control apropiado sobre los recursos.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 34,
+        "pregunta": "En una instalación por razones de evolución se verifica que la capacidad de CPU es insuficiente. Frente a esta situación: ¿Qué consideraciones deben efectuarse para optar por una u otra solución?",
+        "respuestas": [
+            {
+                "respuesta": "-Las gamas compatibles admiten un factor por encima del doble cuando se pasa de un modelo a uno superior. -La solución multiprocesador pasa de una máquina monoprocesador a una máquina de 2 procesadores, luego a 4, etc. Cuando el numero de procesadores es elevado conviene sustituir una unidad central por otra n veces más potente.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "-Las gamas compatibles admiten un factor por encima del doble cuando se pasa de un modelo plano a uno de planificación. -La solución multiprocesador pasa de una máquina monoprocesador a una máquina de 2 procesadores, luego a 4, etc. Cuando el numero de procesadores es elevado conviene sustituir una unidad central por otra n veces más potente.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "-Las gamas superiores compatibles admiten un factor por encima del doble cuando se pasa de un modelo páginado a uno superior. -La solución multiprocesador pasa de una máquina monoprocesador a una máquina virtual de 2 procesadores, luego a 4, etc. Cuando el numero de procesadores es elevado conviene sustituir una unidad central por otra n veces más potente.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 35,
+        "pregunta": "La aparición de un “tiempo de carga” introdujo una serie de innovaciones en los sistemas de computación que constituyen la base del desarrollo posterior de los SO hacia las versiones actuales. ¿Cuáles son esas innovaciones comparando con los sistemas de un tiempo ?",
+        "respuestas": [
+            {
+                "respuesta": "Los procesos son reasignables (compilacion relativa) ya que ahora es el Loader el que carga el programa en memoria teniendo la posibilidad de cargarlo en cualquier conjunto de ubicaciónes contiguas de memoria de direcciones apropiadas mientras que en los sistemas de un tiempo los procesos no eran reasignables (compilacion absoluta). Se realiza asignacion simbolica de dispositivos. En sistemas de un tiempo había inflexibilidad debido a la asignación temprana memoria. La compilación relativa también incluye la posibilidad de combinar programas ya compilados lo que no podia hacerse en sistemas de un tiempo (lo que no permitia enlazar rutinas de los dispositivos de E/S por lo que el compilador debia trabajar mas).",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Los procesos son reasignables (compilacion relativa) ya que ahora es el Bloque de Control de Procesos el que carga el programa en memoria teniendo la posibilidad de cargarlo en cualquier conjunto de ubicaciónes separadas de memoria de direcciones apropiadas mientras que en los sistemas de un tiempo los procesos no eran reasignables (compilacion absoluta). Se realiza asignacion simbolica de dispositivos. En sistemas de un tiempo había inflexibilidad debido a la asignación temprana memoria. La compilación relativa también incluye la posibilidad de combinar programas ya compilados lo que no podia hacerse en sistemas de un tiempo (lo que no permitia enlazar rutinas de los dispositivos de E/S por lo que el compilador debia trabajar mas).",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Los procesos son reasignables (compilacion relativa) ya que ahora es OAN el que carga el programa en memoria teniendo la posibilidad de cargarlo en cualquier conjunto de ubicaciónes contiguas de memoria de direcciones apropiadas mientras que en los sistemas de un tiempo los procesos no eran reasignables (compilacion absoluta). Se realiza asignacion simbolica de dispositivos. En sistemas de un tiempo había inflexibilidad debido a la asignación temprana memoria. La compilación relativa también incluye la posibilidad de combinar programas ya compilados lo que no podia hacerse en sistemas de un tiempo (lo que no permitia enlazar rutinas de los dispositivos de E/S por lo que el compilador debia trabajar mas).",
+                "esCorrecto": true
+            }
+        ]
     }
-
 ]
