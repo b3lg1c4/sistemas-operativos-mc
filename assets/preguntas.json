@@ -635,7 +635,7 @@
         "respuestas": [
             {
                 "respuesta": "Los procesos son reasignables (compilacion relativa) ya que ahora es el Loader el que carga el programa en memoria teniendo la posibilidad de cargarlo en cualquier conjunto de ubicaciónes contiguas de memoria de direcciones apropiadas mientras que en los sistemas de un tiempo los procesos no eran reasignables (compilacion absoluta). Se realiza asignacion simbolica de dispositivos. En sistemas de un tiempo había inflexibilidad debido a la asignación temprana memoria. La compilación relativa también incluye la posibilidad de combinar programas ya compilados lo que no podia hacerse en sistemas de un tiempo (lo que no permitia enlazar rutinas de los dispositivos de E/S por lo que el compilador debia trabajar mas).",
-                "esCorrecto": false
+                "esCorrecto": true
             },
             {
                 "respuesta": "Los procesos son reasignables (compilacion relativa) ya que ahora es el Bloque de Control de Procesos el que carga el programa en memoria teniendo la posibilidad de cargarlo en cualquier conjunto de ubicaciónes separadas de memoria de direcciones apropiadas mientras que en los sistemas de un tiempo los procesos no eran reasignables (compilacion absoluta). Se realiza asignacion simbolica de dispositivos. En sistemas de un tiempo había inflexibilidad debido a la asignación temprana memoria. La compilación relativa también incluye la posibilidad de combinar programas ya compilados lo que no podia hacerse en sistemas de un tiempo (lo que no permitia enlazar rutinas de los dispositivos de E/S por lo que el compilador debia trabajar mas).",
@@ -643,7 +643,385 @@
             },
             {
                 "respuesta": "Los procesos son reasignables (compilacion relativa) ya que ahora es OAN el que carga el programa en memoria teniendo la posibilidad de cargarlo en cualquier conjunto de ubicaciónes contiguas de memoria de direcciones apropiadas mientras que en los sistemas de un tiempo los procesos no eran reasignables (compilacion absoluta). Se realiza asignacion simbolica de dispositivos. En sistemas de un tiempo había inflexibilidad debido a la asignación temprana memoria. La compilación relativa también incluye la posibilidad de combinar programas ya compilados lo que no podia hacerse en sistemas de un tiempo (lo que no permitia enlazar rutinas de los dispositivos de E/S por lo que el compilador debia trabajar mas).",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 36,
+        "pregunta": "Explique cuáles son las características más importantes que deben tener las componentes principales de hardware y de software de un sistema de computación para que se justifique la inclusión en el mismo de una estructura de interrupción.",
+        "respuestas": [
+            {
+                "respuesta": "Características del hardware: 1.Captar tipo/s de interrupción/es producida/s. 2.Informar el resultado de la interrupción y guardarla en la memoria para usos posteriores. | Características del soft: 1.Mantener registro del flujo de operaciones de E/S. 2.Asociar la interrupción con la operación de E/S que la produjo. 3.Analizar los resultados, y de existir excepción encargarse de ella (ej: rutina de recuperación). 4.Asociar la operación de E/S con el proceso que la solicitó. 5.Avisar al proceso cuando termina la operación de E/S. 6.Verificar si hay alguna otra interrupción esperando, si hay iniciarla.",
                 "esCorrecto": true
+            },
+            {
+                "respuesta": "Características del hardware: 1.Captar tipo/s de interrupción/es producida/s. 2.Informar el resultado de la paginación y guardarla en la memoria para usos posteriores. | Características del soft: 1.Mantener registro del flujo de operaciones de interrupciones. 2.Asociar la interrupción con la operación de E/S que la produjo. 3.Analizar los resultados, y de existir excepción encargarse de ella (ej: rutina de recuperación). 4.Asociar la operación de E/S con el proceso que la solicitó. 5.Avisar al proceso cuando termina la operación de E/S. 6.Verificar si hay alguna otra interrupción esperando, si hay iniciarla.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Características del hardware: 1.Captar interrupción/es producida/s por una memoria desfragmentada. 2.Informar el resultado de la interrupción y guardarla en la memoria para usos posteriores. | Características del soft: 1.Mantener registro del flujo de operaciones de E/S. 2.Asociar la interrupción con la operación de E/S que la produjo. 3.Analizar los resultados, y de existir excepción encargarse de ella (ej: rutina de recuperación). 4.Asociar la operación de E/S con el proceso que la solicitó. 5.Avisar al proceso cuando termina la operación de E/S. 6.Verificar si hay alguna otra interrupción esperando, si hay iniciarla.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 37,
+        "pregunta": "¿Cuáles podrían ser dos situaciones distintas en las cuales la solución está dada por la adopción de un sistema de computación de Máquina Virtual.",
+        "respuestas": [
+            {
+                "respuesta": "Desarrollar una nueva versión de un SO interrumpiendo pocas veces el funcionamiento de todo el sistema para su desarrollo definiendo una maquina virtual destinada al desarrollo mientras el el resto del sistema sigue corriendo simultáneamente.Redes de Procesamiento y Procesamiento Distribuido: Cuando necesitan un soporte de hardware más rápido que el que proveen los canales de E/S o permiten las líneas de teleprocesamiento",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Cuando se necesita asignar más memoria virtual al SO. Sistemas de serie simple: Cuando la asignación de recursos es estática y es más conveniente usar una VM",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Cuando se necesita desfragmentar la memoria principal. Sistemas multiprogramados: Cuando la asignación de recursos es dinámica y es más conveniente usar una VM",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 38,
+        "pregunta": "Multiprocesadores - Instrucción “lee y posiciona”. ¿Cómo funciona y qué problemas soluciona?",
+        "respuestas": [
+            {
+                "respuesta": "“Lee y Posiciona”: Instrucción especial que poseen los multiprocesadores, que en “un solo ciclo de memoria” efectúa una lectura con carga de registro y una escritura poniendo en 1 la célula de la memoria leída (Interbloqueo). Finalidad: Evitar que 2 procesadores ejecuten simultáneamente el mismo trabajo (bloquea el acceso para que otro procesador no ejecute el mismo trabajo).",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "“Lee y Posiciona”: Instrucción especial que posee la memoria auxiliar, que en “un solo ciclo de memoria” efectúa una lectura con carga de registro y una escritura poniendo en 1 la célula de la memoria leída (Interbloqueo). Finalidad: Evitar que 2 memorias auxiliares ejecuten simultáneamente el mismo trabajo (bloquea el acceso para que otro procesador no ejecute el mismo trabajo).",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "“Lee y Posiciona”: Instrucción especial que posee la memoria principal, que en “un solo ciclo de memoria” efectúa una lectura con carga de registro y una escritura poniendo en 1 la célula de la memoria leída (Interbloqueo). Finalidad: Evitar que 2 memorias principales ejecuten simultáneamente el mismo trabajo (bloquea el acceso para que otro procesador no ejecute el mismo trabajo).",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 39,
+        "pregunta": "El proceso Batch seguía en sus inicios dos objetivos principales: “Aumentar la productividad del equipo disminuyendo el tiempo de transición y aumentar la eficacia del programador”.",
+        "respuestas": [
+            {
+                "respuesta": "1. La velocidad de los procesadores de 2ª generación es incrementada, entonces surge la preocupación por manejar el tiempo de montaje para disminuir el tiempo de máquina ocioso. 2. Surge el concepto de “desarrollo de programas” como extensión del compilador y permite la separación de tareas de programación y operación debido a que permite al programador desarrollar su programa, enviar una representacion fisica del mismo al centro de computos y juntarse con los resultados despues de un tiempo, si este tiempo se puede predecir el programador puede seguir trabajando en otras cosas mientras el mismo se cumple lo que lo libera de tiempos de espera frente a la maquina.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "1. La velocidad de los procesadores de 3ª generación es incrementada, entonces surge la preocupación por manejar el tiempo de tareas para disminuir el tiempo de máquina ocioso. 2. Surge el concepto de “desarrollo de programas” como extensión del compilador y permite la separación de tareas de programación y operación debido a que permite al programador desarrollar su programa, enviar una representacion fisica del mismo al centro de computos y juntarse con los resultados despues de un tiempo, si este tiempo se puede predecir el programador puede seguir trabajando en otras cosas mientras el mismo se cumple lo que lo libera de tiempos de espera frente a la maquina.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "1. La velocidad de los procesadores de 1ª generación es incrementada, entonces surge la preocupación por manejar el tiempo de montaje para disminuir el tiempo de máquina ocioso. 2. Surge el concepto de “desarrollo de programas” como extensión del ensamblador y permite la separación de tareas de programación y operación debido a que permite al programador desarrollar su programa, enviar una representacion fisica del mismo al centro de computos y juntarse con los resultados despues de un tiempo, si este tiempo se puede predecir el programador puede seguir trabajando en otras cosas mientras el mismo se cumple lo que lo libera de tiempos de espera frente a la maquina.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 40,
+        "pregunta": "Explique el concepto de Spooling. ¿Por qué afirmamos que la inclusión de este mecanismo aumenta el Turn-Around-Time y el Throughput de un centro de cómputos?",
+        "respuestas": [
+            {
+                "respuesta": "El Spooling surge con la aparición de los discos. Es una técnica que utiliza el disco como un buffer de gran tamaño, para tratar de leer lo mas posible de los dispositivos de entrada y almacenar los archivos hasta q los dispositivos de salida estén listos para recibirlos. Permite solapar E/S de un trabajo con el procesamiento de otro trabajo. Aumenta el TAT porque al tiempo original del proceso se agrega el tiempo de ejecución de la rutina y el tiempo de grabación en el dispositivo rápido. Aumenta el throughput porque se puede correr una mayor cantidad de trabajos por unidad de tiempo.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "El Spooling surge con la aparición de los procesadores IA-32. Es una técnica que utiliza el disco como un buffer de gran tamaño, para tratar de leer lo mas posible de los dispositivos de entrada y almacenar los archivos hasta q los dispositivos de salida estén listos para recibirlos en el procesador. Permite solapar E/S de un trabajo con el procesamiento de otro trabajo. Aumenta el TAT porque al tiempo original del proceso se agrega el tiempo de ejecución de la rutina y el tiempo de grabación en el dispositivo rápido. Aumenta el throughput porque se puede correr una mayor cantidad de trabajos por unidad de tiempo.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "El Spooling surge con la aparición de las terminales E/S. Es una técnica que utiliza el disco como un buffer de gran tamaño, para tratar de leer lo mas posible de los dispositivos de entrada y almacenar los archivos hasta q los dispositivos de salida estén listos para recibirlos. Permite solapar E/S de un trabajo con el procesamiento de otro trabajo.Aumenta el TAT porque al tiempo original del proceso se agrega el tiempo de ejecución de la rutina y el tiempo de grabación en el dispositivo rápido. Aumenta el throughput porque se puede correr una mayor cantidad de trabajos por unidad de tiempo.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 41,
+        "pregunta": "Para un sistema de computación multipropósitos de 3 niveles, diferenciando cuando sea entre sistemas Batch y Tiempo Compartido. ¿Por qué colas atraviesa el proceso desde que es demandado hasta que usa la CPU?",
+        "respuestas": [
+            {
+                "respuesta": "CTE(cola del OAN) CPI(cola de ONI) CPA(cola del OBN) En Batch: CTE - CPA | Tiempo Compartido: CPI - CTE - CPA",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "CTE(cola del OAN) CPI(cola de ONI) CPA(cola del OBN) En Batch: CPI - CPA | Tiempo Compartido: CTE - CPI - CPA",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "CTE(cola del OAN) CPI(cola de ONI) CPA(cola del OBN) En Batch: CTE - CPI - CPA | Tiempo Compartido: CPI - CPA",
+                "esCorrecto": true
+            }
+        ]
+    },
+    {
+        "id_pregunta": 42,
+        "pregunta": "Para un sistema de computación multipropósitos de 3 niveles, diferenciando cuando sea entre sistemas Batch y Tiempo Compartido. ¿Quién es el receptor de demandas en: ?",
+        "respuestas": [
+            {
+                "respuesta": "En Batch: Command Interpreter - En Tiempo compartido: Reader",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "En Batch: Reader - En Tiempo compartido: Command Interpreter",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "En Batch: Loader - En Tiempo compartido: Command Interpreter",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 43,
+        "pregunta": "Para un sistema de computación multipropósitos de 3 niveles, diferenciando cuando sea entre sistemas Batch y Tiempo Compartido. ¿Qué módulos actúan sobre los procesos representados en cada una de las colas y qué función cumple cada uno de ellos?",
+        "respuestas": [
+            {
+                "respuesta": "OAN: CTE Selecciona procesos para que pasen a la cola del ONI. ONI: CTE Flexibilizar el sistema seleccionando los procesos que pasarán a recibir el uso de CPU. OBN: CPA multiplexar la CPU entre los procesos de su cola.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "OAN: CPA Selecciona procesos para que pasen a la cola del ONI. ONI: OBN Flexibilizar el sistema seleccionando los procesos que pasarán a recibir el uso de CPU. OBN: CTE multiplexar la CPU entre los procesos de su cola.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "OAN: CPL Selecciona procesos para que pasen a la cola del ONI. ONI: CPA Flexibilizar el sistema seleccionando los procesos que pasarán a recibir el uso de CPU. OBN: CPL multiplexar la CPU entre los procesos de su cola.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 44,
+        "pregunta": "Explique el significado de las siguiente afirmacion: En realidad, el sistema define múltiples máquinas que son ordenadas independientemente y que comparten canales y el uso de la CPU.",
+        "respuestas": [
+            {
+                "respuesta": "Los primeros DOS tenían sus memorias divididas en particiones fijas; y los procesos debían correr en esas particiones; por eso se dice que se definían múltiples máquinas y cada una se ejecuta en una partición.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Los primeros DOS tenían sus memorias divididas en particiones dinámicas; y los procesos debían correr en esas particiones; por eso se dice que se definían múltiples máquinas y cada una se ejecuta en una partición.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Los primeros DOS tenían sus memorias divididas en particiones fijas; y los procesos debían correr en esas particiones; por eso se dice que se definían múltiples máquinas y cada una se ejecuta en un hilo",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 45,
+        "pregunta": "Para un sistema de computación multipropósitos de 3 niveles, diferenciando cuando sea entre sistemas Batch y Tiempo Compartido. ¿En función de qué criterios son seleccionados los procesos en cada una de las colas?",
+        "respuestas": [
+            {
+                "respuesta": "ONI: en base a algún criterio de selección (tiempo de inicio o de fin, recurso crítico, prioridad relativa, requerimiento de CPU, necesidad de Memoria, consumo de E/S, etc.) OBN: en base a dos tipos de informacion: -informacion de cómo progresa el proceso en la mezcla. -informacion de cómo está siendo usado el sistema (ratio de utilización de CPU, canales, memoria, etc.) OAN: en base a las reglas de visita.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "OBN: en base a algún criterio de selección (tiempo de inicio o de fin, recurso crítico, prioridad relativa, requerimiento de CPU, necesidad de Memoria, consumo de E/S, etc.) OAN: en base a dos tipos de informacion: -informacion de cómo progresa el proceso en la mezcla. -informacion de cómo está siendo usado el sistema (ratio de utilización de CPU, canales, memoria, etc.) OBN: en base a las reglas de visita.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "OAN: en base a algún criterio de selección (tiempo de inicio o de fin, recurso crítico, prioridad relativa, requerimiento de CPU, necesidad de Memoria, consumo de E/S, etc.) ONI: en base a dos tipos de informacion: -informacion de cómo progresa el proceso en la mezcla. -informacion de cómo está siendo usado el sistema (ratio de utilización de CPU, canales, memoria, etc.) OBN: en base a las reglas de visita.",
+                "esCorrecto": true
+            }
+        ]
+    },
+    {
+        "id_pregunta": 46,
+        "pregunta": "Explique el significado de las siguiente afirmacion: Mecanismos de conmutación de la CPU con sólo un mínimo intento por balancear el uso de recursos del sistema.",
+        "respuestas": [
+            {
+                "respuesta": "Las particiones tenían asignadas prioridades acerca de quién utilizaba la CPU y además DOS atendía a una idea fija del equipo y de la carga de trabajos.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Las particiones tenían asignadas prioridades acerca de quién utilizaba la CPU para el spooling y además DOS atendía a una idea fija del equipo y de la carga de trabajos.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Las particiones tenían asignadas prioridades acerca de quién utilizaba el buffering para la memoria de registros del CPU y además DOS atendía a una idea fija del equipo y de la carga de trabajos.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 47,
+        "pregunta": "Para un multiprocesador del tipo multi-unidad central. ¿Cuáles son los principales elementos de hardware que la componen?",
+        "respuestas": [
+            {
+                "respuesta": "1.Varias unidades centrales idénticas. 2.Memoria central particionada en bloques independientes. 3.Canales simples o multiplexados.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "1.Varias unidades centrales distintas. 2.Memoria central no particionada. 3.Canales compuestos",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "1.Varias unidades centrales distintas. 2.Memoria central particionada en bloques independientes. 3.Canales simples o multiplexados",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 48,
+        "pregunta": "¿Qué se entiende por Sub-Administración?",
+        "respuestas": [
+            {
+                "respuesta": "Es cuando a un hardware con muchos recursos se lo administra con un SO que fue concebido para regular un hardware más sencillo y por lo tanto no es lo sufientemente sofisticado para detectar los recursos subutilizados del hardware ya que no conoce su funcionamiento.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Es cuando a un software que trabaja con muchos recursos se lo administra con un SO que fue concebido para regular un hardware más sencillo y por lo tanto no es lo sufientemente sofisticado para detectar los recursos subutilizados del hardware ya que no conoce su funcionamiento.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Es cuando a un dispositivo con pocos recursos se lo administra con un SO que fue concebido para regular un hardware más sencillo y por lo tanto no es lo sufientemente sofisticado para detectar los recursos subutilizados del hardware ya que no conoce su funcionamiento.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 49,
+        "pregunta": "Para un multiprocesador del tipo multi-unidad central. ¿Cuáles son los distintos tipos de interconexiones entre procesadores y canales que usted conozca?",
+        "respuestas": [
+            {
+                "respuesta": "1.Interconexión entre núcleos y memoria central. 2.Interconexión a través del procesador 3.Interconexión entre procesadores y canales.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "1.Interconexión entre procesadores y memoria central. 2.Interconexión a través de la memoria 3.Interconexión entre procesadores y canales.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "1.Interconexión entre procesadores y memoria central. 2.Interconexión a través de la memoria auxiliar 3.Interconexión entre hilos y canales.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 50,
+        "pregunta": "Explique el concepto en el marco de los sistemas de multiprogramación avanzada: Dependencia de la actividad del operador.",
+        "respuestas": [
+            {
+                "respuesta": "El programador puede definir el nivel de multiprogramación, asignar prioridades, cancelar procesos y colocar trabajos en la cola de espera.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "El programador puede definir el nivel de multiprogramación, asignar prioridades, establecer permisos a nivel kernel, cancelar procesos y colocar trabajos en la cola de espera.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "El programador puede definir el nivel de multiprogramación, asignar prioridades, particionar sectores del disco, cancelar procesos y colocar trabajos en la cola de espera.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 51,
+        "pregunta": "Explique el concepto en el marco de los sistemas de multiprogramación avanzada: Elaboración de los mecanismos de conmutación de la CPU.",
+        "respuestas": [
+            {
+                "respuesta": "El ONI, permite flexibilizar la sobrecarga del sistema con la posibilidad de utilizar la heuristica. Utilizar colas ciclicas realimentadas para elegir el proximo proceso.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "El ONI, permite flexibilizar la sobrecarga de procesos con la posibilidad de utilizar la heuristica. Utilizar colas ciclicas realimentadas para elegir el proximo proceso.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "El ONI, permite flexibilizar la sobrecarga del conjunto de registros de 16 bits del procesador con la posibilidad de utilizar la heuristica. Utilizar colas ciclicas realimentadas para elegir el proximo proceso.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 52,
+        "pregunta": "Un mecanismo de Dispatching concebido sobre una estructura de subcolas permite clasificar procesos dinámicamente según algoritmos de sus características intrínsecas y tratarlos en forma diferencial. ¿Qué entiende por estructura de subcolas?",
+        "respuestas": [
+            {
+                "respuesta": "A la cola del dispatching se la divide en n subcolas, cada una con una ley de residencia fijada y se la visita según la regla de visita.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "A la cola del dispatching se la divide en n subcolas, cada una con una ley de residencia fijada y se la visita según la prioridad del proceso",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "A la cola del dispatching se la divide en n subcolas, cada una con una ley de residencia fijada y se la visita según el CPT",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 53,
+        "pregunta": "Similitudes y diferencias entre Sistemas de Tiempo Real y Sistemas de Procesamiento de Transacciones.",
+        "respuestas": [
+            {
+                "respuesta": "(Similitudes): -Pobreza relativa de los algoritmos de administracion de recursos. -Atienden la ocurrencia de eventos. (Diferencias): -En el sistema de transacciones, los eventos son iniciados por terminal y, en los de tiempo real, se inician por sensores externos.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "(Similitudes): -Pobreza extrema de los algoritmos de administracion de recursos. -Atienden la ocurrencia de canalización. (Diferencias): -En el sistema de transacciones, los eventos son iniciados por terminal y, en los de tiempo real, se inician por sensores externos.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "(Similitudes): -Pobreza pseudo-algoritmos de administracion de recursos. -Atienden la ocurrencia de eventos. (Diferencias): -En el sistema de transacciones, los procesos son iniciados por TTYs y, en los de tiempo real, se inician por sensores externos.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 54,
+        "pregunta": "Un mecanismo de Dispatching concebido sobre una estructura de subcolas permite clasificar procesos dinámicamente según algoritmos de sus características intrínsecas y tratarlos en forma diferencial. ¿Por qué la frase habla de clasificación dinámica?",
+        "respuestas": [
+            {
+                "respuesta": "Porque permite clasificar a los procesos según el bloque de control de proceso(PCB)",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Porque permite clasificar a los procesos según el anging",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Porque permite clasificar a los procesos según la regla de residencia.",
+                "esCorrecto": true
+            }
+        ]
+    },
+    {
+        "id_pregunta": 55,
+        "pregunta": "¿Cuáles son las razones por las que se puede recurrir a una solución multiprocesador? ",
+        "respuestas": [
+            {
+                "respuesta": "(Aumento de la capacidad de procesamiento del sistema): duplicando o triplicando el procesador central conduce a una solución del tipo multiprocesamiento simetrico, o aliviando el procesador de ciertos trabajos con procesadores especializados, conduce a una solución de multiprocesamiento asimetrico. (Aumento de la disponibilidad): Si un procesador se avería, se continúa con el resto del sistema con eficacia degradada, con ello se supone que el sistema tiene dispositivos de detección de errores y reconfiguración.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "(Aumento de la capacidad de segmentación del sistema): duplicando o triplicando el procesador central conduce a una solución del tipo multiprocesamiento simetrico, o aliviando el procesador de ciertos trabajos con procesadores especializados, conduce a una solución de multiprocesamiento asimetrico. (Aumento de la disponibilidad): Si un procesador se avería, se continúa con el resto del sistema con eficacia degradada, con ello se supone que el sistema tiene dispositivos de detección de errores y reconfiguración.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "(Aumento de velocidad de procesamiento del sistema): duplicando o triplicando el procesador central conduce a una solución del tipo multiprocesamiento simetrico racional, o aliviando el procesador de ciertos trabajos con procesadores especializados, conduce a una solución de multiprocesamiento asimetrico puro. (Aumento de la disponibilidad): Si un procesador se avería, se continúa con el resto del sistema con eficacia degradada, con ello se supone que el sistema tiene dispositivos de detección de errores y reconfiguración.",
+                "esCorrecto": true
+            }
+        ]
+    },
+    {
+        "id_pregunta": 56,
+        "pregunta": "Un mecanismo de Dispatching concebido sobre una estructura de subcolas permite clasificar procesos dinámicamente según algoritmos de sus características intrínsecas y tratarlos en forma diferencial. ¿Quién y cómo permite tratar a los procesos en forma diferencial ?",
+        "respuestas": [
+            {
+                "respuesta": "¿Quién?:la regla de visita. ¿Cómo?:diciendo que los procesos que están en la CTE siempre se servirán de la CPU.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "¿Quién?:la regla de visita. ¿Cómo?:diciendo que los procesos que están en la cola de la izquierda siempre se servirán de la CPU.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "¿Quién?:El CPT. ¿Cómo?:diciendo que los procesos que están en la cola de la derecha siempre se servirán de la CPU.",
+                "esCorrecto": false
             }
         ]
     }
