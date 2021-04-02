@@ -1024,5 +1024,365 @@
                 "esCorrecto": false
             }
         ]
+    },
+    {
+        "id_pregunta": 57,
+        "pregunta": "Si suponemos que el “Dispatching” es “disparado” con N milisegundos, ¿Cada cuánto debe ser disparado el Scheduler en relación a N? Justificar.",
+        "respuestas": [
+            {
+                "respuesta": "C: Cant de procesos que están en la cola de procesos que compiten por los recursos de la CPU. Q: Quantum ≤ N miliseg. T: Tiempo que requiere el proceso más corto. SCHEDULER ≤  N * Q * T",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "C: Cant de procesos que están en la cola de hilos que compiten por los recursos de la CPU. Q: Quantum ≤ N miliseg. T: Tiempo que requiere el hilo más cercano al procesador. SCHEDULER ≤  N * Q * T",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "C: Cant de procesos que están en la memoria dinámica que compiten por los recursos de la CPU. Q: Quantum ≤ N miliseg. T: Tiempo que requiere el proceso más corto. SCHEDULER ≤  N * Q * T",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 58,
+        "pregunta": "Para un sistema de computación que soporta un mecanismo de paginación. ¿Cómo interviene el ONI en un sistema de paginación?",
+        "respuestas": [
+            {
+                "respuesta": "El OAN es el que asigna el CPT de cada proceso de forma dinamica",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "El OBN es el que asigna el CPT de cada proceso de forma dinamica",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "El ONI es el que asigna el CPT de cada proceso de forma dinamica",
+                "esCorrecto": true
+            }
+        ]
+    },
+    {
+        "id_pregunta": 59,
+        "pregunta": "¿En la actualidad se justificaría utilizar un sistema de multiprogramacion básica en lugar de uno de avanzada? Justifique.",
+        "respuestas": [
+            {
+                "respuesta": "Sí, en caso de tener una carga de trabajos estable y que no haya problemas con las mezclas.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Sí, en caso de tener una carga de trabajos con spooling y que no haya problemas con las mezclas.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "No, porque hay problemas con las mezclas de los procesos activos.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 60,
+        "pregunta": "Entre los objetivos específicos de un SO figura el de procesar las funciones que permiten gestionar los recursos de un sistema para lograr objetivos prefijados de explotación. ¿Cuál es el significado de estas funciones?",
+        "respuestas": [
+            {
+                "respuesta": "1)Comunicación de procesos 2)Contabilidad 3)Desfragmentación",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "1)Asignación de Recursos 2)Contabilidad 3)Protección",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "1)Asignación de Recursos 2)Contabilidad 3)Loader",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 61,
+        "pregunta": "¿Por qué el compilador efectúa dos pasadas sobre el fuente?",
+        "respuestas": [
+            {
+                "respuesta": "Porque puede ser que al estar codificando una linea; esta referencia a una linea mas adelante, pero no sabemos cual es la direccion de esa instrucción, porque cada instrucción puede tener un tamaño distintos en memoria. La sabremos recien cuando se ensamblan todas las lineas que la preceden, por esto realiza dos pasadas y que en la segunda se completa la codificacion de la instrucción.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Porque puede ser que al estar codificando tres líneas; esta referencia a una linea mas rápida, pero no sabemos cual es la direccion de esa instrucción, porque cada instrucción puede tener un tamaño distintos en memoria. La sabremos recien cuando se ensamblan todas las lineas que la preceden, por esto realiza dos pasadas y que en la segunda se completa la codificacion de la instrucción.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Ninguna de las anteriores",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 62,
+        "pregunta": "Entre los objetivos específicos de un SO figura el de procesar las funciones que permiten gestionar los recursos de un sistema para lograr objetivos prefijados de explotación. ¿Qué servicioss brinda un SO para lograr estos objetivos?",
+        "respuestas": [
+            {
+                "respuesta": "1) Ejecución de procesos 2)Operaciones de E/S 3)Manipulación del Sistema de Archivos 4)Comunicaciones 5)Detección de Errores",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "1) Ejecución de procesos 2)Regulación de tensión de la fuente 3)Manipulación del Sistema de Archivos 4)Bus de datos 5)Detección de Errores",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "1) CPT 2)Operaciones de E/S 3)Manipulación del Sistema de Archivos 4)Comunicaciones 5)Planificadores",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 63,
+        "pregunta": "¿De qué archivo del sistema obtendría informacion un comando como el dir de DOS?",
+        "respuestas": [
+            {
+                "respuesta": "Del COMMAND.COM que es residente en memoria.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Del kernel32.inc que es residente en memoria.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Del shell.bin que es residente en memoria.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 64,
+        "pregunta": "Comparado con un sistema que no posee el nivel de segmentación, ¿Qué ventajas presenta para un usuario posibilitar una concepción bidimensional en la organización del espacio lógico del usuario?",
+        "respuestas": [
+            {
+                "respuesta": "Facilita la programación; un proceso puede dividirse en módulos lógicos (segmentos) según la concepcion que el usuario tiene de las partes de un programa (subrutina, funciones, tabla de simbolos), cada uno de estos tiene un nombre y una longitud. El usuario referencia las direcciones del programa especificando el nombre del segmento y el desplazamiento en el, olvidandose de la organización en memoria fisica del mismo. En un sistema que no posee segmentación los programadores deben hacerse cargo de la memoria física.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Facilita la programación; un proceso puede dividirse en módulos físicos (marcos) según la concepcion que el usuario tiene de las partes de un programa (subrutina, funciones, tabla de simbolos), cada uno de estos tiene un nombre y una longitud. El usuario referencia las direcciones del programa especificando el nombre del segmento y el desplazamiento en el, olvidandose de la organización en memoria fisica del mismo. En un sistema que no posee segmentación los programadores deben hacerse cargo de la memoria física.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Facilita la segmentación; un proceso puede dividirse en módulos logicos (segmentos) según la concepcion que el usuario tiene de las partes de un programa (subrutina, funciones, tabla de simbolos), cada uno de estos tiene un nombre y una longitud. El usuario referencia las direcciones del programa especificando el nombre del segmento y el desplazamiento en el, olvidandose de la organización en memoria fisica del mismo. En un sistema que no posee segmentación los programadores deben hacerse cargo de la memoria auxiliar.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 65,
+        "pregunta": "¿Qué operación dispara una sentencia de apertura de archivo?",
+        "respuestas": [
+            {
+                "respuesta": "Una sentencia OPEN que hace que se copie en una tabla de la memoria la entrada de ese archivo que existe en el directorio de archivos simbólicos.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Una sentencia OPENFILE que hace que se copie en una tabla de la memoria la entrada de ese archivo que existe en el directorio de archivos simbólicos.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Una sentencia FOPEN que hace que se copie en una tabla de la memoria la entrada de ese archivo que existe en el directorio de archivos simbólicos.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 66,
+        "pregunta": "Supuesta la lectura de una variable en un archivo en disco y en un medio de recursos compartidos. ¿Cuántas interrupciones genera? ¿Cuáles son? ¿Cuánta informacion se transfiere desde el dispositivo? ¿A dónde va a parar?",
+        "respuestas": [
+            {
+                "respuesta": "a) 2 Interrupciones: -Interrupción de soft: Solicitud de E/S. -Interrupción de hard: Finalización de E/S. b) El registro físico que contiene la variable. c) Va a parar al área de amortiguación (buffer).",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "a) 1 interrupción: -Interrupción de hard: Finalización de E/S. b) El registro físico que contiene la variable. c) Va a parar al área de Spooleo.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "a) 3 Interrupciones: -Interrupción de soft: Solicitud de E/S. -Interrupción de hard: Finalización de E/S. -Interrupción a nivel Kernel: se transfiere el control al kernel. b) El registro físico que contiene la variable. c) Va a parar al área de amortiguación (buffer).",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 67,
+        "pregunta": "Comparado con un sistema que no posee el nivel de segmentación, ¿Qué ventajas presenta para un usuario permitir compartir códigos?",
+        "respuestas": [
+            {
+                "respuesta": "Cada proceso tiene una tablas de marcos asociada a su PCB. Los marcos se comparten cuando las entradas de las tablas de marcos de dos procesos distintos apuntan a las mismas localidades fisica. Por ejemplo se podria tener un marco con un conjunto de funciones comunes a distintos programas y evitar ocupar espacio en la memoria innecesariamente",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Cada proceso tiene una tablas de segmentos asociada a su PCB. Los segmentos se comparten cuando las entradas de las tablas de segmentos de dos procesos distintos apuntan a las mismas localidades fisica. Por ejemplo se podria tener un segmento con un conjunto de funciones comunes a distintos programas y evitar ocupar espacio en la memoria innecesariamente",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Cada proceso tiene una tablas de páginas asociada a su PCB. Las páginas se comparten cuando las entradas de las tablas de páginas de dos procesos distintos apuntan a las mismas localidades fisica. Por ejemplo se podria tener una página con un conjunto de funciones comunes a distintos programas y evitar ocupar espacio en la memoria innecesariamente",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 68,
+        "pregunta": "Enumere las funciones que  pueden ejecutarse desde una consola del operador.",
+        "respuestas": [
+            {
+                "respuesta": "JOB GET-UP: Montar las unidades en los soportes correspondientes. LOADING: Cargar el dato en el registro del procesador.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "JOB GET-UP: Montar las unidades en los soportes correspondientes. LOADING: Cargar el proceso en memoria.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "JOB GET-UP: Montar los dispositivos de almacenamiento en los soportes correspondientes. LOADING: Cargar el proceso en memoria.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 69,
+        "pregunta": "El mecanismo LRU global hace la presunción de que un proceso agranda su vecindad cada vez que referencia una nueva página. El concepto de CPT tiende a corregir esta generalización. ¿Cuál es el sentido de esta afirmación?",
+        "respuestas": [
+            {
+                "respuesta": "El concepto de CPT es una representación como una forma de compartir recursos entre procesos, permite establecer dinámicamente qué recurso le pertenece a cuál proceso",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "El concepto de CPT es una representación de la vecindad de un proceso, permite establecer dinámicamente cuántas páginas ha de tener cargado el proceso en memoria, para no producir una elevada actividad de paginación y sin tener páginas en memoria que no utiliza. Para calcularlo se trabaja sobre el análisis del pasado reciente del proceso.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "El concepto de CPT es una representación sencilla de un complejo sistema multiprogramación básico, permite establecer estáticamente cuántas páginas ha de tener cargado el proceso en memoria, para no producir una elevada actividad de paginación y sin tener páginas en memoria que no utiliza. Para calcularlo se trabaja sobre el análisis del pasado reciente del proceso.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 70,
+        "pregunta": "¿Qué es la regla de visita?",
+        "respuestas": [
+            {
+                "respuesta": "Sirve para determinar con que orden recibirán la CPU los procesos estando en una subcola",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Sirve para determinar con que orden recibirá la memoria los programas estando en una subcola",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Sirve para determinar con que orden recibirán la CPU los procesos estando en una memoria virtual",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 71,
+        "pregunta": "¿Qué partes conforman una sentencia de lenguaje fuente? ",
+        "respuestas": [
+            {
+                "respuesta": "-Rótulo: Para utilizar esta sentencia en alguna otra parte del proceso. -Operación: Campo que contiene una directiva o un mnemónico. -Operando: Campo que contiene un símbolo. -Comentario: Comentarios que los programadores quieren hacer sobre el código. Se delimitan con un carácter especial.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "-Rótulo: Para utilizar esta sentencia en alguna otra parte del hilo. -Operación: Campo que contiene una directiva de co-procesador. -Operando: Campo que contiene un símbolo. -Comentario: Comentarios que los programadores quieren hacer sobre el código. Se delimitan con un carácter especial.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Ninguna de las anteriores",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 72,
+        "pregunta": "¿Qué es la regla de residencia?",
+        "respuestas": [
+            {
+                "respuesta": "Sirve para determinar dinamicamente en que subcola debe estar un proceso",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Sirve para determinar estáticamente en que subcola debe estar un proceso",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Sirve para determinar dinamicamente en que posición de memoria debe estar un proceso",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 73,
+        "pregunta": "Dado un SO de multiprogramación, explique el funcionamiento del “Spooling” de entrada.",
+        "respuestas": [
+            {
+                "respuesta": "Lee procesos por adelantado y los guarda en el disco conformando un pool (conjunto) de trabajos desde donde luego seran seleccionados por el OAN. ",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Lee procesos por adelantado y los guarda en el disco conformando un buffer con trabajos desde donde luego seran seleccionados por el OAN. ",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Lee servicios por adelantado y los guarda en el disco conformando un proceso con hilos de diferentes trabajos desde donde luego seran seleccionados por el OAN. ",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 74,
+        "pregunta": "¿Qué funciones se ejecutan en el momento de la carga de un proceso en multiprogramación básica?",
+        "respuestas": [
+            {
+                "respuesta": "Se asignan los periféricos, conjuntos de datos y memoria a un proceso para luego cargarlo  en una particion. Se crea el PCB para representar el proceso en el sistema",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Se asignan las direcciones de memoria, conjuntos de bloques y memoria a un proceso para luego cargarlo  en una la memoria auxiliar. Se crea el PCB para representar el proceso en el sistema",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Se asignan los puertos de los dispositivos E/S, conjuntos de marcos y memoria a un proceso para luego cargarlo  en una particion. Se crea el PCB para representar el proceso en el sistema",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 75,
+        "pregunta": "¿Qué función ejecuta durante el tiempo de activación un SO de multiprogramación avanzada?",
+        "respuestas": [
+            {
+                "respuesta": "Se asignan dispositivos que deben ser asignados en forma estatica.Se crea el PCB que es un elemento que describe el estado y las caracteristicas de un proceso. Se graba el PCB en la cola del ONI.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Se asignan dispositivos que deben ser en forma estatica. Se crea el PCB que es un elemento que describe archivos especiales del sistema y las caracteristicas de un proceso. Se graba el PCB en la cola del ONI.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Se asignan dispositivos virtuales que deben ser asignados en forma estatica. Se crea el PCB que es un elemento que describe el estado y las caracteristicas de un proceso. Se graba el PCB en memoria principal.",
+                "esCorrecto": true
+            }
+        ]
+    },
+    {
+        "id_pregunta": 76,
+        "pregunta": "¿Qué funciones se ejecutan en el momento de la carga de un proceso en multiprogramación avanzada?",
+        "respuestas": [
+            {
+                "respuesta": "Los dispositivos que por sus caracteristicas deben ser asignados de forma estatica son asignados de esta forma (impresora, cinta). Se asigna memoria virtual y se carga el proceso en la misma. Se crea el PCB.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Los dispositivos que por sus caracteristicas deben ser asignados de forma estatica son asignados de esta forma (impresora, cinta). Se asigna memoria estática y se carga el proceso en la misma. No crea el PCB.",
+                "esCorrecto":false
+            },
+            {
+                "respuesta": "Los dispositivos que por sus caracteristicas deben ser asignados de forma dinámica son asignados de esta forma (impresora, cinta). Se asigna memoria virtual y se carga el proceso en la misma. No crea el PCB.",
+                "esCorrecto": false
+            }
+        ]
     }
 ]
