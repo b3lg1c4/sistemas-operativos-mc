@@ -1384,5 +1384,252 @@
                 "esCorrecto": false
             }
         ]
+    },
+
+    {
+        "id_pregunta": 77,
+        "pregunta": "Controll Stream o Job Control. ¿En qué SO es utilizado?",
+        "respuestas": [
+            {
+                "respuesta": "En los sistemas de procesamiento en lotes.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "En los sistemas con IA-32.",
+                "esCorrecto":false
+            },
+            {
+                "respuesta": "En los sistemas con Spooling y Buffering avanzado.",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 78,
+        "pregunta": "Controll Stream o Job Control. ¿Cuál es su finalidad?",
+        "respuestas": [
+            {
+                "respuesta": "Establecer las características particulares de un trabajo, como ser: versión, recursos, prioridad, etc.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Establecer las características particulares de un proceso, como ser: versión, recursos, etc.",
+                "esCorrecto":false
+            },
+            {
+                "respuesta": "Establecer las características particulares de una tarea de un dispositivo de almacenamiento.",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 79,
+        "pregunta": "¿Cómo se descompone el tiempo total para servir una solicitud del disco?",
+        "respuestas": [
+            {
+                "respuesta": "Tiempo de posicionamiento: Primero debe moverse la cabeza a la pista o cilindro correspondiente. Tiempo de latencia: Luego se espera a que el bloque deseado pase debajo de la cabeza. Tiempo de transferencia: Por ultimo, se transfieren los datos entre el disco y la memoria real",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Tiempo de posicionamiento: Primero debe moverse la cabeza a la pista o cilindro más cercano. Tiempo de latencia: Luego se espera a que el bloque deseado pase encima de la cabeza. Tiempo de transferencia: Por ultimo, se transfieren los datos entre el disco y la memoria real",
+                "esCorrecto":false
+            },
+            {
+                "respuesta": "Ninguna de las anteriores",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 80,
+        "pregunta": "¿Para qué tipos de SOs no justificaría trabajar en modo dual? Justifique.",
+        "respuestas": [
+            {
+                "respuesta": "Modo Dual: Impide que un programa en ejecucion modifique datos o codigos de otros. Serie Simple: Al existir un solo programa, este no podria dañar otros. Tiempo Real: Porque el tiempo requerido para realizar esta protección puede afectar al cumplimiento del objetivo principal del sistema. ",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Modo Dual: permite que un programa en ejecucion modifique datos o codigos de otros. Serie Simple: Al existir un solo programa, este podria dañar otros. Tiempo Real: Porque el tiempo requerido para realizar esta protección puede afectar al cumplimiento del objetivo principal del sistema. ",
+                "esCorrecto":false
+            },
+            {
+                "respuesta": "Modo Dual: Impide que un programa en ejecucion modifique datos o codigos de otros. Serie Simple: Al existir un solo programa, este no podria dañar otros. Tiempo Real: Porque el tiempo requerido para realizar esta protección no afecta al cumplimiento del objetivo principal del sistema. ",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 81,
+        "pregunta": "¿Qué entiende por fijación de páginas en memoria? ",
+        "respuestas": [
+            {
+                "respuesta": "Aquellas paginas que no pueden ser seleccionadas como victimas para su reemplazo. Se asocia un bit de fijacion a cada marco. Un marco fijado no puede ser reemplazado.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Aquellas paginas que pueden ser seleccionadas para su reemplazo. Se asocia un bit de fijacion a cada marco. Un marco fijado no puede ser reemplazado.",
+                "esCorrecto":false
+            },
+            {
+                "respuesta": "Aquellas paginas que pueden ser seleccionadas para su reemplazo. Se asocia un bit de fijacion a cada marco del segmento de memoria. Un marco fijado si puede ser reemplazado.",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 82,
+        "pregunta": "¿Cómo se utiliza el algoritmo OPT?",
+        "respuestas": [
+            {
+                "respuesta": "Consiste en reemplazar la pagina que no se usara durante el mayor periodo de tiempo. Al utilizar este algoritmo se garantiza la menor tasa de falla de paginas posibles para un numero fijo de marcos. Es difícil de implantar, por lo que se utiliza generalmente para fines comparativos.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Consiste en reemplazar el segmento que no se usara durante el páginado. Al utilizar este algoritmo se garantiza la menor tasa de falla de paginas posibles para un numero fijo de marcos. Es difícil de implantar, por lo que se utiliza generalmente para fines comparativos.",
+                "esCorrecto":false
+            },
+            {
+                "respuesta": "Consiste en no usar el CPU durante el mayor periodo de tiempo. Al utilizar este algoritmo se garantiza la menor tasa de falla de paginas posibles para un numero fijo de marcos. Es difícil de implantar, por lo que se utiliza generalmente para fines comparativos.",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 83,
+        "pregunta": "Explique, para un sistema paginado. En qué consiste la prepaginación?",
+        "respuestas": [
+            {
+                "respuesta": "Es un intento de evitar el alto nivel de paginación inicial. Consiste en traer a memoria al mismo tiempo todas las paginas que se necesitaran.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Consiste en traer a memoria al mismo tiempo todas las paginas que se necesitaran en caso que se presente una falla de interrupción de dispositivo.",
+                "esCorrecto":false
+            },
+            {
+                "respuesta": "Ambas son correctas.",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 83,
+        "pregunta": "Explique, para un sistema paginado. Qué tipo de fragmentación puede producirse?",
+        "respuestas": [
+            {
+                "respuesta": "Se produce fragmentación interna.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Se produce fragmentación externa.",
+                "esCorrecto":false
+            },
+            {
+                "respuesta": "Se produce fragmentación páginada.",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 84,
+        "pregunta": "Explique qué algoritmo de planificación de disco tiene mayor tiempo promedio para servir una solicitud.",
+        "respuestas": [
+            {
+                "respuesta": "El algoritmo FCFS",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "El algoritmo SSTF",
+                "esCorrecto":false
+            },
+            {
+                "respuesta": "Ninguna de las anteriores",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 85,
+        "pregunta": "Explique qué algoritmo de planificación de disco puede mantener indefinidamente en espera algunas demandas.",
+        "respuestas": [
+            {
+                "respuesta": "El algoritmo SSTF",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "El algoritmo LRU",
+                "esCorrecto":false
+            },
+            {
+                "respuesta": "OPT",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 86,
+        "pregunta": "Describa qué algoritmo de reemplazo de página: Posee el menor ratio de falla de página.",
+        "respuestas": [
+            {
+                "respuesta": "El algoritmo OPT",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "El algoritmo SSTF",
+                "esCorrecto":false
+            },
+            {
+                "respuesta": "El algoritmo FCFS",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 87,
+        "pregunta": "Describa qué algoritmo de reemplazo de página: No está expuesto a la anomalía de Belady.",
+        "respuestas": [
+            {
+                "respuesta": "El algoritmo LRU y OPT",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "El algoritmo SSTF",
+                "esCorrecto":false
+            },
+            {
+                "respuesta": "Ambas son correctas",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 88,
+        "pregunta": "¿En qué tipos de sistemas y en qué casos se entra en estados de control virtuales?",
+        "respuestas": [
+            {
+                "respuesta": "En SO de maquinas virtuales; cuando una aplicación intenta realizar una E/S realiza una llamada, causando una transferencia al SOMV, este registra el cambio de la maquina virtual a estado de control virtual y le cede el control",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "En SO de maquinas virtuales; cuando una aplicación intenta realizar una E/S realiza una llamada a los procesos corrientes, causando una transferencia al SOMV, este registra el cambio de la maquina virtual a estado de control virtual y le cede el control",
+                "esCorrecto":false
+            },
+            {
+                "respuesta": "En SO de maquinas virtuales; cuando una aplicación intenta realizar una E/S realiza una llamada al sistema, causando una transferencia al LVM, este registra el cambio de la maquina virtual a estado de control virtual y le cede el control",
+                "esCorrecto": false
+            }
+        ]
     }
 ]
