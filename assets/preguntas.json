@@ -1978,5 +1978,423 @@
                 "esCorrecto": true
             }
         ]
-    }
+    },
+
+    {
+        "id_pregunta": 109,
+        "pregunta": "¿En un sistema de 3 niveles en que cola y en que estado se encuentra un proceso en el tiempo de procesamiento?",
+        "respuestas": [
+            {
+                "respuesta": "En la cola del ONI o en la del OBN. En estado de ejecucion de espera o listo",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "En la cola del ONI o en la del OBN. En estado de suspensión a procesamiento",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "En la cola del ONI o en la del OBN. En estado de ejecucion para mejor velocidad de obtención de hilos",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 110,
+        "pregunta": "¿Que es un recurso abstracto?",
+        "respuestas": [
+            {
+                "respuesta": "Es una abstraccion que se define en el sistema a la cual se dan atributos que definen su accesibilidad y su representacion fisica en el sistema. Por ejemplo el Spooling, archivos, etc.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Es una abstraccion que se define en la memoria a la cual se dan atributos que definen su accesibilidad y su representacion fisica en el sistema. Por ejemplo el hardening de buffer, cerradura de Spooleo, etc.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Ninguna de las anteriores.",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 111,
+        "pregunta": "¿En disco, que es asignacion y acceso?",
+        "respuestas": [
+            {
+                "respuesta": "Asignacion: es colocar los bloques de archivos en bloques físicos del disco, para luego acceder a ellos cuando se lo requiera. Acceso: implican los 3 tiempos que utiliza el disco para obtener un bloque y colocarlo en memoria. Los tiempos son de posicionamiento, de latencia y de transferencia.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Asignacion: es colocar los bloques de memoria en bloques físicos del disco, para luego acceder a ellos cuando se lo requiera. Acceso: implican los 5 tiempos que utiliza el disco para obtener un bloque y colocarlo en memoria. Los tiempos son indexado, de latencia y de transferencia.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Asignacion: es colocar los bloques de archivos en bloques lógicos en los registros de la CPU, para luego acceder a ellos cuando se lo requiera. Acceso: implican los 2 tiempos que utiliza el disco para obtener un bloque y colocarlo en memoria. Los tiempos son de posicionamiento y latencia.",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 112,
+        "pregunta": "¿Cuál es la utilidad de que existan 2 modos de operación?¿Qué hardware se requiere?",
+        "respuestas": [
+            {
+                "respuesta": "Nos proporciona un medio para proteger al SO de los usuarios errantes, y a estos de ellos mismos. Se requiere un bit de modo",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Es un medio para agilizar al SO de los procesos errantes. Se requiere más de un bit de modo real.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Ambas son correctas.",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 113,
+        "pregunta": "¿En que consiste el proceso de ejecucion de una transaccion en un sistema de procesamiento de transacciones?",
+        "respuestas": [
+            {
+                "respuesta": "Consiste en recibir un mensaje proveniente de una terminal, transferir dicho mensaje a un programa que lo procesa, algunas referencias a bases de datos en línea para preparar la información para responder al mensaje y direccionar la respuesta hacia la terminal.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Consiste en recibir una instrucción proveniente de la E/S, transferir dicha instrucción a un programa que lo procesa, algunas referencias a bases de datos en línea para preparar la información para responder al mensaje y direccionar la respuesta hacia la terminal.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Consiste en recibir un sondeo del procesador, transferir dicho sondeo a un programa que lo procesa, algunas referencias a bases de datos en línea para preparar la información para responder al mensaje y direccionar la respuesta hacia la terminal.",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 114,
+        "pregunta": "¿Cuándo una pagina modificada es reemplazada, es conveniente grabarlo en el mismo lugar del disco?¿Por qué?",
+        "respuestas": [
+            {
+                "respuesta": "Si, para no tener que actualizar la tabla de paginas.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Si, para tener que actualizar la tabla de paginas.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Si, para no tener que actualizar la tabla de paginas y segmentos.",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 115,
+        "pregunta": "Distinga entre planificador de cola de multiples niveles y planificacion de cola de multiples niveles con retroalimentación",
+        "respuestas": [
+            {
+                "respuesta": "Cola de múltiples niveles: Los procesos se asignan en forma permanente a una cola, generalmente a partir de alguna propiedad del proceso. Cola de multiples niveles con retroalimentación: Permite a un proceso moverse de una cola a otra, la idea es separar los procesos con diferentes características en cuanto a ráfagas de CPU.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Cola de múltiples niveles: Los procesos se asignan en forma temporal a una cola, generalmente a partir de alguna propiedad del proceso. Cola de multiples niveles con retroalimentación: Permite a un proceso moverse de una cola a otra, la idea es separar los procesos con diferentes características en cuanto a ráfagas de CPU.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Cola de múltiples niveles: Los procesos se asignan a una cola hasta que el direccionamiento real sobrepase memoria, generalmente a partir de alguna propiedad del proceso. Cola de multiples niveles con retroalimentación: Permite a un proceso moverse de una cola a otra, la idea es separar los procesos con diferentes características en cuanto a ráfagas de CPU.",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 116,
+        "pregunta": "Enumere las distintas formas de administracion del espacio libre en disco.",
+        "respuestas": [
+            {
+                "respuesta": "Vector de bits; Lista ligada; Agrupamiento; Recuento",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Vector de objetos; Lista ligada; Agrupamiento de procesos; Recuento",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Vector de bits; Lista enlazada; Agrupamiento; Modo direccionamiento real",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 117,
+        "pregunta": "Enumere los distintos metodos de asignacion de espacio de los archivos en disco.",
+        "respuestas": [
+            {
+                "respuesta": "Asignación contigua; Asignación enlazada; Asignación indexada",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Asignación separada; Asignación enlazada; Asignación por promesas",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Asignación asíncrona; Asignación simétrica; Asignación indexada",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 118,
+        "pregunta": "Enumere los criterios de planificacion de la CPU.",
+        "respuestas": [
+            {
+                "respuesta": "Utilización de la CPU; Productividad; Tiempo de retorno; Tiempo de respuesta; Tiempo de espera",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Utilización de la memoria; Productividad en E/S; Tiempo de retorno; Tiempo de respuesta; Tiempo de bloqueo",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Ninguna de las anteriores",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 119,
+        "pregunta": "Enumere los criterios de planificacion de la CPU.",
+        "respuestas": [
+            {
+                "respuesta": "FCFS; SJF; Prioridades; Round Robin; Colas de multiples niveles; Colas de multiples niveles con realimentacion",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "CFFS; FJS; Prioridades; Red Robin; Colas de multiples niveles; Colas de multiples niveles con realimentacion",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Ninguna de las anteriores",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 120,
+        "pregunta": "Que mecanismo permite que las operaciones de CPU y E/S puedan superponerse, que metodos se usan.",
+        "respuestas": [
+            {
+                "respuesta": "Un mecanismo que permita la desincronización y la resincronizacion de las operaciones. Métodos: a) transferencia de datos dirigida por interrupciones. b) transferencia de datos por acceso directo a memoria",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Un mecanismo que permita la sincronización y la resincronizacion de las operaciones. Métodos: a) transferencia de datos dirigida por interrupciones. b) transferencia de datos por acceso directo a memorian",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Un mecanismo que permita la asíncronia y la resincronizacion de las operaciones aritméticas de la ALU. Métodos: a) transferencia de datos dirigida por interrupciones. b) transferencia de datos por acceso directo a memoria",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 121,
+        "pregunta": "En sistemas de MA que acciones se ejecutan en Tiempo de Activacion para activar un programa de 100K, que lee un archivo de disco lo graba en cinta y lo imprime.",
+        "respuestas": [
+            {
+                "respuesta": "Se asigna Impresora y Cinta de forma estatica. Se crea el PCB y se coloca a este en la CPI.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Se asigna Impresora y Cinta de forma dinámica. Se crea el PCB y se coloca a este en la CPI.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Se asigna Impresora y Cinta de forma que la memoria principal no esté llena. Se crea el PCB y se coloca a este en la CPI.",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 122,
+        "pregunta": "Explique recurso reasignable. Mencione cual/es..",
+        "respuestas": [
+            {
+                "respuesta": "Son aquellos recursos que pueden asignarse y desasignarse a un proceso sin alterar su lógica. CPU y memoria.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Son aquellos recursos que pueden asignarse y desasignarse a un proceso sin alterar su procesamiento. CPU y colas.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Son aquellos recursos que pueden asignarse y desasignarse a un proceso sin alterar su comportamiento indexado. CPU y buffer.",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 123,
+        "pregunta": "¿Qué es un algoritmo de asignación de bloque de memoria real?",
+        "respuestas": [
+            {
+                "respuesta": "Es un algoritmo que divide la memoria en particiones de tamaño fijo, las cuales pueden contener exactamente un proces. El nivel de multiprogramación esta limitado por el numero de particiones.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Es un algoritmo que divide la disco en particiones de tamaño fijo, las cuales pueden contener exactamente un proceso estático. El nivel de multiprogramación esta limitado por el numero de particiones.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Es un algoritmo que divide la E/S en particiones lógicas de tamaño fijo, las cuales pueden contener exactamente un proces. El nivel de multiprogramación esta limitado por el numero de particiones.",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 124,
+        "pregunta": "Que es precargador o boot? Donde reside?",
+        "respuestas": [
+            {
+                "respuesta": "Es el encargado de inicializar el sistema cuando se enciende el computador. Reside en memoria ROM.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Es el encargado de controlar el sistema cuando se enciende el computador. Reside en memoria RAM.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Es el encargado de proteger el sistema cuando se enciende el computador. Reside en memoria CAS.",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 125,
+        "pregunta": "Posibles formas de administrar la memoria (tipo de compilación, particionamiento, organización) en multiprogramación básica.",
+        "respuestas": [
+            {
+                "respuesta": "Compilación absoluta. Particiones de tamaño fijo. Asignación estática. Cada trabajo se programaba pensando en que partición iba a ser corrido.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Compilación síncrona. Particiones de tamaño dinámico. Asignación estática. Cada trabajo se programaba pensando en que partición iba a ser corrido.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Ninguna es correcta",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 126,
+        "pregunta": "En un sistema de multiprogramación básica. ¿Bajo que circunstancia se activa el OAN?",
+        "respuestas": [
+            {
+                "respuesta": "Cuando ingresa un nuevo trabajo a la CTE o cuando termina la ejecución de un proceso activo.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Cuando ingresa un nuevo proceso a la CTE o cuando termina la ejecución de un hilo activo.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Ninguna es correcta",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 127,
+        "pregunta": "En un sistema de tiempo real ¿conviene tener toda la información en línea? De no ser asi, ¿Cuál seria la consecuencia?",
+        "respuestas": [
+            {
+                "respuesta": "Si. Hay que tenerla. La consecuencia de no tenerla en línea es que no se podría cumplir con el objetivo de proporcionar rápidos tiempos de respuesta a sucesos.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "No. No hay que tenerla. La consecuencia de tenerla en línea es que no se podría cumplir con el objetivo de proporcionar rápidos tiempos de respuesta a sucesos.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "No. No hay que tenerla. La consecuencia de no tenerla en línea es que no se podría cumplir con el objetivo de proporcionar más memoria a los subprocesos.",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 128,
+        "pregunta": "Independientemente del SO, explique cual es la utilidad de usar colas cíclicas realimentadas.",
+        "respuestas": [
+            {
+                "respuesta": "Permite clasificar dinámicamente los programas según características intrínsecas de los mismos y tratarlos en forma diferencial, beneficiando a unos y penalizando a otros.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Permite clasificar dinámicamente los programas según características intrínsecas de los mismos y tratarlos en forma secuencial, beneficiando a unos y penalizando a otros.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Permite clasificar sincrónicamente los programas según características intrínsecas de los mismos y tratarlos en forma dinámica",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 129,
+        "pregunta": "Mecanismos/políticas de administración de recursos, definición, indicar si pertenecen o no al SO y poner un ejemplo de cada una.",
+        "respuestas": [
+            {
+                "respuesta": "Los mecanismos determinan como realizar algo, las políticas deciden que se hara. Por ejemplo, un mecanismo para asegurar la protección de la CPU es el sistema de cronometro. La decisión de que calor se colocara en el cronometro para cada usuario es una decisión política. Pertenecen al SO.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Los mecanismos determinan como realizar algo, las políticas deciden que se hara. Por ejemplo, un mecanismo para asegurar la protección de la CPU es el sistema de planificación segmentada. La decisión de que calor se colocara en el cronometro para cada usuario es una decisión política. Pertenecen a memoria principal.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Ninguna de las anteriores",
+                "esCorrecto": false
+            }
+        ]
+    },
+
+    {
+        "id_pregunta": 130,
+        "pregunta": "Planificacion de la CPU en sistemas multiprocesadores.",
+        "respuestas": [
+            {
+                "respuesta": "Multiprocesamiento simetrico; Multiprocesamiento asimétrico: amo-esclavo",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Multiprocesamiento sincrónico; Multiprocesamiento asincrónico: amo-esclavo",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Multiprocesamiento por lotes; Multiprocesamiento canalizado: master-slave",
+                "esCorrecto": false
+            }
+        ]
+    },
 ]
