@@ -1377,7 +1377,7 @@
             },
             {
                 "respuesta": "Los dispositivos que por sus caracteristicas deben ser asignados de forma estatica son asignados de esta forma (impresora, cinta). Se asigna memoria estática y se carga el proceso en la misma. No crea el PCB.",
-                "esCorrecto":false
+                "esCorrecto": false
             },
             {
                 "respuesta": "Los dispositivos que por sus caracteristicas deben ser asignados de forma dinámica son asignados de esta forma (impresora, cinta). Se asigna memoria virtual y se carga el proceso en la misma. No crea el PCB.",
@@ -1385,7 +1385,6 @@
             }
         ]
     },
-
     {
         "id_pregunta": 77,
         "pregunta": "Controll Stream o Job Control. ¿En qué SO es utilizado?",
@@ -1396,7 +1395,7 @@
             },
             {
                 "respuesta": "En los sistemas con IA-32.",
-                "esCorrecto":false
+                "esCorrecto": false
             },
             {
                 "respuesta": "En los sistemas con Spooling y Buffering avanzado.",
@@ -1404,7 +1403,6 @@
             }
         ]
     },
-
     {
         "id_pregunta": 78,
         "pregunta": "Controll Stream o Job Control. ¿Cuál es su finalidad?",
@@ -1415,7 +1413,7 @@
             },
             {
                 "respuesta": "Establecer las características particulares de un proceso, como ser: versión, recursos, etc.",
-                "esCorrecto":false
+                "esCorrecto": false
             },
             {
                 "respuesta": "Establecer las características particulares de una tarea de un dispositivo de almacenamiento.",
@@ -1423,7 +1421,6 @@
             }
         ]
     },
-
     {
         "id_pregunta": 79,
         "pregunta": "¿Cómo se descompone el tiempo total para servir una solicitud del disco?",
@@ -1434,7 +1431,7 @@
             },
             {
                 "respuesta": "Tiempo de posicionamiento: Primero debe moverse la cabeza a la pista o cilindro más cercano. Tiempo de latencia: Luego se espera a que el bloque deseado pase encima de la cabeza. Tiempo de transferencia: Por ultimo, se transfieren los datos entre el disco y la memoria real",
-                "esCorrecto":false
+                "esCorrecto": false
             },
             {
                 "respuesta": "Ninguna de las anteriores",
@@ -1442,7 +1439,6 @@
             }
         ]
     },
-
     {
         "id_pregunta": 80,
         "pregunta": "¿Para qué tipos de SOs no justificaría trabajar en modo dual? Justifique.",
@@ -1453,7 +1449,7 @@
             },
             {
                 "respuesta": "Modo Dual: permite que un programa en ejecucion modifique datos o codigos de otros. Serie Simple: Al existir un solo programa, este podria dañar otros. Tiempo Real: Porque el tiempo requerido para realizar esta protección puede afectar al cumplimiento del objetivo principal del sistema. ",
-                "esCorrecto":false
+                "esCorrecto": false
             },
             {
                 "respuesta": "Modo Dual: Impide que un programa en ejecucion modifique datos o codigos de otros. Serie Simple: Al existir un solo programa, este no podria dañar otros. Tiempo Real: Porque el tiempo requerido para realizar esta protección no afecta al cumplimiento del objetivo principal del sistema. ",
@@ -1461,7 +1457,6 @@
             }
         ]
     },
-
     {
         "id_pregunta": 81,
         "pregunta": "¿Qué entiende por fijación de páginas en memoria? ",
@@ -1472,7 +1467,7 @@
             },
             {
                 "respuesta": "Aquellas paginas que pueden ser seleccionadas para su reemplazo. Se asocia un bit de fijacion a cada marco. Un marco fijado no puede ser reemplazado.",
-                "esCorrecto":false
+                "esCorrecto": false
             },
             {
                 "respuesta": "Aquellas paginas que pueden ser seleccionadas para su reemplazo. Se asocia un bit de fijacion a cada marco del segmento de memoria. Un marco fijado si puede ser reemplazado.",
@@ -1480,7 +1475,6 @@
             }
         ]
     },
-
     {
         "id_pregunta": 82,
         "pregunta": "¿Cómo se utiliza el algoritmo OPT?",
@@ -1491,7 +1485,7 @@
             },
             {
                 "respuesta": "Consiste en reemplazar el segmento que no se usara durante el páginado. Al utilizar este algoritmo se garantiza la menor tasa de falla de paginas posibles para un numero fijo de marcos. Es difícil de implantar, por lo que se utiliza generalmente para fines comparativos.",
-                "esCorrecto":false
+                "esCorrecto": false
             },
             {
                 "respuesta": "Consiste en no usar el CPU durante el mayor periodo de tiempo. Al utilizar este algoritmo se garantiza la menor tasa de falla de paginas posibles para un numero fijo de marcos. Es difícil de implantar, por lo que se utiliza generalmente para fines comparativos.",
@@ -1499,7 +1493,6 @@
             }
         ]
     },
-
     {
         "id_pregunta": 83,
         "pregunta": "Explique, para un sistema paginado. En qué consiste la prepaginación?",
@@ -1510,7 +1503,7 @@
             },
             {
                 "respuesta": "Consiste en traer a memoria al mismo tiempo todas las paginas que se necesitaran en caso que se presente una falla de interrupción de dispositivo.",
-                "esCorrecto":false
+                "esCorrecto": false
             },
             {
                 "respuesta": "Ambas son correctas.",
@@ -1518,7 +1511,6 @@
             }
         ]
     },
-
     {
         "id_pregunta": 83,
         "pregunta": "Explique, para un sistema paginado. Qué tipo de fragmentación puede producirse?",
@@ -1529,7 +1521,7 @@
             },
             {
                 "respuesta": "Se produce fragmentación externa.",
-                "esCorrecto":false
+                "esCorrecto": false
             },
             {
                 "respuesta": "Se produce fragmentación páginada.",
@@ -1537,7 +1529,6 @@
             }
         ]
     },
-
     {
         "id_pregunta": 84,
         "pregunta": "Explique qué algoritmo de planificación de disco tiene mayor tiempo promedio para servir una solicitud.",
@@ -1548,7 +1539,7 @@
             },
             {
                 "respuesta": "El algoritmo SSTF",
-                "esCorrecto":false
+                "esCorrecto": false
             },
             {
                 "respuesta": "Ninguna de las anteriores",
@@ -1556,7 +1547,6 @@
             }
         ]
     },
-
     {
         "id_pregunta": 85,
         "pregunta": "Explique qué algoritmo de planificación de disco puede mantener indefinidamente en espera algunas demandas.",
@@ -1567,7 +1557,7 @@
             },
             {
                 "respuesta": "El algoritmo LRU",
-                "esCorrecto":false
+                "esCorrecto": false
             },
             {
                 "respuesta": "OPT",
@@ -1575,7 +1565,6 @@
             }
         ]
     },
-
     {
         "id_pregunta": 86,
         "pregunta": "Describa qué algoritmo de reemplazo de página: Posee el menor ratio de falla de página.",
@@ -1586,7 +1575,7 @@
             },
             {
                 "respuesta": "El algoritmo SSTF",
-                "esCorrecto":false
+                "esCorrecto": false
             },
             {
                 "respuesta": "El algoritmo FCFS",
@@ -1594,7 +1583,6 @@
             }
         ]
     },
-
     {
         "id_pregunta": 87,
         "pregunta": "Describa qué algoritmo de reemplazo de página: No está expuesto a la anomalía de Belady.",
@@ -1605,7 +1593,7 @@
             },
             {
                 "respuesta": "El algoritmo SSTF",
-                "esCorrecto":false
+                "esCorrecto": false
             },
             {
                 "respuesta": "Ambas son correctas",
@@ -1613,7 +1601,6 @@
             }
         ]
     },
-
     {
         "id_pregunta": 88,
         "pregunta": "¿En qué tipos de sistemas y en qué casos se entra en estados de control virtuales?",
@@ -1624,11 +1611,371 @@
             },
             {
                 "respuesta": "En SO de maquinas virtuales; cuando una aplicación intenta realizar una E/S realiza una llamada a los procesos corrientes, causando una transferencia al SOMV, este registra el cambio de la maquina virtual a estado de control virtual y le cede el control",
-                "esCorrecto":false
+                "esCorrecto": false
             },
             {
                 "respuesta": "En SO de maquinas virtuales; cuando una aplicación intenta realizar una E/S realiza una llamada al sistema, causando una transferencia al LVM, este registra el cambio de la maquina virtual a estado de control virtual y le cede el control",
                 "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 89,
+        "pregunta": "¿Para qué se utiliza una estructura de colas cíclicas realimentadas?",
+        "respuestas": [
+            {
+                "respuesta": "Se utiliza para clasificar procesos dinámicamente según algunas de sus caracteristicas intrinsecas y tratarlos de forma diferencial, dependiendo del tipo de SO donde esta corriendo. El OBN seleccionara un proceso de una subcola según la regla establecida y los procesos se clasifican dinamicamente según la regla de residencia.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Se utiliza para clasificar procesos estáticamente según algunas de sus caracteristicas intrinsecas y tratarlos de forma diferencial, dependiendo del tipo de SO donde esta corriendo. El OAN seleccionara un proceso de una subcola según la regla establecida y los procesos se clasifican dinamicamente según la regla de residencia.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Se utiliza para clasificar procesos dinamicamente según algunas de sus caracteristicas intrinsecas y tratarlos de forma diferencial, dependiendo del tipo de SO donde esta corriendo. El ONI seleccionara un proceso de una subcola según la regla establecida y los procesos se clasifican dinámicamente según la regla de residencia.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 90,
+        "pregunta": "¿Qué entiende por direccionamiento físico y direccionamiento lógico?",
+        "respuestas": [
+            {
+                "respuesta": "Las direcciones lógicas son las generadas por los programas en ejecución, en las cuales se alojan páginas de la memoria principal. Las direcciones físicas son las verdaderas direcciones en las cuales residen los programas en memoria física. Son las utilizadas por el SO.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Las direcciones lógicas son las verdaderas direcciones en las cuales residen los programas en memoria física. Son las utilizadas por el SO. Las direcciones físicas son las generadas por los programas en ejecución, en las cuales se alojan instrucciones, variables, registros, etc.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Las direcciones lógicas son las generadas por los programas en ejecución, en las cuales se alojan instrucciones, variables, registros, etc.Las direcciones físicas son las verdaderas direcciones en las cuales residen los programas en memoria física. Son las utilizadas por el SO.",
+                "esCorrecto": true
+            }
+        ]
+    },
+    {
+        "id_pregunta": 91,
+        "pregunta": "¿Qué entiende por proceso y canal?",
+        "respuestas": [
+            {
+                "respuesta": "Proceso: medio de comunicación entre los dispositivos de E/S y la memoria. Es la unidad de trabajo de un SO. Canal: es un programa en ejecución, con un contador de programa, el cual indica cual es la próxima instrucción que ejecutara el programa.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Proceso: es un programa en ejecución, con un contador de programa, el cual indica cual es la próxima instrucción que ejecutara el programa. Es la unidad de trabajo de un SO. Canal: medio de comunicación entre los dispositivos de E/S y la memoria.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Proceso: es un programa aún no cargado en memoria, con un contador de programa, el cual indica cual es la próxima instrucción que ejecutara el programa. Es la unidad de trabajo de un SO. Canal: medio de comunicación entre los dispositivos de E/S y la memoria.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 92,
+        "pregunta": "En la multiprogramación, ¿para que sirve el registro base?",
+        "respuestas": [
+            {
+                "respuesta": "Me sirve para proteccion de memoria, se controla por hardware que un programa no referencia por debajo de su registro base.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Me sirve para proteccion de memoria, se controla por hardware que un programa no referencia por encima de su registro base.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Me sirve para proteccion de memoria auxiliar, se controla por hardware que un programa no referencia por encima de su registro base.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 93,
+        "pregunta": "¿En que SO no sirven los modos de protección?",
+        "respuestas": [
+            {
+                "respuesta": "En el de tiempo compartido y en el de tiempo real",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "En el de multiprogramación básica y en el de tiempo real",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "En el de serie simple y en el de tiempo real",
+                "esCorrecto": true
+            }
+        ]
+    },
+    {
+        "id_pregunta": 94,
+        "pregunta": "¿Qué es un página física y que contiene?",
+        "respuestas": [
+            {
+                "respuesta": "Es una página. Contiene un marco, el cual contiene instrucciones, rutinas, variables, etc. pertenecientes a un proceso.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Es un marco. Contiene una pagina lógica, la cual contiene instrucciones, rutinas, variables, etc. pertenecientes a un proceso.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Es un bloque. Contiene un marco, el cual contiene instrucciones, rutinas, variables, etc. pertenecientes a un proceso.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 95,
+        "pregunta": "En la paginación, ¿dónde residen las localidades?",
+        "respuestas": [
+            {
+                "respuesta": "En memoria ROM",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "En memoria auxiliar.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "En memoria principal.",
+                "esCorrecto": true
+            }
+        ]
+    },
+    {
+        "id_pregunta": 96,
+        "pregunta": "¿Qué método del SO le da formato a un proceso?",
+        "respuestas": [
+            {
+                "respuesta": "El Loader. En el momento de la carga.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "El CPT. En el momento de la compilación.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "El Reader. En el momento de combinación",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 97,
+        "pregunta": "¿En qué circunstancias y con qué frecuencia se activa el PMP (ONI)?",
+        "respuestas": [
+            {
+                "respuesta": "Pueden ser necesarios la compactación para mejorar la mezcla de procesos o cuando un cambio en los requerimientos de memoria ha comprometido en exceso la memoria disponible. Se activa 1 vez tras ejecutarse el SO. Podra operar sobre la base de un tiempo fijo o bien en respuesta a un evento.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Pueden ser necesarios la redirección para mejorar la mezcla de procesos o cuando un cambio en los requerimientos de memoria ha comprometido en exceso la memoria disponible. Se activa al finalizar un proceso. Podra operar sobre la base de un tiempo fijo o bien en respuesta a un evento.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Pueden ser necesarios los intercambios para mejorar la mezcla de procesos o cuando un cambio en los requerimientos de memoria ha comprometido en exceso la memoria disponible. Se activa periódicamente. Podra operar sobre la base de un tiempo fijo o bien en respuesta a un evento.",
+                "esCorrecto": true
+            }
+        ]
+    },
+    {
+        "id_pregunta": 98,
+        "pregunta": "¿Qué es un PCB?",
+        "respuestas": [
+            {
+                "respuesta": "Es un bloque que contiene informacion relacionada con un proceso concreto, o sea toda aquella informacion que puede variar de un proceso a otro.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Es un bloque que contiene informacion relacionada con una página en memoria(multiprogramación avanzada), o sea toda aquella informacion que puede variar de un proceso a otro.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Es un bloque que contiene informacion relacionada con un proceso qué no está más en memoria, o sea toda aquella informacion que puede variar de un proceso a otro.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 99,
+        "pregunta": "¿Dónde reside el PCB?",
+        "respuestas": [
+            {
+                "respuesta": "Reside fisicamente en memoria auxiliar y logicamente en la cola del OBN o en la cola del OAN.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Reside fisicamente en memoria principal y logicamente en la cola del ONI o en la cola del OBN.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Reside fisicamente en memoria ROM y logicamente en la cola del ONI o en la cola del OBN.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 100,
+        "pregunta": "¿Qué contiene el PCB?",
+        "respuestas": [
+            {
+                "respuesta": "Contiene: Nombre, Apuntador a la base de la tabla de marcos, Estado, Longitud de la tabla de marcos, Prioridad, Registros de la CPU, Contador de instrucciones, Dispositivos asignados, Informacion Contable, etc.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Contiene: Nombre, Apuntador a la base de la tabla de paginas, Estado, Longitud de la tabla de paginas, Prioridad, Registros de la CPU, Contador de instrucciones, Dispositivos asignados, Informacion Contable, etc.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "No contiene nada más qué información en tiempo real de la memoria auxiliar para qué el procesador tenga conocimiento cómo realizar el intercambio de procesos.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 101,
+        "pregunta": "En una estructura de subcolas se realizan dos acciones clasificacion y penalizacion. ¿Qué regla representa a cada acción y qué significa cada una?",
+        "respuestas": [
+            {
+                "respuesta": "Clasificacion: -Regla de residencia: determina si un proceso se va o se queda en una Subcola. Penalizacion: -Regla de visita: controla el servicio de la CPU a cada una de las subcolas regulando la importancia que se le dará a cada una.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Clasificacion: -Regla de visita: controla el servicio de la CPU a cada una de las subcolas regulando la importancia que se le dará a cada una. Penalizacion: -Regla de residencia: determina si un proceso se va o se queda en una Subcola.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Clasificacion: -Regla de residencia: controla el servicio de la CPU a cada una de las subcolas regulando la importancia que se le dará a cada una. Penalizacion: -Regla de visita: determina si un proceso se va o se queda en una Subcola.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 102,
+        "pregunta": "¿Cuál de los siguientes podría ser un ejemplo de OVERFLOW?",
+        "respuestas": [
+            {
+                "respuesta": "Desbordamiento de los núcleos de la CPU",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Desbordamiento de memoria principal.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Desbordamiento de la pila de la CPU.",
+                "esCorrecto": true
+            }
+        ]
+    },
+    {
+        "id_pregunta": 103,
+        "pregunta": "¿Cual es la utilidad de contar con una tabla de estado de dispositivo y una lista de solicitudes para cada una?",
+        "respuestas": [
+            {
+                "respuesta": "Para llevar un control de varias solicitudes de procesamiento al mismo tiempo, y para guardar el código de espera del usuario que realizó la solicitud de procesamiento.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Para llevar un control de varias solicitudes de E/S al mismo tiempo, y para guardar el código de espera del usuario que realizó la solicitud de procesamiento.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Para llevar un control de varias solicitudes de E/S al mismo tiempo, y para guardar el código de espera del usuario que realizó la solicitud de E/S.",
+                "esCorrecto": true
+            }
+        ]
+    },
+    {
+        "id_pregunta": 104,
+        "pregunta": "¿Cuál sería la consecuencia de la NO existencia de una tabla de estado de dispositivo y una lista de solicitudes para cada una?",
+        "respuestas": [
+            {
+                "respuesta": "No se pueden tener operaciones de E/S simultáneas, porque cuando interrumpen, el SO no sabe a que dispositivo corresponde la interrupción.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "No se pueden tener operaciones de paginación simultáneas, porque cuando interrumpen, el SO no sabe a que dispositivo corresponde la interrupción.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "No se pueden tener operaciones de procesamiento simultáneas, porque cuando interrumpen, el SO no sabe a que dispositivo corresponde la interrupción.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 105,
+        "pregunta": "¿La proteccion de memoria en caso de particiones multiples (asignacion continua), es por hardware o por software?",
+        "respuestas": [
+            {
+                "respuesta": "Por software, es un complemento del SO qué ha de instalarse externamente.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Por hardware, mediante la utilización de registros base y limite.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Por hardware, mediante la utilización de registros excluyentes",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 106,
+        "pregunta": "En un sistema de tres niveles, ¿Qué programas de aplicación residen parcial o totalmente en memoria principal?",
+        "respuestas": [
+            {
+                "respuesta": "Los programas en ejecución y los iniciados.",
+                "esCorrecto": true
+            },
+            {
+                "respuesta": "Los programas en ejecución, los iniciados y los qué están en la cola de espera.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Sólo los programas qué están en ejecución.",
+                "esCorrecto": false
+            }
+        ]
+    },
+    {
+        "id_pregunta": 107,
+        "pregunta": "¿Cómo y cuándo se protege la memoria en asignación contigua?",
+        "respuestas": [
+            {
+                "respuesta": "Se protege utilizando un registro base, que establece las direcciones de memoria a las cuales puede hacer referencia un proceso legalmente. Cuando un proceso genera una dirección, esta se compara con el registro y si está fuera del rango permitido se genera una trampa por error de direccionamiento.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Se protege utilizando un registro límite, que establece las direcciones de memoria a las cuales puede hacer referencia un proceso legalmente. Cuando un proceso genera una dirección, esta se compara con el registro y si está fuera del rango permitido se genera una trampa por error de direccionamiento.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Se protege utilizando dos registros, uno base y uno limite, que establecen las direcciones de memoria a las cuales puede hacer referencia un proceso legalmente. Cuando un proceso genera una dirección, esta se compara con los registros y si esta fuera del rango permitido se genera una trampa por error de direccionamiento.",
+                "esCorrecto": true
+            }
+        ]
+    },
+    {
+        "id_pregunta": 108,
+        "pregunta": "¿Que implica la administración de recursos?",
+        "respuestas": [
+            {
+                "respuesta": "Implica asignar a cada página en memoria diferentes recursos de hardware disponibles.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Implica la correcta manipulación de archivos en cuánto a recursos de software.",
+                "esCorrecto": false
+            },
+            {
+                "respuesta": "Implica resolver los conflictos de demanda, asignación y proteger un recurso.",
+                "esCorrecto": true
             }
         ]
     }
