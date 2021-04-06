@@ -1,3 +1,31 @@
+#root .SoButton {
+  background: #c1de1b;
+  width: 150px;
+  transition: background 0.3s ease;
+  font-weight: 1000;
+  font-size: 18px;
+  color: #ffffff;
+}
+#root .SoButton:hover {
+  background: #ffffff;
+}
 
+.loop {
+  animation-name: loop;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
 
-/*# sourceMappingURL=sobutton.css.map */
+@keyframes loop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*# sourceMappingURL=SoButton.css.map */

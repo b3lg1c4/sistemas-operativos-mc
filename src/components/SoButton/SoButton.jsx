@@ -2,9 +2,10 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import './SoButton.css';
 
-const SoButton = () => {
+const SoButton = ({label,animated}) => {
     return (
-        <Button variant="contained">Default</Button>
+
+        <Button className={animated ? "SoButton loop" : "SoButton"} variant="contained">{label}</Button>
     );
 };
 

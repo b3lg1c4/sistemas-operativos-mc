@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"sostartscreenscore.css"}
+{"version":3,"sourceRoot":"","sources":["SoStartScreenScore.scss","../../../_mixins.scss","../../../_variables.scss"],"names":[],"mappings":"AAGA;ECFI;EACA,iBDEc;ECDd,aDC4B;ECA5B;EDCA;EACA;;AACA;EACI;EACA;;AAGJ;EACI;EACA;EACA;;AAEA;AAAA;EChBJ;EACA,iBDiBsB;EChBtB,aDgB8B;ECf9B,gBAJsC;EDoB9B;EACA;EACA;EACA;EACA;;AAGJ;AAAA;EAEI;EACA,OE9BA;EF+BA;;;AAKZ;EACI;IACI;;;AAIR;EACI;IACI;;;AAIR;EACI;IACI","file":"SoStartScreenScore.css"}

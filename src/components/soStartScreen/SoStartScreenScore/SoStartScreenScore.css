@@ -1,3 +1,53 @@
+.SoStartScreenScore {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 60%;
+}
+.SoStartScreenScore h1 {
+  font-style: italic;
+  font-size: 50px;
+}
+.SoStartScreenScore-table {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.SoStartScreenScore-table .SoStartScreenScore-table-puntuacion,
+.SoStartScreenScore-table .SoStartScreenScore-table-timestamp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #c1de1b;
+  padding-bottom: 10px;
+  color: #ffffff;
+  font-size: 17px;
+}
+.SoStartScreenScore-table .SoStartScreenScore-table-puntuacion:nth-child(2),
+.SoStartScreenScore-table .SoStartScreenScore-table-timestamp:first-child {
+  font-size: 25px;
+  color: #c1de1b;
+  font-weight: 600;
+}
 
+@media (max-width: 960px) {
+  .SoStartScreenScore-table {
+    width: 70%;
+  }
+}
+@media (max-width: 720px) {
+  .SoStartScreenScore-table {
+    width: 90%;
+  }
+}
+@media (max-width: 560px) {
+  .SoStartScreenScore-table {
+    width: 100%;
+  }
+}
 
-/*# sourceMappingURL=sostartscreenscore.css.map */
+/*# sourceMappingURL=SoStartScreenScore.css.map */

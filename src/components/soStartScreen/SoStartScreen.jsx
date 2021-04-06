@@ -8,7 +8,7 @@ const SoStartScreen = () => {
         <div className="SoStartScreen">
             <h1 className="SoStartScreen-title">SOMC</h1>
             <SoStartScreenScore/>
-            <SoButton/>
+            <SoButton animated={true} label="Comenzar"/>
         </div>
     );
 };
