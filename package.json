@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "sistemas-operativos-mc",
   "version": "0.1.0",
   "private": true,
@@ -36,15 +35,4 @@
       "last 1 safari version"
     ]
   }
-=======
-  "name": "so",
-  "version": "1.0.0",
-  "description": "pequeño software para aprender SO",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "belgica-real",
-  "license": "MIT"
->>>>>>> c6c564a7d5a9f729a56c53d27e127badb825c6ca
 }
