@@ -1,9 +1,15 @@
 import React from 'react';
-import './SoStartScreen'
+import './SoStartScreen.css';
+import SoStartScreenScore from './SoStartScreenScore/SoStartScreenScore';
+import SoButton from '../SoButton/SoButton';
 
-const SoStartScreen = () =>{
+const SoStartScreen = () => {
     return (
-        <h1>SoStartScreen</h1>
+        <div className="SoStartScreen">
+            <h1 className="SoStartScreen-title">SOMC</h1>
+            <SoStartScreenScore/>
+            <SoButton/>
+        </div>
     );
 };
 

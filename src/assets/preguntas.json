@@ -1,0 +1,2830 @@
+{
+    "preguntas": [
+        {
+            "id_pregunta": 0,
+            "pregunta": "¿Que diferencias hay entre Multiprogramacion y Multiprocesamiento?",
+            "respuestas": [
+                {
+                    "respuesta": "Multiprogramación: Es la capacidad de ejecutar varios procesos que residen en memoria en forma concurrente repartiendo el uso de la CPU entre cada uno de ellos. Multiprocesamiento: Consiste en ejecutar varios procesos en forma simultánea a traves de varios procesadores trabajando a la vez.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Multiprogramación: Consiste en ejecutar varios procesos en forma simultanea a traves de varios procesadores trabajando a la vez. Multiprocesamiento: Es la capacidad de ejecutar varios procesos que residen en memoria en forma concurrente repartiendo el uso de la CPU entre cada uno de ellos.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Multiprogramación: Es la capacidad de ejecutar varios procesos que residen en la memoria auxiliar en forma concurrente repartiendo el uso de la CPU entre cada uno de ellos. Multiprocesamiento: Es la capacidad de ejecutar varios procesos que residen en memoria en forma concurrente repartiendo el uso de la CPU entre cada uno de ellos.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 1,
+            "pregunta": "Independientemente del SO, una estructura de subcolas permite clasificar programas dinámicamente según características intrínsecas de los mismos. ¿A qué características nos referimos?",
+            "respuestas": [
+                {
+                    "respuesta": "1) Prioridad relativa. 2) Tiempo límite de inicio y fin. 3) Llenado de memoria 4) Recursos limites 5) Grado de avance",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "1) Prioridad relativa. 2) Grado de avance. 3) Recursos limites",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "1) Tiempo límite de inicio y fin. 2) Prioridad relativa. 3) Desbordamiento de pila 4) Memoria completa",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 2,
+            "pregunta": "¿A qué se denomina TRASHING y cómo se soluciona?",
+            "respuestas": [
+                {
+                    "respuesta": "Se denomina Trashing a la hiperpaginación. Ocurre cuando en un proceso se emplea mas tiempo paginando que ejecutando el proceso, los recursos del sistema están siendo utilizados por los mecanismos de paginación, no quedando disponibles (o quedando muy poco) tiempo asignado para el progreso de los programas. Se soluciona aplicando un algoritmo en forma local, es decir, ante la necesidad de un proceso de una nueva página debe elegirse la página víctima dentro de las de ese proceso. Las paginas de cada proceso se asignan basandose en el modelo de area activa. Tambien se puede solucionar reduciendo el nivel de multiprogramación.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Se denomina Trashing al proceso que se emplea mas tiempo paginando que ejecutando los recursos del sistema los cuales están siendo utilizados por los mecanismos de paginación, no quedando disponibles (o quedando muy poco) tiempo asignado para el progreso de los programas. Se soluciona aplicando un algoritmo en forma local, es decir, ante la necesidad de un proceso de una nueva página debe elegirse la página víctima dentro de las de ese proceso. Las paginas de cada proceso se asignan basandose en el modelo de area activa. Tambien se puede solucionar reduciendo el nivel de multiprogramación.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Se denomina Trashing al tiempo asignado para el progreso de los programas TRASH de la memoria de paginación. Se soluciona aplicando un algoritmo en forma local, es decir, ante la necesidad de un proceso de una nueva página debe elegirse la página víctima dentro de las de ese proceso. Las paginas de cada proceso se asignan basandose en el modelo de area activa. Tambien se puede solucionar reduciendo el nivel de multiprogramación.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 3,
+            "pregunta": "¿Cuál es la diferencia entre vecindad (o localidad) y C.P.T?",
+            "respuestas": [
+                {
+                    "respuesta": "Vecindad o Localidad: Es el conjunto de páginas que se utilizan conjuntamente. Se considera que un programa está formado por un conjunto de vecindades, las cuales pueden superponerse. C.P.T.: Representación aproximada del tamaño de la vecindad de un programa. Se obtiene sobre el análisis del pasado reciente de un programa.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Vecindad o Localidad: Representación aproximada del tamaño de la vecindad de un programa. Se obtiene sobre el análisis del pasado reciente de un programa. C.P.T.: Es el conjunto de páginas que se utilizan conjuntamente. Se considera que un programa está formado por un conjunto de vecindades, las cuales pueden superponerse.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Vecindad o Localidad: Representación aproximada del tamaño de un marco de memoria principal. C.P.T. : Abreviación de cola de procesos trabados, se da cuando el proceso queda indefinidamente sin procesar por un error del procesador",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 4,
+            "pregunta": "¿El ONI es un administrador de recursos? ¿El OAN? ¿Por qué?",
+            "respuestas": [
+                {
+                    "respuesta": "El ONI es un recurso que está en la CPU al decidir qué trabajos van a correr en la mezcla. El OAN influye pero no toma ninguna decisión acerca de qué programas utilizará la CPU.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "El ONI es una administrador de recursos porque está administrando la CPU al decidir qué trabajos van a correr en la mezcla. El OAN influye pero no toma ninguna decisión acerca de qué programas utilizará la CPU.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "El ONI son conjuntos de trabajos los cuales administran los recursos del CPU. El OAN influye pero no toma ninguna decisión acerca de qué programas utilizará la CPU.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 5,
+            "pregunta": "Dado un sistema de multiprogramación avanzada que cuenta con estructuras de subcolas y en el que corre una mezcla heterogénea en el uso de recursos, ¿por qué puede producirse un desbalance en el uso de recursos?",
+            "respuestas": [
+                {
+                    "respuesta": "Si se distribuyen los recursos de la memoria de un programa entre los distintos canales, el algoritmo de dispatching se distorsionara ('el mas corto primero'). Debido a este mal uso de los canales, que hace que los mismo esten frecuentemente ocupados, se producirán colas de espera, y por tanto, un desbalance de la mezcla.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Si se distribuyen los archivos de un programa entre los distintos canales, el algoritmo de dispatching se distorsionara ('el mas corto primero'). Debido a este mal uso de los canales, que hace que los mismo procesos frecuentemente ocupados, se producirán muchos gastos de recursos del sistema, y por tanto, un desbalance de la mezcla.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Si se distribuyen los archivos de un programa entre los distintos canales, el algoritmo de dispatching se distorsionara ('el mas corto primero'). Debido a este mal uso de los canales, que hace que los mismo esten frecuentemente ocupados, se producirán colas de espera, y por tanto, un desbalance de la mezcla.",
+                    "esCorrecta": true
+                }
+            ]
+        },
+        {
+            "id_pregunta": 6,
+            "pregunta": "Definir: Tráfico de E/S, Driver de E/S, Planeador de E/S, Controlador de E/S.",
+            "respuestas": [
+                {
+                    "respuesta": "1) Tráfico de E/S: rafagas de informacion entre dipositivos, canales y memoria. 2) Drivers de Dispositivos.: Módulo asociado a cada tipo de dispositivo, es el encargado de comunicarse con el canal de E/S ya que sabe como funciona y como proporcionarle u obtener informacion de el. Maneja las interrupciones. 3) Planeador de E/S: Módulo encargado de asignar una solicitud de E/S al controlador de E/S y establecer el camino al dispositivo. 4) Controlador de E/S: Es el encargado de transferir los datos entre el periferico que controla y su buffer local. En DMA transfiere los datos directamente a memoria.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "1) Tráfico de E/S: rafagas de informacion entre dipositivos. 2) Drivers de Dispositivos.: programa asociado a cada tipo de dispositivo, es el encargado de comunicarse con el canal de E/S y CPU ya que sabe como funciona y como proporcionarle u obtener informacion de el. Maneja las interrupciones. 3) Planeador de E/S: Módulo encargado de asignar una solicitud de E/S al controlador de E/S y establecer el camino al dispositivo. 4) Controlador de E/S: Es el encargado de transferir los datos entre el periferico que controla y su buffer local. En Caché transfiere los datos directamente a memoria.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "1) Tráfico de E/S: informacion entre dipositivos, buffer y memoria. 2) Drivers de Dispositivos: Módulo asociado a cada tipo de dispositivo, es el encargado de controlar el canal de E/S ya que sabe como funciona y como proporcionarle u obtener informacion de el. Maneja las interrupciones. 3) Planeador de E/S: Módulo encargado de asignar una solicitud de E/S al controlador de E/S. 4) Controlador de E/S: Es el encargado de transferir los datos entre el periferico que controla.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 7,
+            "pregunta": "¿Qué introdujeron estos conceptos: Monitor simple, Operación Off-Line, Buffering, Spooling?",
+            "respuestas": [
+                {
+                    "respuesta": "1) Monitor simple: un SO rudimentario. 2)Operación Off-line: independencia de dispositivos 3) Buffering: mecanismos de interrupciones 4) Spooling: pool de trabajos, multiprogramacion",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "1) Monitor simple: independencia de dispositivos. 2) Operación Off-line: mecanismos de interrupción. 3) Buffering: familia IA-32 4) Spooling: multiprogramacion",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "1) Monitor simple: multiprogramación. 2) Operación Off-line: interrupciones avanzadas 3) Buffering: pool de trabajos 4) Spooling: operaciones simultáneas on-line",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 8,
+            "pregunta": "Definir y dar ejemplos de Event-Driven (o Queve-Driven) y Proccess-Driven.",
+            "respuestas": [
+                {
+                    "respuesta": "1) Event - Driven: los procesos son disparados por eventos externos. Ej: Sistema de inyeccion de combustible, Control de estado de las funciones vitales de un paciente. 2) Proccess - Driven: los procesos son iniciados por sus características intrínsecas según la utilizacion que se le quiera dar al equipo. Ej: Procesos con prioridad, Procesos limitados por CPU para una mezcla limitada por E/S.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "1) Event - Driven: eventos externos disparados por los procesos. Ej: Sistema de inyeccion en procesos, Control de estado de las funciones vitales de un paciente. 2) Proccess - Driven: hilos iniciados por sus características intrínsecas según la utilizacion que se le quiera dar al equipo. Ej: Procesos con prioridad, Procesos limitados por CPU para una mezcla limitada por E/S.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "1) Event - Driven: procesos disparadores de eventos externos. 2) Proccess - Driven: los procesos son iniciados por sus características intrínsecas según la utilizacion que se le quiera dar al equipo. Ej: Procesos con prioridad, Procesos ilimitados por CPU para una mezcla limitada por E/S.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 9,
+            "pregunta": "¿Cómo justificaría la incorporación de un nuevo módulo administrador de recursos?",
+            "respuestas": [
+                {
+                    "respuesta": "Cuando los trabajos no usan los recursos de manera eficiente teniendo en cuenta los objetivos, presentando mezclas no deseadas en la CPA. ",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Cuando los trabajos no usan los recursos de manera eficiente teniendo en cuenta los objetivos, presentando mezclas no deseadas en el bloque de control de proceso (PCB). ",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Cuando los trabajos no usan los recursos de manera eficiente teniendo en cuenta los objetivos, presentando mezclas no deseadas en un sistema de archivos NTFS. ",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 10,
+            "pregunta": "Los sistemas de multiprogramación avanzada poseen mecanismos elaborados de conmutación de la CPU. Dé un ejemplo de ello.",
+            "respuestas": [
+                {
+                    "respuesta": "Utilizar colas cíclicas realimentadas, en donde se utiliza como política “el más corto primero”, es decir, se da prioridad a la aplicación que en el menor tiempo solicite una operación de E/S.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Utilizar planificación circular, en donde se utiliza como política “el qué primero llega”, es decir, se da prioridad a la primera aplicación qué realizó una petición",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "No existe aún hoy en día un mecanismo qué de manera eficiente conmute la CPU entre las diversas aplicaciones.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 11,
+            "pregunta": "¿Cuáles son los recursos críticos de los siguientes SOs: Multiprogramacion Básica, Multiprogramacion Avanzada, Tiempo Compartido, Tiempo Real?",
+            "respuestas": [
+                {
+                    "respuesta": "1) Multiprogramación básica: Memoria 2) Multiprogramación avanzada: Canales 3) Tiempo compartido: CPU 4) Tiempo real: Según los procesos que se corren E/S o CPU",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "1) Multiprogramación básica: Memoria plana 2) Multiprogramación avanzada: Canales de comunicación 3) Tiempo compartido: CPU y Memoria 4) Tiempo real: Según los procesos que se corren E/S o CPU",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "1) Multiprogramación básica: Memoria segmentada 2) Multiprogramación avanzada: Canales  3) Tiempo compartido: CPU 4) Tiempo real: Según los procesos que se corren E/S o CPU",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 12,
+            "pregunta": "¿Qué implicancia tendría que la elección de la tabla de páginas sobre la cuál se elegirá la página víctima se efectúe probabilísticamente?",
+            "respuestas": [
+                {
+                    "respuesta": "Si la página víctima se eligiera en forma probabilística habría más interrupciones por falla de página y por lo tanto alto ratio de paginación",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Si la página víctima se eligiera en forma probabilística habría menos interrupciones por falla de página y por lo tanto bajo ratio de paginación",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Si la página víctima se eligiera en forma probabilística habría más interrupciones por falla de página y por lo tanto bajo ratio de paginación",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 13,
+            "pregunta": "(SUBCOLA 1) N1 = 5 Q1 = 5 | (SUBCOLA 2) N2 = 10 Q2 = 10 | (SUBCOLA 3) N3 = [uInfinito] Q3 = 30, cuya regla de visita establece que: “Siempre que en la subcola derecha haya un proceso listo para correr será atendido”. ¿Qué conclusiones puede sacar?",
+            "respuestas": [
+                {
+                    "respuesta": "Penaliza a los procesos cortos y favorece a los largos, los procesos cortos se ven penalizados ya que cada vez que se comience a ejecutar un proceso largo este sera atendido hasta su finalizacion y los cortos que lo siguen deberan esperar. Seria los mismo que un algoritmo FCFS con una sola cola.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Penaliza a los procesos largos y favorece a los cortos, los procesos largos se ven penalizados ya que cada vez que se comience a ejecutar un proceso corto este sera atendido hasta su finalizacion y los largos que lo siguen deberan esperar. Seria los mismo que un algoritmo FCFS con una sola cola.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "No penaliza a un proceso, ya qué el TAT es constante sin importar el tamaño del proceso en cuestión",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 14,
+            "pregunta": "¿Por qué la segmentación facilita la compartición de código?",
+            "respuestas": [
+                {
+                    "respuesta": "Porque se puede asociar un mismo segmento a distintos procesos mediante la tabla de segmentos de cada proceso. Ademas cada segmento esta definido apoyado sobre la perspectiva del usuario semanticamente (codigo, funciones, variables) lo que facilita la comparticion. Por ejemplo se podria compartir entre varios procesos un segmento en el cual se encuentran funciones comunes a estos.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Porque se puede asociar un mismo segmento a distintos procesos mediante la tabla de paginación de cada proceso. Ademas cada segmento esta definido apoyado sobre la perspectiva del usuario semanticamente (codigo, funciones, variables) lo que facilita la comparticion de hilos. Por ejemplo se podria compartir entre varios procesos un segmento en el cual se encuentran funciones comunes a estos.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Porque se puede asociar un mismo paginado de distintos procesos mediante la tabla de segmentos de cada proceso. Ademas cada página esta definido apoyado sobre la perspectiva del usuario semanticamente (codigo, funciones, variables) lo que facilita la comparticion. Por ejemplo se podria compartir entre varios procesos un segmento en el cual se encuentran funciones comunes a estos.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 15,
+            "pregunta": "En un SO de 3 niveles, ¿qué cola tiene mayor capacidad, la del ONI o la del OBN? Justificar.",
+            "respuestas": [
+                {
+                    "respuesta": "La cola que posee mayor capacidad es la del OBN, es conveniente que esta cola tenga mayor capacidad ya que almacena los procesos iniciados (recien llegados y parcialmente ejecutados) con los cuales el OBN efectuara las futuras mezclas (tomando el las decisiones evitando sobrecargar al ONI) de la CPA para mejorar el rendimiento del sistema con vista a los objetivos. Ademas como los procesos de esta cola reciden en memoria virtual el limite de capacidad que se le impone lo define el sistema lo cual no sucede con la cola del ONI.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Niguna de las 2 anteriores. La cola con mayor capacidad es la OAN (planificador a largo plazo)",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "La cola que posee mayor capacidad es la del ONI, es conveniente que esta cola tenga mayor capacidad ya que almacena los procesos iniciados (recien llegados y parcialmente ejecutados) con los cuales el ONI efectuara las futuras mezclas (tomando el las decisiones evitando sobrecargar al OBN) de la CPA para mejorar el rendimiento del sistema con vista a los objetivos. Ademas como los procesos de esta cola reciden en memoria virtual el limite de capacidad que se le impone lo define el sistema lo cual no sucede con la cola del OBN.",
+                    "esCorrecta": true
+                }
+            ]
+        },
+        {
+            "id_pregunta": 16,
+            "pregunta": "¿Por qué motivo en un sistema con memoria virtual es importante ante la solicitud de una nueva página por parte de un proceso, conocer si la vecindad cambia o crece? ¿Cómo actúa en cada caso?",
+            "respuestas": [
+                {
+                    "respuesta": "Es importante porque en caso de que la vecindad crece en la proxima intervencion del ONI este le agrandara la vecindad para que pueda correr sin ocasionar falla de pagina. El sistema para discernir entre un cambio o crecimiento evalua el ratio de repaginacion. Si el mismo es elevado la vecindad crece y si es bajo cambia. Ante un crecimiento: le asigna mas marcos al proceso, si no hay marcos disponibles puede hacer tres cosas: sacarle paginas a otro proceso de menos prioridad o mal comportamiento, suspender un proceso de menos prioridad, suspender el proceso hasta que halla marcos disponibles para el CPT del mismo. Ante un cambio: aplicar el algoritmo de reemplazo de pagina en forma local",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Es importante porque en caso de que la vecindad crece en la proxima intervencion de la CPU, este le agrandara la vecindad para que pueda correr sin ocasionar falla de segmento. El sistema para discernir entre un cambio o crecimiento evalua el ratio de repaginacion. Si el mismo es elevado la vecindad crece y si es bajo cambia. Ante un crecimiento: le asigna mas marcos al proceso, si no hay marcos disponibles puede hacer tres cosas: sacarle paginas a otro proceso de menos prioridad o mal comportamiento, suspender un proceso de menos prioridad, suspender el proceso hasta que halla marcos disponibles para el CPT del mismo. Ante un cambio: aplicar el algoritmo de reemplazo de pagina en forma local",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Ninguna es correcta",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 17,
+            "pregunta": "¿Cuáles son las ventajas de construir una red de procesamiento?",
+            "respuestas": [
+                {
+                    "respuesta": "Independizar las aplicaciones de la ubicación física de los datos y/o programas. Facilidad para comunicarse entre sistemas",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Independizar las aplicaciones de la ubicación lógica de los procesos. Facilidad para comunicarse entre sistemas",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Independizar las aplicaciones de la ubicación física de los registros físicos/lógicos. Facilidad para comunicarse entre sistemas",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 18,
+            "pregunta": "¿Cuál es la diferencia entre red de procesamiento y procesamiento distribuido?",
+            "respuestas": [
+                {
+                    "respuesta": "Red de Procesamiento: Considera que una aplicación ha sido desarrollada para trabajar en varios procesadores, de tal forma que en cada nodo se desarrollan determinadas funciones que en totalidad forman el sistema completo | Procesamiento Distribuido: Considera que una aplicación ha sido desarrollada para trabajar en varios procesadores, de tal forma que en cada nodo se desarrollan determinadas funciones que en totalidad forman el sistema completo. Ante un crecimiento: le asigna mas marcos al proceso, si no hay marcos disponibles puede hacer tres cosas: sacarle paginas a otro proceso de menos prioridad o mal comportamiento, suspender un proceso de menos prioridad, suspender el proceso hasta que halla marcos disponibles para el CPT del mismo.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Red de Procesamiento: cada nodo se lo considera como un sistema multipropósito capaz de: -ofrecer funciones y/o servicios a los usuarios -trabajar en forma independiente | Procesamiento Distribuido: Considera que una aplicación ha sido desarrollada para trabajar en varios procesadores, de tal forma que en cada nodo se desarrollan determinadas funciones que en totalidad forman el sistema completo",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Red de Procesamiento: cada nodo se lo considera como un sistema distribuido capaz de: -ofrecer rutinas del SO específicas -trabajar en relación de dependencia | Procesamiento Distribuido: Considera que una aplicación ha sido desarrollada para trabajar en sólo un procesador, de tal forma que en cada nodo se desarrollan determinadas funciones que en totalidad forman el sistema completo ",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 19,
+            "pregunta": "Dado un procesador determinado; ¿cómo se logra mayor capacidad de cálculo, agregando 3 procesadores iguales al existente o cambiando por uno 4 veces más potente? ¿Por qué?",
+            "respuestas": [
+                {
+                    "respuesta": "Cambiando por uno 4 veces más potente, porque al aumentar la cantidad de procesadores en 3 no se va a cuadriplicar la capacidad de procesamiento debido a que hay cierta cantidad de tiempo de procesamiento requerido para mantener al conjunto funcionando correctamente",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Cambiando por uno 3 veces más potente, porque al aumentar la cantidad de procesadores en 4 no se va a cuadriplicar la capacidad de procesamiento debido a que hay cierta cantidad de tiempo de buffering requerido para mantener al conjunto funcionando correctamente",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Ninguna de las anteriores",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 20,
+            "pregunta": "Explique los pasos que sigue un sistema de 3 niveles para correr en una mezcla Batch un programa con tiempo límite de finalización.",
+            "respuestas": [
+                {
+                    "respuesta": "1) El ONI calcula el total de recursos que va a utilizar el programa en unidades de servicio (mide el avance del programa en la mezcla) 2) Al final de cada período el ONI controla el grado de avance del programa y, según éste retrasado o adelantado se le modificara si es necesario la prioridad relativa",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "1) El OBN calcula el total de recursos que va a utilizar el programa en unidades de servicio (mide el avance del programa en la mezcla) 2) Al final de cada período el OBN controla el grado de avance del programa y, según éste retrasado o adelantado se le modificara si es necesario la prioridad relativa",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "1) El OAN calcula el total de recursos que va a utilizar el programa en unidades de servicio (mide el avance del programa en la mezcla) 2) Al final de cada período el OAN controla el grado de avance del programa y, según éste retrasado o adelantado se le modificara si es necesario la prioridad relativa",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 21,
+            "pregunta": "Imagine un proceso corriendo en un sistema de paginación; las páginas del mismo se identifican con una con una letra. Suponga que la secuencia con que referencia sus páginas en un intervalo del ONI es la siguiente: t = 0, A-B-C-E-F-D-E-F-K-L-M-D-E-F-N-O-P-D-E-F-Q-R-S-D-E-F-T-U-V, t = 1 El sistema dispone de una lista de 8 registros asociativos de hard para la asociación entre direcciones lógicas y ubicaciones físicas además, claro está, de la tabla de páginas. Esta lista se mantiene con un mecanismo LFU (bit de referencia). ¿Cuántas referencias del proceso en cuestión han podido ser validadas sin recurrir a otro mecanismo que no sea la lista?",
+            "respuestas": [
+                {
+                    "respuesta": "DFDFFEEFDED",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "DFDEFFDFDEE",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "EFDEFDEFDEF",
+                    "esCorrecta": true
+                }
+            ]
+        },
+        {
+            "id_pregunta": 22,
+            "pregunta": "¿Qué conclusiones pueden sacarse respecto de las caracteristicas de un programa conociendo su ratio de paginación? ¿Por qué?",
+            "respuestas": [
+                {
+                    "respuesta": "Con su ratio de paginación no podemos sacar ninguna conclusión, porque el proceso puede producir una brusca variación de la vecindad, ya sea porque su localidad crece o cambia. En cambio, conociendo su ratio de repaginación, un proceso que crece tiene elevado ratio de repaginación y un proceso que cambia tendrá un pequeño ratio de repaginación.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Con su memoria de paginación no podemos sacar ninguna conclusión, porque el proceso puede producir una brusca variación de la vecindad, ya sea porque su localidad crece o cambia. En cambio, conociendo su ratio de repaginación, un proceso que crece tiene elevado ratio de repaginación y un proceso que cambia tendrá un pequeño ratio de repaginación.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Con su segmento de memoria no podemos sacar ninguna conclusión, porque el proceso puede producir una brusca vulnerabilidad de la vecindad, ya sea porque su localidad crece o cambia. En cambio, conociendo su memoria de repaginación, un proceso que crece tiene elevado ratio de repaginación y un proceso que cambia tendrá un pequeño ratio de repaginación.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 23,
+            "pregunta": "Imagine un proceso corriendo en un sistema de paginación; las páginas del mismo se identifican con una con una letra. Suponga que la secuencia con que referencia sus páginas en un intervalo del ONI es la siguiente: t = 0, A-B-C-E-F-D-E-F-K-L-M-D-E-F-N-O-P-D-E-F-Q-R-S-D-E-F-T-U-V, t = 1 El sistema dispone de una lista de 8 registros asociativos de hard para la asociación entre direcciones lógicas y ubicaciones físicas además, claro está, de la tabla de páginas. Esta lista se mantiene con un mecanismo LFU (bit de referencia). ¿Qué inconvenientes presenta?",
+            "respuestas": [
+                {
+                    "respuesta": "Que puedo dar de baja una página que a continuación se vuelve a referenciar",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Que puedo dar de baja un marco que a continuación se vuelve a referenciar",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Que puedo dar de baja un proceso que a continuación se vuelve a referenciar",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 24,
+            "pregunta": "Explique y justifique cuáles son los objetivos comunes con los que se desarrollaron todos los algoritmos de reemplazo de páginas.",
+            "respuestas": [
+                {
+                    "respuesta": "Que produzca el menor numero de fallas de páginas, porque se consumirá menos tiempo en procesar un programa ya que no se necesitan tantas secuencias de paginación. Esto incluye: -Evitar que se presente la anomalia de Belady. -Evitar el trashing. -Aproximarse al CPT",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Que produzca el mayor numero de fallas de páginas, porque se consumirá más tiempo en procesar un programa ya que no se necesitan tantas secuencias de segmentación. Esto incluye: -Evitar que se presente la anomalia de Belady. -Evitar el spooling. -Aproximarse al CTP",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Que produzca el mayor numero de fallas de segmentos, porque se consumirá más tiempo en procesar un programa ya que no se necesitan tantas secuencias. Esto incluye: -Evitar que se presente la anomalia de Belady. -Evitar el spooling. -Aproximarse al CTP",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 25,
+            "pregunta": "Explicar por que es frecuentemente necesario recurrir a un Cross-Compiler o a un Meta-Asembler para el desarrollo de estos sistemas.",
+            "respuestas": [
+                {
+                    "respuesta": "El sistema es desarrollado en un hardware con un SO que soporta desarrollo de programas diferente al hardware en el que va a ejecutarse la aplicación de tiempo real (los sistemas estan desarrollados a medida solo pensado en el uso que le va a dar la aplicación) y el Cross-compiler o el Meta-assembler permiten que estando en una máquina se pueda crear código para una arquitectura distinta a la esta.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "El sistema es desarrollado en un hardware con un SO que soporta desarrollo de programas similares al hardware en el que va a ejecutarse la aplicación de tiempo real (los sistemas estan desarrollados a medida solo pensado en el uso de procesadores x86 que le va a dar la aplicación) y el Cross-compiler o el Meta-assembler permiten que estando en una máquina se pueda crear código para una arquitectura distinta a la esta.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "El sistema es desarrollado en un hardware muy específico con un SO que soporta desarrollo de programas diferente al hardware y multihilos en el que va a ejecutarse la aplicación de tiempo real (los sistemas estan desarrollados a medida solo pensado en el uso que le va a dar la aplicación) y el Cross-compiler o el Meta-assembler permiten que estando en una máquina se pueda crear código para una arquitectura distinta a la esta.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 26,
+            "pregunta": "¿Cuáles son los objetivos de explotación y describir las características de una mezcla ideal de procesos para: Sistemas Batch - Sistemas de Tiempo Compartido?",
+            "respuestas": [
+                {
+                    "respuesta": "Sistemas Batch: Máximar la utilización del hard, trata de correr la mayor cantidad de trabajos por unidad de tiempo. Mezcla ideal: Heterogénea con respecto a los recursos, ya que si la aplicación de la mezcla utiliza distintos recursos se puede balancear el uso de los mismos. Tiempo Compartido: Pronta respuesta al usuario. Puede sacrificar el uso del hard, ya que se basa en brindar una respuesta rápida a los usuarios. Mezcla ideal: Homogénea en cuanto a las funciones utilizadas, si todas los procesos utilizan una misma función, se reduce el esfuerzo del sistema de traerla y dejarla disponible para su uso.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Sistemas Batch: Pronta respuesta al usuario. Puede sacrificar el uso del hard, ya que se basa en brindar una respuesta rápida a los usuarios. Mezcla ideal: Heterogénea con respecto a los recursos, ya que si la aplicación de la mezcla utiliza distintos recursos se puede balancear el uso de los mismos. Tiempo Compartido: Máximar la utilización del hard, trata de correr la mayor cantidad de trabajos por unidad de tiempo. Mezcla ideal: Heterogénea con respecto a los recursos, ya que si la aplicación de la mezcla utiliza distintos recursos se puede balancear el uso de los mismos.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Sistemas Batch: Pronta respuesta al usuario. Puede sacrificar el uso del hard, ya que se basa en brindar una respuesta rápida a los usuarios. Mezcla ideal: Homogénea en cuanto a las funciones utilizadas, si todas los procesos utilizan una misma función, se reduce el esfuerzo del sistema de traerla y dejarla disponible para su uso. Tiempo Compartido: Máximar la utilización del hard, trata de correr la mayor cantidad de trabajos por unidad de tiempo. Mezcla ideal: Homogénea en cuanto a las funciones utilizadas, si todas los procesos utilizan una misma función, se reduce el esfuerzo del sistema de traerla y dejarla disponible para su uso.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 27,
+            "pregunta": "En un medio de recursos compartidos, ¿puede el compilador generar todas las funciones en un proceso compilado? Explique.",
+            "respuestas": [
+                {
+                    "respuesta": "No, no se permite porque la idea de ámbito de procesamiento contiene una idea interfases extendidas y una idea de coordinación  y control. Como muchos procesos necesitan funciones idénticas, se definen mecanismos que permitan compartir código y usar eficientemente la memoria. Cuando el  compilador necesita una de las interfases extendidas solo llama al modulo.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "No, no se permite porque el procesamiento contiene una idea de coordinación  y control. Como muchos espacios de memoria contigua necesitan funciones idénticas, se definen mecanismos que permitan compartir código y usar eficientemente la memoria. Cuando el  compilador necesita una de las interfases extendidas solo llama al modulo.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "No, no se permite porque la memoria contiene una idea de interfaces extendidas y una idea de coordinación  y control. Como muchos procesos necesitan funciones segmentadas, se definen mecanismos que permitan compartir código y usar eficientemente la memoria. Cuando el  compilador necesita una de las interfaces extendidas solo llama al modulo público.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 28,
+            "pregunta": "¿Cómo se aprovecha una estructura de subcolas en un sistema de Tiempo Compartido?",
+            "respuestas": [
+                {
+                    "respuesta": "Una estructura de subcolas permite, en este tipo de sistemas, distinguir los programas largos de los cortos para privilegiar o beneficiar a estos ultimos repectos de los demas, y como consecuencia disminuir para los programas largos el TAT y el TIEMPO DE RESPUESTA. La regla de residencia esta dada por los golpes de la memoria auxiliar que recibe un proceso \"N\" y la de visita es la que penaliza a los programas largos.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Una estructura de subcolas permite, en este tipo de sistemas, distinguir lás páginas largas de los cortas para privilegiar o beneficiar a estas ultimas repectos de los demas, y como consecuencia disminuir para las páginas largas el numero efectivo de cargas y descargas en memoria. La regla de residencia esta dada por los golpes de CPU que recibe un proceso \"N\" y la de visita es la que penaliza a las páginas largas.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Una estructura de subcolas permite, en este tipo de sistemas, distinguir los programas largos de los cortos para privilegiar o beneficiar a estos ultimos repectos de los demas, y como consecuencia disminuir para los programas largos el numero efectivo de cargas y descargas en memoria. La regla de residencia esta dada por los golpes de CPU que recibe un proceso \"N\" y la de visita es la que penaliza a los programas largos.",
+                    "esCorrecta": true
+                }
+            ]
+        },
+        {
+            "id_pregunta": 29,
+            "pregunta": "¿Cuáles son los fundamentos económicos de la administracion de recursos en un sistema de computación?",
+            "respuestas": [
+                {
+                    "respuesta": "Costo: reside en el incremento de los beneficios economicos que obtiene una empresa debido a la incorporacion de un sistema de computacion. El valor puede derivar de la reduccion de los costos de creacion, manipulacion, clasificacion y almacenamiento de datos; del aumento de la productividad de los usuarios y profesionales ligados al sistema; de la provision de informacion de mejor calidad y en margen de tiempo mas conveniente proporcionando mayores posibilidades de correlacionar informacion; y proveyendo metodologias de planificacion de negocios mas sofisticadas. Debe ser medido por el valor de la informacion que el produce, un retardo en ella produce costo. Valor: incluye el costo del software, el costo del staff de profeionales derivados del desarrollo de aplicaciones y del mantenimiento de la informacion y de los programas, y de los costos derivados del efectivo uso del equipo.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Costo: incluye el costo del hardware, el costo del staff de profeionales derivados del desarrollo de aplicaciones y del mantenimiento de la informacion y de los programas, y de los costos derivados del efectivo uso del equipo. Valor: reside en el incremento de los beneficios economicos que obtiene una empresa debido a la incorporacion de un sistema de computacion. El valor puede derivar de la reduccion de los costos de creacion, manipulacion, clasificacion y almacenamiento de datos; del aumento de la productividad de los usuarios y profesionales ligados al sistema; de la provision de informacion de mejor calidad y en margen de tiempo mas conveniente proporcionando mayores posibilidades de correlacionar informacion; y proveyendo metodologias de planificacion de negocios mas sofisticadas. Debe ser medido por el valor de la informacion que el produce, un retardo en ella produce costo.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Costo: incluye el costo del software, el costo del staff de profeionales derivados del desarrollo de aplicaciones y del mantenimiento de la informacion y de los programas, y de los costos derivados del efectivo uso del equipo. Valor: reside en el incremento de los beneficios economicos que obtiene una empresa debido a la incorporacion de un sistema de computacion. El valor puede derivar de la reduccion de los costos de creacion, manipulacion, clasificacion y almacenamiento de datos; del aumento de la productividad de los usuarios y profesionales ligados al sistema; de la provision de informacion de mejor calidad y en margen de tiempo mas conveniente proporcionando mayores posibilidades de correlacionar informacion; y proveyendo metodologias de planificacion de negocios mas sofisticadas. Debe ser medido por el valor de la informacion que el produce, un retardo en ella produce costo.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 30,
+            "pregunta": "Explicar qué se entiende por máquinas virtuales.",
+            "respuestas": [
+                {
+                    "respuesta": "Cuando en un mismo hardware pueden correr varios SO (llamados de produccion) y cada uno trabaja a nivel lógico como si fuera el único SO que está trabajando sobre ese hardware . Un SO corriendo en la maquina fisica  puede crear la ilusion de procesos multiples que se ejecutan  cada uno en su propio procesador con su propia memoria (virtual). Este SO planifica los recursos de la maquina fisica para compartirlos entre los distintos SO de produccion proporcionandoles una copia virtual del hardware fisico.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Cuando en un mismo hardware pueden correr varios SO y cada uno trabaja a nivel lógico como si fuera el único SO que está trabajando sobre ese hardware. Un SO corriendo en la maquina fisica  puede crear la ilusion de hilos multiples que se ejecutan  cada uno en su propio núcleo con su propia memoria paginada. Este SO planifica los recursos de la maquina fisica para compartirlos entre los distintos SO de produccion proporcionandoles una copia virtual del hardware fisico.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Ninguna de las anteriores",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 31,
+            "pregunta": "En un sistema de paginación. Existen procesos cuyo grado de avance depende del número de páginas que el sistema le permite cargar en el almacenamiento primario. Existen, por el contrario, otros cuyo grado de avance es relativamente insensible a este número.Los sistemas más desarrollados son capaces de diferenciar uno y otro tipo de procesos. ¿Qué parámetros evalúan estos sistemas para lograr establecer esta diferencia?",
+            "respuestas": [
+                {
+                    "respuesta": "Evalúan la vecindad del programa, si esta crece es porque el programa depende del numero de paginas que el sistema le permite cargar (CPT) y si esta cambia el programa es insensible a dicho numero.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Evalúan la cantidad de memoria auxiliar y procesos qué pueden almacenarse en memoria principal, si esta crece es porque el programa depende del numero de paginas que el sistema le permite cargar (CPT) y si esta cambia el programa es insensible a dicho numero.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Evalúan la intensidad de comunicación entre procesos por medio de un buzón, si esta crece es porque el programa depende del numero de paginas que el sistema le permite cargar (CPT) y si esta cambia el programa es insensible a dicho numero.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 32,
+            "pregunta": "En una instalación por razones de evolución se verifica que la capacidad de CPU es insuficiente. Frente a esta situación: ¿Cuáles son las 2 posibles soluciones?",
+            "respuestas": [
+                {
+                    "respuesta": "-Gama compatible de máquina, adaptable mediante cambio estándar de la unidad central. -Solución multiprocesador, adjudicación de 1 o más unidades centrales.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "-Gama compatible con memoria virtual de la máquina, adaptable mediante cambio estándar de la unidad central. -Solución multiprocesador, adjudicación de 1 o más unidades centrales.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "-Gama adaptable mediante cambio estándar de la unidad central. -Solución multiprocesador, adjudicación de 1 o más unidades centrales.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 33,
+            "pregunta": "¿Qué se entiende por Estado de Trabajo y Estado de Control?",
+            "respuestas": [
+                {
+                    "respuesta": "Estado de Trabajo: Estado donde corren los procesos de usuarios. Cada vez que ocurre una trampa o interrupcion el SO pasa a estado de control. Solo pueden ejecutarse intrucciones no privilegiadas. Al ejecutarse una instrucción privilegiada se produce una interrupcion. Estado de Control: Se realizan instrucciones de trabajo y privilegiadas. El SO toma el control cada vez que se produce una trampa o interrupcion lo cual le permite al SO administrar al sistema informatico proporcionandole integridad y control apropiado sobre los recursos.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Estado de Trabajo: Se realizan instrucciones de trabajo y privilegiadas. El SO toma el control cada vez que se produce una trampa o interrupcion lo cual le permite al SO administrar al sistema informatico proporcionandole integridad y control apropiado sobre los recursos. Estado de Control: Estado donde corren los procesos de usuarios. Cada vez que ocurre una trampa o interrupcion el SO pasa a estado de control. Solo pueden ejecutarse intrucciones no privilegiadas. Al ejecutarse una instrucción privilegiada se produce una interrupcion.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Estado de Trabajo: Estado donde corren los procesos privilegiados del SO. Cada vez que ocurre una trampa o interrupcion el SO pasa a estado de control. Solo pueden ejecutarse intrucciones en modo usuario. Al ejecutarse una instrucción de usuario se produce una interrupcion. Estado de Control: Se realizan instrucciones de trabajo y modo usuario. El usuario toma el control cada vez que se produce una trampa o interrupcion lo cual le permite al SO administrar al sistema informatico proporcionandole integridad y control apropiado sobre los recursos.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 34,
+            "pregunta": "En una instalación por razones de evolución se verifica que la capacidad de CPU es insuficiente. Frente a esta situación: ¿Qué consideraciones deben efectuarse para optar por una u otra solución?",
+            "respuestas": [
+                {
+                    "respuesta": "-Las gamas compatibles admiten un factor por encima del doble cuando se pasa de un modelo a uno superior. -La solución multiprocesador pasa de una máquina monoprocesador a una máquina de 2 procesadores, luego a 4, etc. Cuando el numero de procesadores es elevado conviene sustituir una unidad central por otra n veces más potente.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "-Las gamas compatibles admiten un factor por encima del doble cuando se pasa de un modelo plano a uno de planificación. -La solución multiprocesador pasa de una máquina monoprocesador a una máquina de 2 procesadores, luego a 4, etc. Cuando el numero de procesadores es elevado conviene sustituir una unidad central por otra n veces más potente.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "-Las gamas superiores compatibles admiten un factor por encima del doble cuando se pasa de un modelo páginado a uno superior. -La solución multiprocesador pasa de una máquina monoprocesador a una máquina virtual de 2 procesadores, luego a 4, etc. Cuando el numero de procesadores es elevado conviene sustituir una unidad central por otra n veces más potente.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 35,
+            "pregunta": "La aparición de un “tiempo de carga” introdujo una serie de innovaciones en los sistemas de computación que constituyen la base del desarrollo posterior de los SO hacia las versiones actuales. ¿Cuáles son esas innovaciones comparando con los sistemas de un tiempo ?",
+            "respuestas": [
+                {
+                    "respuesta": "Los procesos son reasignables (compilacion relativa) ya que ahora es el Loader el que carga el programa en memoria teniendo la posibilidad de cargarlo en cualquier conjunto de ubicaciónes contiguas de memoria de direcciones apropiadas mientras que en los sistemas de un tiempo los procesos no eran reasignables (compilacion absoluta). Se realiza asignacion simbolica de dispositivos. En sistemas de un tiempo había inflexibilidad debido a la asignación temprana memoria. La compilación relativa también incluye la posibilidad de combinar programas ya compilados lo que no podia hacerse en sistemas de un tiempo (lo que no permitia enlazar rutinas de los dispositivos de E/S por lo que el compilador debia trabajar mas).",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Los procesos son reasignables (compilacion relativa) ya que ahora es el Bloque de Control de Procesos el que carga el programa en memoria teniendo la posibilidad de cargarlo en cualquier conjunto de ubicaciónes separadas de memoria de direcciones apropiadas mientras que en los sistemas de un tiempo los procesos no eran reasignables (compilacion absoluta). Se realiza asignacion simbolica de dispositivos. En sistemas de un tiempo había inflexibilidad debido a la asignación temprana memoria. La compilación relativa también incluye la posibilidad de combinar programas ya compilados lo que no podia hacerse en sistemas de un tiempo (lo que no permitia enlazar rutinas de los dispositivos de E/S por lo que el compilador debia trabajar mas).",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Los procesos son reasignables (compilacion relativa) ya que ahora es OAN el que carga el programa en memoria teniendo la posibilidad de cargarlo en cualquier conjunto de ubicaciónes contiguas de memoria de direcciones apropiadas mientras que en los sistemas de un tiempo los procesos no eran reasignables (compilacion absoluta). Se realiza asignacion simbolica de dispositivos. En sistemas de un tiempo había inflexibilidad debido a la asignación temprana memoria. La compilación relativa también incluye la posibilidad de combinar programas ya compilados lo que no podia hacerse en sistemas de un tiempo (lo que no permitia enlazar rutinas de los dispositivos de E/S por lo que el compilador debia trabajar mas).",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 36,
+            "pregunta": "Explique cuáles son las características más importantes que deben tener las componentes principales de hardware y de software de un sistema de computación para que se justifique la inclusión en el mismo de una estructura de interrupción.",
+            "respuestas": [
+                {
+                    "respuesta": "Características del hardware: 1.Captar tipo/s de interrupción/es producida/s. 2.Informar el resultado de la interrupción y guardarla en la memoria para usos posteriores. | Características del soft: 1.Mantener registro del flujo de operaciones de E/S. 2.Asociar la interrupción con la operación de E/S que la produjo. 3.Analizar los resultados, y de existir excepción encargarse de ella (ej: rutina de recuperación). 4.Asociar la operación de E/S con el proceso que la solicitó. 5.Avisar al proceso cuando termina la operación de E/S. 6.Verificar si hay alguna otra interrupción esperando, si hay iniciarla.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Características del hardware: 1.Captar tipo/s de interrupción/es producida/s. 2.Informar el resultado de la paginación y guardarla en la memoria para usos posteriores. | Características del soft: 1.Mantener registro del flujo de operaciones de interrupciones. 2.Asociar la interrupción con la operación de E/S que la produjo. 3.Analizar los resultados, y de existir excepción encargarse de ella (ej: rutina de recuperación). 4.Asociar la operación de E/S con el proceso que la solicitó. 5.Avisar al proceso cuando termina la operación de E/S. 6.Verificar si hay alguna otra interrupción esperando, si hay iniciarla.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Características del hardware: 1.Captar interrupción/es producida/s por una memoria desfragmentada. 2.Informar el resultado de la interrupción y guardarla en la memoria para usos posteriores. | Características del soft: 1.Mantener registro del flujo de operaciones de E/S. 2.Asociar la interrupción con la operación de E/S que la produjo. 3.Analizar los resultados, y de existir excepción encargarse de ella (ej: rutina de recuperación). 4.Asociar la operación de E/S con el proceso que la solicitó. 5.Avisar al proceso cuando termina la operación de E/S. 6.Verificar si hay alguna otra interrupción esperando, si hay iniciarla.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 37,
+            "pregunta": "¿Cuáles podrían ser dos situaciones distintas en las cuales la solución está dada por la adopción de un sistema de computación de Máquina Virtual.",
+            "respuestas": [
+                {
+                    "respuesta": "Desarrollar una nueva versión de un SO interrumpiendo pocas veces el funcionamiento de todo el sistema para su desarrollo definiendo una maquina virtual destinada al desarrollo mientras el el resto del sistema sigue corriendo simultáneamente.Redes de Procesamiento y Procesamiento Distribuido: Cuando necesitan un soporte de hardware más rápido que el que proveen los canales de E/S o permiten las líneas de teleprocesamiento",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Cuando se necesita asignar más memoria virtual al SO. Sistemas de serie simple: Cuando la asignación de recursos es estática y es más conveniente usar una VM",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Cuando se necesita desfragmentar la memoria principal. Sistemas multiprogramados: Cuando la asignación de recursos es dinámica y es más conveniente usar una VM",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 38,
+            "pregunta": "Multiprocesadores - Instrucción “lee y posiciona”. ¿Cómo funciona y qué problemas soluciona?",
+            "respuestas": [
+                {
+                    "respuesta": "“Lee y Posiciona”: Instrucción especial que poseen los multiprocesadores, que en “un solo ciclo de memoria” efectúa una lectura con carga de registro y una escritura poniendo en 1 la célula de la memoria leída (Interbloqueo). Finalidad: Evitar que 2 procesadores ejecuten simultáneamente el mismo trabajo (bloquea el acceso para que otro procesador no ejecute el mismo trabajo).",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "“Lee y Posiciona”: Instrucción especial que posee la memoria auxiliar, que en “un solo ciclo de memoria” efectúa una lectura con carga de registro y una escritura poniendo en 1 la célula de la memoria leída (Interbloqueo). Finalidad: Evitar que 2 memorias auxiliares ejecuten simultáneamente el mismo trabajo (bloquea el acceso para que otro procesador no ejecute el mismo trabajo).",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "“Lee y Posiciona”: Instrucción especial que posee la memoria principal, que en “un solo ciclo de memoria” efectúa una lectura con carga de registro y una escritura poniendo en 1 la célula de la memoria leída (Interbloqueo). Finalidad: Evitar que 2 memorias principales ejecuten simultáneamente el mismo trabajo (bloquea el acceso para que otro procesador no ejecute el mismo trabajo).",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 39,
+            "pregunta": "El proceso Batch seguía en sus inicios dos objetivos principales: “Aumentar la productividad del equipo disminuyendo el tiempo de transición y aumentar la eficacia del programador”.",
+            "respuestas": [
+                {
+                    "respuesta": "1. La velocidad de los procesadores de 2ª generación es incrementada, entonces surge la preocupación por manejar el tiempo de montaje para disminuir el tiempo de máquina ocioso. 2. Surge el concepto de “desarrollo de programas” como extensión del compilador y permite la separación de tareas de programación y operación debido a que permite al programador desarrollar su programa, enviar una representacion fisica del mismo al centro de computos y juntarse con los resultados despues de un tiempo, si este tiempo se puede predecir el programador puede seguir trabajando en otras cosas mientras el mismo se cumple lo que lo libera de tiempos de espera frente a la maquina.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "1. La velocidad de los procesadores de 3ª generación es incrementada, entonces surge la preocupación por manejar el tiempo de tareas para disminuir el tiempo de máquina ocioso. 2. Surge el concepto de “desarrollo de programas” como extensión del compilador y permite la separación de tareas de programación y operación debido a que permite al programador desarrollar su programa, enviar una representacion fisica del mismo al centro de computos y juntarse con los resultados despues de un tiempo, si este tiempo se puede predecir el programador puede seguir trabajando en otras cosas mientras el mismo se cumple lo que lo libera de tiempos de espera frente a la maquina.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "1. La velocidad de los procesadores de 1ª generación es incrementada, entonces surge la preocupación por manejar el tiempo de montaje para disminuir el tiempo de máquina ocioso. 2. Surge el concepto de “desarrollo de programas” como extensión del ensamblador y permite la separación de tareas de programación y operación debido a que permite al programador desarrollar su programa, enviar una representacion fisica del mismo al centro de computos y juntarse con los resultados despues de un tiempo, si este tiempo se puede predecir el programador puede seguir trabajando en otras cosas mientras el mismo se cumple lo que lo libera de tiempos de espera frente a la maquina.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 40,
+            "pregunta": "Explique el concepto de Spooling. ¿Por qué afirmamos que la inclusión de este mecanismo aumenta el Turn-Around-Time y el Throughput de un centro de cómputos?",
+            "respuestas": [
+                {
+                    "respuesta": "El Spooling surge con la aparición de los discos. Es una técnica que utiliza el disco como un buffer de gran tamaño, para tratar de leer lo mas posible de los dispositivos de entrada y almacenar los archivos hasta q los dispositivos de salida estén listos para recibirlos. Permite solapar E/S de un trabajo con el procesamiento de otro trabajo. Aumenta el TAT porque al tiempo original del proceso se agrega el tiempo de ejecución de la rutina y el tiempo de grabación en el dispositivo rápido. Aumenta el throughput porque se puede correr una mayor cantidad de trabajos por unidad de tiempo.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "El Spooling surge con la aparición de los procesadores IA-32. Es una técnica que utiliza el disco como un buffer de gran tamaño, para tratar de leer lo mas posible de los dispositivos de entrada y almacenar los archivos hasta q los dispositivos de salida estén listos para recibirlos en el procesador. Permite solapar E/S de un trabajo con el procesamiento de otro trabajo. Aumenta el TAT porque al tiempo original del proceso se agrega el tiempo de ejecución de la rutina y el tiempo de grabación en el dispositivo rápido. Aumenta el throughput porque se puede correr una mayor cantidad de trabajos por unidad de tiempo.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "El Spooling surge con la aparición de las terminales E/S. Es una técnica que utiliza el disco como un buffer de gran tamaño, para tratar de leer lo mas posible de los dispositivos de entrada y almacenar los archivos hasta q los dispositivos de salida estén listos para recibirlos. Permite solapar E/S de un trabajo con el procesamiento de otro trabajo.Aumenta el TAT porque al tiempo original del proceso se agrega el tiempo de ejecución de la rutina y el tiempo de grabación en el dispositivo rápido. Aumenta el throughput porque se puede correr una mayor cantidad de trabajos por unidad de tiempo.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 41,
+            "pregunta": "Para un sistema de computación multipropósitos de 3 niveles, diferenciando cuando sea entre sistemas Batch y Tiempo Compartido. ¿Por qué colas atraviesa el proceso desde que es demandado hasta que usa la CPU?",
+            "respuestas": [
+                {
+                    "respuesta": "CTE(cola del OAN) CPI(cola de ONI) CPA(cola del OBN) En Batch: CTE - CPA | Tiempo Compartido: CPI - CTE - CPA",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "CTE(cola del OAN) CPI(cola de ONI) CPA(cola del OBN) En Batch: CPI - CPA | Tiempo Compartido: CTE - CPI - CPA",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "CTE(cola del OAN) CPI(cola de ONI) CPA(cola del OBN) En Batch: CTE - CPI - CPA | Tiempo Compartido: CPI - CPA",
+                    "esCorrecta": true
+                }
+            ]
+        },
+        {
+            "id_pregunta": 42,
+            "pregunta": "Para un sistema de computación multipropósitos de 3 niveles, diferenciando cuando sea entre sistemas Batch y Tiempo Compartido. ¿Quién es el receptor de demandas en: ?",
+            "respuestas": [
+                {
+                    "respuesta": "En Batch: Command Interpreter - En Tiempo compartido: Reader",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "En Batch: Reader - En Tiempo compartido: Command Interpreter",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "En Batch: Loader - En Tiempo compartido: Command Interpreter",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 43,
+            "pregunta": "Para un sistema de computación multipropósitos de 3 niveles, diferenciando cuando sea entre sistemas Batch y Tiempo Compartido. ¿Qué módulos actúan sobre los procesos representados en cada una de las colas y qué función cumple cada uno de ellos?",
+            "respuestas": [
+                {
+                    "respuesta": "OAN: CTE Selecciona procesos para que pasen a la cola del ONI. ONI: CTE Flexibilizar el sistema seleccionando los procesos que pasarán a recibir el uso de CPU. OBN: CPA multiplexar la CPU entre los procesos de su cola.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "OAN: CPA Selecciona procesos para que pasen a la cola del ONI. ONI: OBN Flexibilizar el sistema seleccionando los procesos que pasarán a recibir el uso de CPU. OBN: CTE multiplexar la CPU entre los procesos de su cola.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "OAN: CPL Selecciona procesos para que pasen a la cola del ONI. ONI: CPA Flexibilizar el sistema seleccionando los procesos que pasarán a recibir el uso de CPU. OBN: CPL multiplexar la CPU entre los procesos de su cola.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 44,
+            "pregunta": "Explique el significado de las siguiente afirmacion: En realidad, el sistema define múltiples máquinas que son ordenadas independientemente y que comparten canales y el uso de la CPU.",
+            "respuestas": [
+                {
+                    "respuesta": "Los primeros DOS tenían sus memorias divididas en particiones fijas; y los procesos debían correr en esas particiones; por eso se dice que se definían múltiples máquinas y cada una se ejecuta en una partición.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Los primeros DOS tenían sus memorias divididas en particiones dinámicas; y los procesos debían correr en esas particiones; por eso se dice que se definían múltiples máquinas y cada una se ejecuta en una partición.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Los primeros DOS tenían sus memorias divididas en particiones fijas; y los procesos debían correr en esas particiones; por eso se dice que se definían múltiples máquinas y cada una se ejecuta en un hilo",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 45,
+            "pregunta": "Para un sistema de computación multipropósitos de 3 niveles, diferenciando cuando sea entre sistemas Batch y Tiempo Compartido. ¿En función de qué criterios son seleccionados los procesos en cada una de las colas?",
+            "respuestas": [
+                {
+                    "respuesta": "ONI: en base a algún criterio de selección (tiempo de inicio o de fin, recurso crítico, prioridad relativa, requerimiento de CPU, necesidad de Memoria, consumo de E/S, etc.) OBN: en base a dos tipos de informacion: -informacion de cómo progresa el proceso en la mezcla. -informacion de cómo está siendo usado el sistema (ratio de utilización de CPU, canales, memoria, etc.) OAN: en base a las reglas de visita.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "OBN: en base a algún criterio de selección (tiempo de inicio o de fin, recurso crítico, prioridad relativa, requerimiento de CPU, necesidad de Memoria, consumo de E/S, etc.) OAN: en base a dos tipos de informacion: -informacion de cómo progresa el proceso en la mezcla. -informacion de cómo está siendo usado el sistema (ratio de utilización de CPU, canales, memoria, etc.) OBN: en base a las reglas de visita.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "OAN: en base a algún criterio de selección (tiempo de inicio o de fin, recurso crítico, prioridad relativa, requerimiento de CPU, necesidad de Memoria, consumo de E/S, etc.) ONI: en base a dos tipos de informacion: -informacion de cómo progresa el proceso en la mezcla. -informacion de cómo está siendo usado el sistema (ratio de utilización de CPU, canales, memoria, etc.) OBN: en base a las reglas de visita.",
+                    "esCorrecta": true
+                }
+            ]
+        },
+        {
+            "id_pregunta": 46,
+            "pregunta": "Explique el significado de las siguiente afirmacion: Mecanismos de conmutación de la CPU con sólo un mínimo intento por balancear el uso de recursos del sistema.",
+            "respuestas": [
+                {
+                    "respuesta": "Las particiones tenían asignadas prioridades acerca de quién utilizaba la CPU y además DOS atendía a una idea fija del equipo y de la carga de trabajos.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Las particiones tenían asignadas prioridades acerca de quién utilizaba la CPU para el spooling y además DOS atendía a una idea fija del equipo y de la carga de trabajos.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Las particiones tenían asignadas prioridades acerca de quién utilizaba el buffering para la memoria de registros del CPU y además DOS atendía a una idea fija del equipo y de la carga de trabajos.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 47,
+            "pregunta": "Para un multiprocesador del tipo multi-unidad central. ¿Cuáles son los principales elementos de hardware que la componen?",
+            "respuestas": [
+                {
+                    "respuesta": "1.Varias unidades centrales idénticas. 2.Memoria central particionada en bloques independientes. 3.Canales simples o multiplexados.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "1.Varias unidades centrales distintas. 2.Memoria central no particionada. 3.Canales compuestos",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "1.Varias unidades centrales distintas. 2.Memoria central particionada en bloques independientes. 3.Canales simples o multiplexados",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 48,
+            "pregunta": "¿Qué se entiende por Sub-Administración?",
+            "respuestas": [
+                {
+                    "respuesta": "Es cuando a un hardware con muchos recursos se lo administra con un SO que fue concebido para regular un hardware más sencillo y por lo tanto no es lo sufientemente sofisticado para detectar los recursos subutilizados del hardware ya que no conoce su funcionamiento.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Es cuando a un software que trabaja con muchos recursos se lo administra con un SO que fue concebido para regular un hardware más sencillo y por lo tanto no es lo sufientemente sofisticado para detectar los recursos subutilizados del hardware ya que no conoce su funcionamiento.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Es cuando a un dispositivo con pocos recursos se lo administra con un SO que fue concebido para regular un hardware más sencillo y por lo tanto no es lo sufientemente sofisticado para detectar los recursos subutilizados del hardware ya que no conoce su funcionamiento.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 49,
+            "pregunta": "Para un multiprocesador del tipo multi-unidad central. ¿Cuáles son los distintos tipos de interconexiones entre procesadores y canales que usted conozca?",
+            "respuestas": [
+                {
+                    "respuesta": "1.Interconexión entre núcleos y memoria central. 2.Interconexión a través del procesador 3.Interconexión entre procesadores y canales.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "1.Interconexión entre procesadores y memoria central. 2.Interconexión a través de la memoria 3.Interconexión entre procesadores y canales.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "1.Interconexión entre procesadores y memoria central. 2.Interconexión a través de la memoria auxiliar 3.Interconexión entre hilos y canales.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 50,
+            "pregunta": "Explique el concepto en el marco de los sistemas de multiprogramación avanzada: Dependencia de la actividad del operador.",
+            "respuestas": [
+                {
+                    "respuesta": "El programador puede definir el nivel de multiprogramación, asignar prioridades, cancelar procesos y colocar trabajos en la cola de espera.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "El programador puede definir el nivel de multiprogramación, asignar prioridades, establecer permisos a nivel kernel, cancelar procesos y colocar trabajos en la cola de espera.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "El programador puede definir el nivel de multiprogramación, asignar prioridades, particionar sectores del disco, cancelar procesos y colocar trabajos en la cola de espera.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 51,
+            "pregunta": "Explique el concepto en el marco de los sistemas de multiprogramación avanzada: Elaboración de los mecanismos de conmutación de la CPU.",
+            "respuestas": [
+                {
+                    "respuesta": "El ONI, permite flexibilizar la sobrecarga del sistema con la posibilidad de utilizar la heuristica. Utilizar colas ciclicas realimentadas para elegir el proximo proceso.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "El ONI, permite flexibilizar la sobrecarga de procesos con la posibilidad de utilizar la heuristica. Utilizar colas ciclicas realimentadas para elegir el proximo proceso.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "El ONI, permite flexibilizar la sobrecarga del conjunto de registros de 16 bits del procesador con la posibilidad de utilizar la heuristica. Utilizar colas ciclicas realimentadas para elegir el proximo proceso.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 52,
+            "pregunta": "Un mecanismo de Dispatching concebido sobre una estructura de subcolas permite clasificar procesos dinámicamente según algoritmos de sus características intrínsecas y tratarlos en forma diferencial. ¿Qué entiende por estructura de subcolas?",
+            "respuestas": [
+                {
+                    "respuesta": "A la cola del dispatching se la divide en n subcolas, cada una con una ley de residencia fijada y se la visita según la regla de visita.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "A la cola del dispatching se la divide en n subcolas, cada una con una ley de residencia fijada y se la visita según la prioridad del proceso",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "A la cola del dispatching se la divide en n subcolas, cada una con una ley de residencia fijada y se la visita según el CPT",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 53,
+            "pregunta": "Similitudes y diferencias entre Sistemas de Tiempo Real y Sistemas de Procesamiento de Transacciones.",
+            "respuestas": [
+                {
+                    "respuesta": "(Similitudes): -Pobreza relativa de los algoritmos de administracion de recursos. -Atienden la ocurrencia de eventos. (Diferencias): -En el sistema de transacciones, los eventos son iniciados por terminal y, en los de tiempo real, se inician por sensores externos.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "(Similitudes): -Pobreza extrema de los algoritmos de administracion de recursos. -Atienden la ocurrencia de canalización. (Diferencias): -En el sistema de transacciones, los eventos son iniciados por terminal y, en los de tiempo real, se inician por sensores externos.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "(Similitudes): -Pobreza pseudo-algoritmos de administracion de recursos. -Atienden la ocurrencia de eventos. (Diferencias): -En el sistema de transacciones, los procesos son iniciados por TTYs y, en los de tiempo real, se inician por sensores externos.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 54,
+            "pregunta": "Un mecanismo de Dispatching concebido sobre una estructura de subcolas permite clasificar procesos dinámicamente según algoritmos de sus características intrínsecas y tratarlos en forma diferencial. ¿Por qué la frase habla de clasificación dinámica?",
+            "respuestas": [
+                {
+                    "respuesta": "Porque permite clasificar a los procesos según el bloque de control de proceso(PCB)",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Porque permite clasificar a los procesos según el anging",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Porque permite clasificar a los procesos según la regla de residencia.",
+                    "esCorrecta": true
+                }
+            ]
+        },
+        {
+            "id_pregunta": 55,
+            "pregunta": "¿Cuáles son las razones por las que se puede recurrir a una solución multiprocesador? ",
+            "respuestas": [
+                {
+                    "respuesta": "(Aumento de la capacidad de procesamiento del sistema): duplicando o triplicando el procesador central conduce a una solución del tipo multiprocesamiento simetrico, o aliviando el procesador de ciertos trabajos con procesadores especializados, conduce a una solución de multiprocesamiento asimetrico. (Aumento de la disponibilidad): Si un procesador se avería, se continúa con el resto del sistema con eficacia degradada, con ello se supone que el sistema tiene dispositivos de detección de errores y reconfiguración.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "(Aumento de la capacidad de segmentación del sistema): duplicando o triplicando el procesador central conduce a una solución del tipo multiprocesamiento simetrico, o aliviando el procesador de ciertos trabajos con procesadores especializados, conduce a una solución de multiprocesamiento asimetrico. (Aumento de la disponibilidad): Si un procesador se avería, se continúa con el resto del sistema con eficacia degradada, con ello se supone que el sistema tiene dispositivos de detección de errores y reconfiguración.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "(Aumento de velocidad de procesamiento del sistema): duplicando o triplicando el procesador central conduce a una solución del tipo multiprocesamiento simetrico racional, o aliviando el procesador de ciertos trabajos con procesadores especializados, conduce a una solución de multiprocesamiento asimetrico puro. (Aumento de la disponibilidad): Si un procesador se avería, se continúa con el resto del sistema con eficacia degradada, con ello se supone que el sistema tiene dispositivos de detección de errores y reconfiguración.",
+                    "esCorrecta": true
+                }
+            ]
+        },
+        {
+            "id_pregunta": 56,
+            "pregunta": "Un mecanismo de Dispatching concebido sobre una estructura de subcolas permite clasificar procesos dinámicamente según algoritmos de sus características intrínsecas y tratarlos en forma diferencial. ¿Quién y cómo permite tratar a los procesos en forma diferencial ?",
+            "respuestas": [
+                {
+                    "respuesta": "¿Quién?:la regla de visita. ¿Cómo?:diciendo que los procesos que están en la CTE siempre se servirán de la CPU.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "¿Quién?:la regla de visita. ¿Cómo?:diciendo que los procesos que están en la cola de la izquierda siempre se servirán de la CPU.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "¿Quién?:El CPT. ¿Cómo?:diciendo que los procesos que están en la cola de la derecha siempre se servirán de la CPU.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 57,
+            "pregunta": "Si suponemos que el “Dispatching” es “disparado” con N milisegundos, ¿Cada cuánto debe ser disparado el Scheduler en relación a N? Justificar.",
+            "respuestas": [
+                {
+                    "respuesta": "C: Cant de procesos que están en la cola de procesos que compiten por los recursos de la CPU. Q: Quantum ≤ N miliseg. T: Tiempo que requiere el proceso más corto. SCHEDULER ≤  N * Q * T",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "C: Cant de procesos que están en la cola de hilos que compiten por los recursos de la CPU. Q: Quantum ≤ N miliseg. T: Tiempo que requiere el hilo más cercano al procesador. SCHEDULER ≤  N * Q * T",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "C: Cant de procesos que están en la memoria dinámica que compiten por los recursos de la CPU. Q: Quantum ≤ N miliseg. T: Tiempo que requiere el proceso más corto. SCHEDULER ≤  N * Q * T",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 58,
+            "pregunta": "Para un sistema de computación que soporta un mecanismo de paginación. ¿Cómo interviene el ONI en un sistema de paginación?",
+            "respuestas": [
+                {
+                    "respuesta": "El OAN es el que asigna el CPT de cada proceso de forma dinamica",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "El OBN es el que asigna el CPT de cada proceso de forma dinamica",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "El ONI es el que asigna el CPT de cada proceso de forma dinamica",
+                    "esCorrecta": true
+                }
+            ]
+        },
+        {
+            "id_pregunta": 59,
+            "pregunta": "¿En la actualidad se justificaría utilizar un sistema de multiprogramacion básica en lugar de uno de avanzada? Justifique.",
+            "respuestas": [
+                {
+                    "respuesta": "Sí, en caso de tener una carga de trabajos estable y que no haya problemas con las mezclas.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Sí, en caso de tener una carga de trabajos con spooling y que no haya problemas con las mezclas.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "No, porque hay problemas con las mezclas de los procesos activos.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 60,
+            "pregunta": "Entre los objetivos específicos de un SO figura el de procesar las funciones que permiten gestionar los recursos de un sistema para lograr objetivos prefijados de explotación. ¿Cuál es el significado de estas funciones?",
+            "respuestas": [
+                {
+                    "respuesta": "1)Comunicación de procesos 2)Contabilidad 3)Desfragmentación",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "1)Asignación de Recursos 2)Contabilidad 3)Protección",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "1)Asignación de Recursos 2)Contabilidad 3)Loader",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 61,
+            "pregunta": "¿Por qué el compilador efectúa dos pasadas sobre el fuente?",
+            "respuestas": [
+                {
+                    "respuesta": "Porque puede ser que al estar codificando una linea; esta referencia a una linea mas adelante, pero no sabemos cual es la direccion de esa instrucción, porque cada instrucción puede tener un tamaño distintos en memoria. La sabremos recien cuando se ensamblan todas las lineas que la preceden, por esto realiza dos pasadas y que en la segunda se completa la codificacion de la instrucción.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Porque puede ser que al estar codificando tres líneas; esta referencia a una linea mas rápida, pero no sabemos cual es la direccion de esa instrucción, porque cada instrucción puede tener un tamaño distintos en memoria. La sabremos recien cuando se ensamblan todas las lineas que la preceden, por esto realiza dos pasadas y que en la segunda se completa la codificacion de la instrucción.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Ninguna de las anteriores",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 62,
+            "pregunta": "Entre los objetivos específicos de un SO figura el de procesar las funciones que permiten gestionar los recursos de un sistema para lograr objetivos prefijados de explotación. ¿Qué servicioss brinda un SO para lograr estos objetivos?",
+            "respuestas": [
+                {
+                    "respuesta": "1) Ejecución de procesos 2)Operaciones de E/S 3)Manipulación del Sistema de Archivos 4)Comunicaciones 5)Detección de Errores",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "1) Ejecución de procesos 2)Regulación de tensión de la fuente 3)Manipulación del Sistema de Archivos 4)Bus de datos 5)Detección de Errores",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "1) CPT 2)Operaciones de E/S 3)Manipulación del Sistema de Archivos 4)Comunicaciones 5)Planificadores",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 63,
+            "pregunta": "¿De qué archivo del sistema obtendría informacion un comando como el dir de DOS?",
+            "respuestas": [
+                {
+                    "respuesta": "Del COMMAND.COM que es residente en memoria.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Del kernel32.inc que es residente en memoria.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Del shell.bin que es residente en memoria.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 64,
+            "pregunta": "Comparado con un sistema que no posee el nivel de segmentación, ¿Qué ventajas presenta para un usuario posibilitar una concepción bidimensional en la organización del espacio lógico del usuario?",
+            "respuestas": [
+                {
+                    "respuesta": "Facilita la programación; un proceso puede dividirse en módulos lógicos (segmentos) según la concepcion que el usuario tiene de las partes de un programa (subrutina, funciones, tabla de simbolos), cada uno de estos tiene un nombre y una longitud. El usuario referencia las direcciones del programa especificando el nombre del segmento y el desplazamiento en el, olvidandose de la organización en memoria fisica del mismo. En un sistema que no posee segmentación los programadores deben hacerse cargo de la memoria física.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Facilita la programación; un proceso puede dividirse en módulos físicos (marcos) según la concepcion que el usuario tiene de las partes de un programa (subrutina, funciones, tabla de simbolos), cada uno de estos tiene un nombre y una longitud. El usuario referencia las direcciones del programa especificando el nombre del segmento y el desplazamiento en el, olvidandose de la organización en memoria fisica del mismo. En un sistema que no posee segmentación los programadores deben hacerse cargo de la memoria física.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Facilita la segmentación; un proceso puede dividirse en módulos logicos (segmentos) según la concepcion que el usuario tiene de las partes de un programa (subrutina, funciones, tabla de simbolos), cada uno de estos tiene un nombre y una longitud. El usuario referencia las direcciones del programa especificando el nombre del segmento y el desplazamiento en el, olvidandose de la organización en memoria fisica del mismo. En un sistema que no posee segmentación los programadores deben hacerse cargo de la memoria auxiliar.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 65,
+            "pregunta": "¿Qué operación dispara una sentencia de apertura de archivo?",
+            "respuestas": [
+                {
+                    "respuesta": "Una sentencia OPEN que hace que se copie en una tabla de la memoria la entrada de ese archivo que existe en el directorio de archivos simbólicos.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Una sentencia OPENFILE que hace que se copie en una tabla de la memoria la entrada de ese archivo que existe en el directorio de archivos simbólicos.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Una sentencia FOPEN que hace que se copie en una tabla de la memoria la entrada de ese archivo que existe en el directorio de archivos simbólicos.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 66,
+            "pregunta": "Supuesta la lectura de una variable en un archivo en disco y en un medio de recursos compartidos. ¿Cuántas interrupciones genera? ¿Cuáles son? ¿Cuánta informacion se transfiere desde el dispositivo? ¿A dónde va a parar?",
+            "respuestas": [
+                {
+                    "respuesta": "a) 2 Interrupciones: -Interrupción de soft: Solicitud de E/S. -Interrupción de hard: Finalización de E/S. b) El registro físico que contiene la variable. c) Va a parar al área de amortiguación (buffer).",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "a) 1 interrupción: -Interrupción de hard: Finalización de E/S. b) El registro físico que contiene la variable. c) Va a parar al área de Spooleo.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "a) 3 Interrupciones: -Interrupción de soft: Solicitud de E/S. -Interrupción de hard: Finalización de E/S. -Interrupción a nivel Kernel: se transfiere el control al kernel. b) El registro físico que contiene la variable. c) Va a parar al área de amortiguación (buffer).",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 67,
+            "pregunta": "Comparado con un sistema que no posee el nivel de segmentación, ¿Qué ventajas presenta para un usuario permitir compartir códigos?",
+            "respuestas": [
+                {
+                    "respuesta": "Cada proceso tiene una tablas de marcos asociada a su PCB. Los marcos se comparten cuando las entradas de las tablas de marcos de dos procesos distintos apuntan a las mismas localidades fisica. Por ejemplo se podria tener un marco con un conjunto de funciones comunes a distintos programas y evitar ocupar espacio en la memoria innecesariamente",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Cada proceso tiene una tablas de segmentos asociada a su PCB. Los segmentos se comparten cuando las entradas de las tablas de segmentos de dos procesos distintos apuntan a las mismas localidades fisica. Por ejemplo se podria tener un segmento con un conjunto de funciones comunes a distintos programas y evitar ocupar espacio en la memoria innecesariamente",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Cada proceso tiene una tablas de páginas asociada a su PCB. Las páginas se comparten cuando las entradas de las tablas de páginas de dos procesos distintos apuntan a las mismas localidades fisica. Por ejemplo se podria tener una página con un conjunto de funciones comunes a distintos programas y evitar ocupar espacio en la memoria innecesariamente",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 68,
+            "pregunta": "Enumere las funciones que  pueden ejecutarse desde una consola del operador.",
+            "respuestas": [
+                {
+                    "respuesta": "JOB GET-UP: Montar las unidades en los soportes correspondientes. LOADING: Cargar el dato en el registro del procesador.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "JOB GET-UP: Montar las unidades en los soportes correspondientes. LOADING: Cargar el proceso en memoria.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "JOB GET-UP: Montar los dispositivos de almacenamiento en los soportes correspondientes. LOADING: Cargar el proceso en memoria.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 69,
+            "pregunta": "El mecanismo LRU global hace la presunción de que un proceso agranda su vecindad cada vez que referencia una nueva página. El concepto de CPT tiende a corregir esta generalización. ¿Cuál es el sentido de esta afirmación?",
+            "respuestas": [
+                {
+                    "respuesta": "El concepto de CPT es una representación como una forma de compartir recursos entre procesos, permite establecer dinámicamente qué recurso le pertenece a cuál proceso",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "El concepto de CPT es una representación de la vecindad de un proceso, permite establecer dinámicamente cuántas páginas ha de tener cargado el proceso en memoria, para no producir una elevada actividad de paginación y sin tener páginas en memoria que no utiliza. Para calcularlo se trabaja sobre el análisis del pasado reciente del proceso.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "El concepto de CPT es una representación sencilla de un complejo sistema multiprogramación básico, permite establecer estáticamente cuántas páginas ha de tener cargado el proceso en memoria, para no producir una elevada actividad de paginación y sin tener páginas en memoria que no utiliza. Para calcularlo se trabaja sobre el análisis del pasado reciente del proceso.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 70,
+            "pregunta": "¿Qué es la regla de visita?",
+            "respuestas": [
+                {
+                    "respuesta": "Sirve para determinar con que orden recibirán la CPU los procesos estando en una subcola",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Sirve para determinar con que orden recibirá la memoria los programas estando en una subcola",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Sirve para determinar con que orden recibirán la CPU los procesos estando en una memoria virtual",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 71,
+            "pregunta": "¿Qué partes conforman una sentencia de lenguaje fuente? ",
+            "respuestas": [
+                {
+                    "respuesta": "-Rótulo: Para utilizar esta sentencia en alguna otra parte del proceso. -Operación: Campo que contiene una directiva o un mnemónico. -Operando: Campo que contiene un símbolo. -Comentario: Comentarios que los programadores quieren hacer sobre el código. Se delimitan con un carácter especial.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "-Rótulo: Para utilizar esta sentencia en alguna otra parte del hilo. -Operación: Campo que contiene una directiva de co-procesador. -Operando: Campo que contiene un símbolo. -Comentario: Comentarios que los programadores quieren hacer sobre el código. Se delimitan con un carácter especial.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Ninguna de las anteriores",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 72,
+            "pregunta": "¿Qué es la regla de residencia?",
+            "respuestas": [
+                {
+                    "respuesta": "Sirve para determinar dinamicamente en que subcola debe estar un proceso",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Sirve para determinar estáticamente en que subcola debe estar un proceso",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Sirve para determinar dinamicamente en que posición de memoria debe estar un proceso",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 73,
+            "pregunta": "Dado un SO de multiprogramación, explique el funcionamiento del “Spooling” de entrada.",
+            "respuestas": [
+                {
+                    "respuesta": "Lee procesos por adelantado y los guarda en el disco conformando un pool (conjunto) de trabajos desde donde luego seran seleccionados por el OAN. ",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Lee procesos por adelantado y los guarda en el disco conformando un buffer con trabajos desde donde luego seran seleccionados por el OAN. ",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Lee servicios por adelantado y los guarda en el disco conformando un proceso con hilos de diferentes trabajos desde donde luego seran seleccionados por el OAN. ",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 74,
+            "pregunta": "¿Qué funciones se ejecutan en el momento de la carga de un proceso en multiprogramación básica?",
+            "respuestas": [
+                {
+                    "respuesta": "Se asignan los periféricos, conjuntos de datos y memoria a un proceso para luego cargarlo  en una particion. Se crea el PCB para representar el proceso en el sistema",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Se asignan las direcciones de memoria, conjuntos de bloques y memoria a un proceso para luego cargarlo  en una la memoria auxiliar. Se crea el PCB para representar el proceso en el sistema",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Se asignan los puertos de los dispositivos E/S, conjuntos de marcos y memoria a un proceso para luego cargarlo  en una particion. Se crea el PCB para representar el proceso en el sistema",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 75,
+            "pregunta": "¿Qué función ejecuta durante el tiempo de activación un SO de multiprogramación avanzada?",
+            "respuestas": [
+                {
+                    "respuesta": "Se asignan dispositivos que deben ser asignados en forma estatica.Se crea el PCB que es un elemento que describe el estado y las caracteristicas de un proceso. Se graba el PCB en la cola del ONI.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Se asignan dispositivos que deben ser en forma estatica. Se crea el PCB que es un elemento que describe archivos especiales del sistema y las caracteristicas de un proceso. Se graba el PCB en la cola del ONI.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Se asignan dispositivos virtuales que deben ser asignados en forma estatica. Se crea el PCB que es un elemento que describe el estado y las caracteristicas de un proceso. Se graba el PCB en memoria principal.",
+                    "esCorrecta": true
+                }
+            ]
+        },
+        {
+            "id_pregunta": 76,
+            "pregunta": "¿Qué funciones se ejecutan en el momento de la carga de un proceso en multiprogramación avanzada?",
+            "respuestas": [
+                {
+                    "respuesta": "Los dispositivos que por sus caracteristicas deben ser asignados de forma estatica son asignados de esta forma (impresora, cinta). Se asigna memoria virtual y se carga el proceso en la misma. Se crea el PCB.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Los dispositivos que por sus caracteristicas deben ser asignados de forma estatica son asignados de esta forma (impresora, cinta). Se asigna memoria estática y se carga el proceso en la misma. No crea el PCB.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Los dispositivos que por sus caracteristicas deben ser asignados de forma dinámica son asignados de esta forma (impresora, cinta). Se asigna memoria virtual y se carga el proceso en la misma. No crea el PCB.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 77,
+            "pregunta": "Controll Stream o Job Control. ¿En qué SO es utilizado?",
+            "respuestas": [
+                {
+                    "respuesta": "En los sistemas de procesamiento en lotes.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "En los sistemas con IA-32.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "En los sistemas con Spooling y Buffering avanzado.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 78,
+            "pregunta": "Controll Stream o Job Control. ¿Cuál es su finalidad?",
+            "respuestas": [
+                {
+                    "respuesta": "Establecer las características particulares de un trabajo, como ser: versión, recursos, prioridad, etc.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Establecer las características particulares de un proceso, como ser: versión, recursos, etc.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Establecer las características particulares de una tarea de un dispositivo de almacenamiento.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 79,
+            "pregunta": "¿Cómo se descompone el tiempo total para servir una solicitud del disco?",
+            "respuestas": [
+                {
+                    "respuesta": "Tiempo de posicionamiento: Primero debe moverse la cabeza a la pista o cilindro correspondiente. Tiempo de latencia: Luego se espera a que el bloque deseado pase debajo de la cabeza. Tiempo de transferencia: Por ultimo, se transfieren los datos entre el disco y la memoria real",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Tiempo de posicionamiento: Primero debe moverse la cabeza a la pista o cilindro más cercano. Tiempo de latencia: Luego se espera a que el bloque deseado pase encima de la cabeza. Tiempo de transferencia: Por ultimo, se transfieren los datos entre el disco y la memoria real",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Ninguna de las anteriores",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 80,
+            "pregunta": "¿Para qué tipos de SOs no justificaría trabajar en modo dual? Justifique.",
+            "respuestas": [
+                {
+                    "respuesta": "Modo Dual: Impide que un programa en ejecucion modifique datos o codigos de otros. Serie Simple: Al existir un solo programa, este no podria dañar otros. Tiempo Real: Porque el tiempo requerido para realizar esta protección puede afectar al cumplimiento del objetivo principal del sistema. ",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Modo Dual: permite que un programa en ejecucion modifique datos o codigos de otros. Serie Simple: Al existir un solo programa, este podria dañar otros. Tiempo Real: Porque el tiempo requerido para realizar esta protección puede afectar al cumplimiento del objetivo principal del sistema. ",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Modo Dual: Impide que un programa en ejecucion modifique datos o codigos de otros. Serie Simple: Al existir un solo programa, este no podria dañar otros. Tiempo Real: Porque el tiempo requerido para realizar esta protección no afecta al cumplimiento del objetivo principal del sistema. ",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 81,
+            "pregunta": "¿Qué entiende por fijación de páginas en memoria? ",
+            "respuestas": [
+                {
+                    "respuesta": "Aquellas paginas que no pueden ser seleccionadas como victimas para su reemplazo. Se asocia un bit de fijacion a cada marco. Un marco fijado no puede ser reemplazado.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Aquellas paginas que pueden ser seleccionadas para su reemplazo. Se asocia un bit de fijacion a cada marco. Un marco fijado no puede ser reemplazado.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Aquellas paginas que pueden ser seleccionadas para su reemplazo. Se asocia un bit de fijacion a cada marco del segmento de memoria. Un marco fijado si puede ser reemplazado.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 82,
+            "pregunta": "¿Cómo se utiliza el algoritmo OPT?",
+            "respuestas": [
+                {
+                    "respuesta": "Consiste en reemplazar la pagina que no se usara durante el mayor periodo de tiempo. Al utilizar este algoritmo se garantiza la menor tasa de falla de paginas posibles para un numero fijo de marcos. Es difícil de implantar, por lo que se utiliza generalmente para fines comparativos.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Consiste en reemplazar el segmento que no se usara durante el páginado. Al utilizar este algoritmo se garantiza la menor tasa de falla de paginas posibles para un numero fijo de marcos. Es difícil de implantar, por lo que se utiliza generalmente para fines comparativos.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Consiste en no usar el CPU durante el mayor periodo de tiempo. Al utilizar este algoritmo se garantiza la menor tasa de falla de paginas posibles para un numero fijo de marcos. Es difícil de implantar, por lo que se utiliza generalmente para fines comparativos.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 83,
+            "pregunta": "Explique, para un sistema paginado. En qué consiste la prepaginación?",
+            "respuestas": [
+                {
+                    "respuesta": "Es un intento de evitar el alto nivel de paginación inicial. Consiste en traer a memoria al mismo tiempo todas las paginas que se necesitaran.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Consiste en traer a memoria al mismo tiempo todas las paginas que se necesitaran en caso que se presente una falla de interrupción de dispositivo.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Ambas son correctas.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 83,
+            "pregunta": "Explique, para un sistema paginado. Qué tipo de fragmentación puede producirse?",
+            "respuestas": [
+                {
+                    "respuesta": "Se produce fragmentación interna.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Se produce fragmentación externa.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Se produce fragmentación páginada.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 84,
+            "pregunta": "Explique qué algoritmo de planificación de disco tiene mayor tiempo promedio para servir una solicitud.",
+            "respuestas": [
+                {
+                    "respuesta": "El algoritmo FCFS",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "El algoritmo SSTF",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Ninguna de las anteriores",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 85,
+            "pregunta": "Explique qué algoritmo de planificación de disco puede mantener indefinidamente en espera algunas demandas.",
+            "respuestas": [
+                {
+                    "respuesta": "El algoritmo SSTF",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "El algoritmo LRU",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "OPT",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 86,
+            "pregunta": "Describa qué algoritmo de reemplazo de página: Posee el menor ratio de falla de página.",
+            "respuestas": [
+                {
+                    "respuesta": "El algoritmo OPT",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "El algoritmo SSTF",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "El algoritmo FCFS",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 87,
+            "pregunta": "Describa qué algoritmo de reemplazo de página: No está expuesto a la anomalía de Belady.",
+            "respuestas": [
+                {
+                    "respuesta": "El algoritmo LRU y OPT",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "El algoritmo SSTF",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Ambas son correctas",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 88,
+            "pregunta": "¿En qué tipos de sistemas y en qué casos se entra en estados de control virtuales?",
+            "respuestas": [
+                {
+                    "respuesta": "En SO de maquinas virtuales; cuando una aplicación intenta realizar una E/S realiza una llamada, causando una transferencia al SOMV, este registra el cambio de la maquina virtual a estado de control virtual y le cede el control",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "En SO de maquinas virtuales; cuando una aplicación intenta realizar una E/S realiza una llamada a los procesos corrientes, causando una transferencia al SOMV, este registra el cambio de la maquina virtual a estado de control virtual y le cede el control",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "En SO de maquinas virtuales; cuando una aplicación intenta realizar una E/S realiza una llamada al sistema, causando una transferencia al LVM, este registra el cambio de la maquina virtual a estado de control virtual y le cede el control",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 89,
+            "pregunta": "¿Para qué se utiliza una estructura de colas cíclicas realimentadas?",
+            "respuestas": [
+                {
+                    "respuesta": "Se utiliza para clasificar procesos dinámicamente según algunas de sus caracteristicas intrinsecas y tratarlos de forma diferencial, dependiendo del tipo de SO donde esta corriendo. El OBN seleccionara un proceso de una subcola según la regla establecida y los procesos se clasifican dinamicamente según la regla de residencia.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Se utiliza para clasificar procesos estáticamente según algunas de sus caracteristicas intrinsecas y tratarlos de forma diferencial, dependiendo del tipo de SO donde esta corriendo. El OAN seleccionara un proceso de una subcola según la regla establecida y los procesos se clasifican dinamicamente según la regla de residencia.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Se utiliza para clasificar procesos dinamicamente según algunas de sus caracteristicas intrinsecas y tratarlos de forma diferencial, dependiendo del tipo de SO donde esta corriendo. El ONI seleccionara un proceso de una subcola según la regla establecida y los procesos se clasifican dinámicamente según la regla de residencia.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 90,
+            "pregunta": "¿Qué entiende por direccionamiento físico y direccionamiento lógico?",
+            "respuestas": [
+                {
+                    "respuesta": "Las direcciones lógicas son las generadas por los programas en ejecución, en las cuales se alojan páginas de la memoria principal. Las direcciones físicas son las verdaderas direcciones en las cuales residen los programas en memoria física. Son las utilizadas por el SO.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Las direcciones lógicas son las verdaderas direcciones en las cuales residen los programas en memoria física. Son las utilizadas por el SO. Las direcciones físicas son las generadas por los programas en ejecución, en las cuales se alojan instrucciones, variables, registros, etc.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Las direcciones lógicas son las generadas por los programas en ejecución, en las cuales se alojan instrucciones, variables, registros, etc.Las direcciones físicas son las verdaderas direcciones en las cuales residen los programas en memoria física. Son las utilizadas por el SO.",
+                    "esCorrecta": true
+                }
+            ]
+        },
+        {
+            "id_pregunta": 91,
+            "pregunta": "¿Qué entiende por proceso y canal?",
+            "respuestas": [
+                {
+                    "respuesta": "Proceso: medio de comunicación entre los dispositivos de E/S y la memoria. Es la unidad de trabajo de un SO. Canal: es un programa en ejecución, con un contador de programa, el cual indica cual es la próxima instrucción que ejecutara el programa.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Proceso: es un programa en ejecución, con un contador de programa, el cual indica cual es la próxima instrucción que ejecutara el programa. Es la unidad de trabajo de un SO. Canal: medio de comunicación entre los dispositivos de E/S y la memoria.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Proceso: es un programa aún no cargado en memoria, con un contador de programa, el cual indica cual es la próxima instrucción que ejecutara el programa. Es la unidad de trabajo de un SO. Canal: medio de comunicación entre los dispositivos de E/S y la memoria.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 92,
+            "pregunta": "En la multiprogramación, ¿para que sirve el registro base?",
+            "respuestas": [
+                {
+                    "respuesta": "Me sirve para proteccion de memoria, se controla por hardware que un programa no referencia por debajo de su registro base.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Me sirve para proteccion de memoria, se controla por hardware que un programa no referencia por encima de su registro base.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Me sirve para proteccion de memoria auxiliar, se controla por hardware que un programa no referencia por encima de su registro base.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 93,
+            "pregunta": "¿En que SO no sirven los modos de protección?",
+            "respuestas": [
+                {
+                    "respuesta": "En el de tiempo compartido y en el de tiempo real",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "En el de multiprogramación básica y en el de tiempo real",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "En el de serie simple y en el de tiempo real",
+                    "esCorrecta": true
+                }
+            ]
+        },
+        {
+            "id_pregunta": 94,
+            "pregunta": "¿Qué es un página física y que contiene?",
+            "respuestas": [
+                {
+                    "respuesta": "Es una página. Contiene un marco, el cual contiene instrucciones, rutinas, variables, etc. pertenecientes a un proceso.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Es un marco. Contiene una pagina lógica, la cual contiene instrucciones, rutinas, variables, etc. pertenecientes a un proceso.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Es un bloque. Contiene un marco, el cual contiene instrucciones, rutinas, variables, etc. pertenecientes a un proceso.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 95,
+            "pregunta": "En la paginación, ¿dónde residen las localidades?",
+            "respuestas": [
+                {
+                    "respuesta": "En memoria ROM",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "En memoria auxiliar.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "En memoria principal.",
+                    "esCorrecta": true
+                }
+            ]
+        },
+        {
+            "id_pregunta": 96,
+            "pregunta": "¿Qué método del SO le da formato a un proceso?",
+            "respuestas": [
+                {
+                    "respuesta": "El Loader. En el momento de la carga.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "El CPT. En el momento de la compilación.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "El Reader. En el momento de combinación",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 97,
+            "pregunta": "¿En qué circunstancias y con qué frecuencia se activa el PMP (ONI)?",
+            "respuestas": [
+                {
+                    "respuesta": "Pueden ser necesarios la compactación para mejorar la mezcla de procesos o cuando un cambio en los requerimientos de memoria ha comprometido en exceso la memoria disponible. Se activa 1 vez tras ejecutarse el SO. Podra operar sobre la base de un tiempo fijo o bien en respuesta a un evento.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Pueden ser necesarios la redirección para mejorar la mezcla de procesos o cuando un cambio en los requerimientos de memoria ha comprometido en exceso la memoria disponible. Se activa al finalizar un proceso. Podra operar sobre la base de un tiempo fijo o bien en respuesta a un evento.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Pueden ser necesarios los intercambios para mejorar la mezcla de procesos o cuando un cambio en los requerimientos de memoria ha comprometido en exceso la memoria disponible. Se activa periódicamente. Podra operar sobre la base de un tiempo fijo o bien en respuesta a un evento.",
+                    "esCorrecta": true
+                }
+            ]
+        },
+        {
+            "id_pregunta": 98,
+            "pregunta": "¿Qué es un PCB?",
+            "respuestas": [
+                {
+                    "respuesta": "Es un bloque que contiene informacion relacionada con un proceso concreto, o sea toda aquella informacion que puede variar de un proceso a otro.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Es un bloque que contiene informacion relacionada con una página en memoria(multiprogramación avanzada), o sea toda aquella informacion que puede variar de un proceso a otro.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Es un bloque que contiene informacion relacionada con un proceso qué no está más en memoria, o sea toda aquella informacion que puede variar de un proceso a otro.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 99,
+            "pregunta": "¿Dónde reside el PCB?",
+            "respuestas": [
+                {
+                    "respuesta": "Reside fisicamente en memoria auxiliar y logicamente en la cola del OBN o en la cola del OAN.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Reside fisicamente en memoria principal y logicamente en la cola del ONI o en la cola del OBN.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Reside fisicamente en memoria ROM y logicamente en la cola del ONI o en la cola del OBN.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 100,
+            "pregunta": "¿Qué contiene el PCB?",
+            "respuestas": [
+                {
+                    "respuesta": "Contiene: Nombre, Apuntador a la base de la tabla de marcos, Estado, Longitud de la tabla de marcos, Prioridad, Registros de la CPU, Contador de instrucciones, Dispositivos asignados, Informacion Contable, etc.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Contiene: Nombre, Apuntador a la base de la tabla de paginas, Estado, Longitud de la tabla de paginas, Prioridad, Registros de la CPU, Contador de instrucciones, Dispositivos asignados, Informacion Contable, etc.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "No contiene nada más qué información en tiempo real de la memoria auxiliar para qué el procesador tenga conocimiento cómo realizar el intercambio de procesos.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 101,
+            "pregunta": "En una estructura de subcolas se realizan dos acciones clasificacion y penalizacion. ¿Qué regla representa a cada acción y qué significa cada una?",
+            "respuestas": [
+                {
+                    "respuesta": "Clasificacion: -Regla de residencia: determina si un proceso se va o se queda en una Subcola. Penalizacion: -Regla de visita: controla el servicio de la CPU a cada una de las subcolas regulando la importancia que se le dará a cada una.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Clasificacion: -Regla de visita: controla el servicio de la CPU a cada una de las subcolas regulando la importancia que se le dará a cada una. Penalizacion: -Regla de residencia: determina si un proceso se va o se queda en una Subcola.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Clasificacion: -Regla de residencia: controla el servicio de la CPU a cada una de las subcolas regulando la importancia que se le dará a cada una. Penalizacion: -Regla de visita: determina si un proceso se va o se queda en una Subcola.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 102,
+            "pregunta": "¿Cuál de los siguientes podría ser un ejemplo de OVERFLOW?",
+            "respuestas": [
+                {
+                    "respuesta": "Desbordamiento de los núcleos de la CPU",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Desbordamiento de memoria principal.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Desbordamiento de la pila de la CPU.",
+                    "esCorrecta": true
+                }
+            ]
+        },
+        {
+            "id_pregunta": 103,
+            "pregunta": "¿Cual es la utilidad de contar con una tabla de estado de dispositivo y una lista de solicitudes para cada una?",
+            "respuestas": [
+                {
+                    "respuesta": "Para llevar un control de varias solicitudes de procesamiento al mismo tiempo, y para guardar el código de espera del usuario que realizó la solicitud de procesamiento.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Para llevar un control de varias solicitudes de E/S al mismo tiempo, y para guardar el código de espera del usuario que realizó la solicitud de procesamiento.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Para llevar un control de varias solicitudes de E/S al mismo tiempo, y para guardar el código de espera del usuario que realizó la solicitud de E/S.",
+                    "esCorrecta": true
+                }
+            ]
+        },
+        {
+            "id_pregunta": 104,
+            "pregunta": "¿Cuál sería la consecuencia de la NO existencia de una tabla de estado de dispositivo y una lista de solicitudes para cada una?",
+            "respuestas": [
+                {
+                    "respuesta": "No se pueden tener operaciones de E/S simultáneas, porque cuando interrumpen, el SO no sabe a que dispositivo corresponde la interrupción.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "No se pueden tener operaciones de paginación simultáneas, porque cuando interrumpen, el SO no sabe a que dispositivo corresponde la interrupción.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "No se pueden tener operaciones de procesamiento simultáneas, porque cuando interrumpen, el SO no sabe a que dispositivo corresponde la interrupción.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 105,
+            "pregunta": "¿La proteccion de memoria en caso de particiones multiples (asignacion continua), es por hardware o por software?",
+            "respuestas": [
+                {
+                    "respuesta": "Por software, es un complemento del SO qué ha de instalarse externamente.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Por hardware, mediante la utilización de registros base y limite.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Por hardware, mediante la utilización de registros excluyentes",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 106,
+            "pregunta": "En un sistema de tres niveles, ¿Qué programas de aplicación residen parcial o totalmente en memoria principal?",
+            "respuestas": [
+                {
+                    "respuesta": "Los programas en ejecución y los iniciados.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Los programas en ejecución, los iniciados y los qué están en la cola de espera.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Sólo los programas qué están en ejecución.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 107,
+            "pregunta": "¿Cómo y cuándo se protege la memoria en asignación contigua?",
+            "respuestas": [
+                {
+                    "respuesta": "Se protege utilizando un registro base, que establece las direcciones de memoria a las cuales puede hacer referencia un proceso legalmente. Cuando un proceso genera una dirección, esta se compara con el registro y si está fuera del rango permitido se genera una trampa por error de direccionamiento.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Se protege utilizando un registro límite, que establece las direcciones de memoria a las cuales puede hacer referencia un proceso legalmente. Cuando un proceso genera una dirección, esta se compara con el registro y si está fuera del rango permitido se genera una trampa por error de direccionamiento.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Se protege utilizando dos registros, uno base y uno limite, que establecen las direcciones de memoria a las cuales puede hacer referencia un proceso legalmente. Cuando un proceso genera una dirección, esta se compara con los registros y si esta fuera del rango permitido se genera una trampa por error de direccionamiento.",
+                    "esCorrecta": true
+                }
+            ]
+        },
+        {
+            "id_pregunta": 108,
+            "pregunta": "¿Que implica la administración de recursos?",
+            "respuestas": [
+                {
+                    "respuesta": "Implica asignar a cada página en memoria diferentes recursos de hardware disponibles.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Implica la correcta manipulación de archivos en cuánto a recursos de software.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Implica resolver los conflictos de demanda, asignación y proteger un recurso.",
+                    "esCorrecta": true
+                }
+            ]
+        },
+        {
+            "id_pregunta": 109,
+            "pregunta": "¿En un sistema de 3 niveles en que cola y en que estado se encuentra un proceso en el tiempo de procesamiento?",
+            "respuestas": [
+                {
+                    "respuesta": "En la cola del ONI o en la del OBN. En estado de ejecucion de espera o listo",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "En la cola del ONI o en la del OBN. En estado de suspensión a procesamiento",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "En la cola del ONI o en la del OBN. En estado de ejecucion para mejor velocidad de obtención de hilos",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 110,
+            "pregunta": "¿Que es un recurso abstracto?",
+            "respuestas": [
+                {
+                    "respuesta": "Es una abstraccion que se define en el sistema a la cual se dan atributos que definen su accesibilidad y su representacion fisica en el sistema. Por ejemplo el Spooling, archivos, etc.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Es una abstraccion que se define en la memoria a la cual se dan atributos que definen su accesibilidad y su representacion fisica en el sistema. Por ejemplo el hardening de buffer, cerradura de Spooleo, etc.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Ninguna de las anteriores.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 111,
+            "pregunta": "¿En disco, que es asignacion y acceso?",
+            "respuestas": [
+                {
+                    "respuesta": "Asignacion: es colocar los bloques de archivos en bloques físicos del disco, para luego acceder a ellos cuando se lo requiera. Acceso: implican los 3 tiempos que utiliza el disco para obtener un bloque y colocarlo en memoria. Los tiempos son de posicionamiento, de latencia y de transferencia.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Asignacion: es colocar los bloques de memoria en bloques físicos del disco, para luego acceder a ellos cuando se lo requiera. Acceso: implican los 5 tiempos que utiliza el disco para obtener un bloque y colocarlo en memoria. Los tiempos son indexado, de latencia y de transferencia.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Asignacion: es colocar los bloques de archivos en bloques lógicos en los registros de la CPU, para luego acceder a ellos cuando se lo requiera. Acceso: implican los 2 tiempos que utiliza el disco para obtener un bloque y colocarlo en memoria. Los tiempos son de posicionamiento y latencia.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 112,
+            "pregunta": "¿Cuál es la utilidad de que existan 2 modos de operación?¿Qué hardware se requiere?",
+            "respuestas": [
+                {
+                    "respuesta": "Nos proporciona un medio para proteger al SO de los usuarios errantes, y a estos de ellos mismos. Se requiere un bit de modo",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Es un medio para agilizar al SO de los procesos errantes. Se requiere más de un bit de modo real.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Ambas son correctas.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 113,
+            "pregunta": "¿En que consiste el proceso de ejecucion de una transaccion en un sistema de procesamiento de transacciones?",
+            "respuestas": [
+                {
+                    "respuesta": "Consiste en recibir un mensaje proveniente de una terminal, transferir dicho mensaje a un programa que lo procesa, algunas referencias a bases de datos en línea para preparar la información para responder al mensaje y direccionar la respuesta hacia la terminal.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Consiste en recibir una instrucción proveniente de la E/S, transferir dicha instrucción a un programa que lo procesa, algunas referencias a bases de datos en línea para preparar la información para responder al mensaje y direccionar la respuesta hacia la terminal.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Consiste en recibir un sondeo del procesador, transferir dicho sondeo a un programa que lo procesa, algunas referencias a bases de datos en línea para preparar la información para responder al mensaje y direccionar la respuesta hacia la terminal.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 114,
+            "pregunta": "¿Cuándo una pagina modificada es reemplazada, es conveniente grabarlo en el mismo lugar del disco?¿Por qué?",
+            "respuestas": [
+                {
+                    "respuesta": "Si, para no tener que actualizar la tabla de paginas.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Si, para tener que actualizar la tabla de paginas.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Si, para no tener que actualizar la tabla de paginas y segmentos.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 115,
+            "pregunta": "Distinga entre planificador de cola de multiples niveles y planificacion de cola de multiples niveles con retroalimentación",
+            "respuestas": [
+                {
+                    "respuesta": "Cola de múltiples niveles: Los procesos se asignan en forma permanente a una cola, generalmente a partir de alguna propiedad del proceso. Cola de multiples niveles con retroalimentación: Permite a un proceso moverse de una cola a otra, la idea es separar los procesos con diferentes características en cuanto a ráfagas de CPU.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Cola de múltiples niveles: Los procesos se asignan en forma temporal a una cola, generalmente a partir de alguna propiedad del proceso. Cola de multiples niveles con retroalimentación: Permite a un proceso moverse de una cola a otra, la idea es separar los procesos con diferentes características en cuanto a ráfagas de CPU.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Cola de múltiples niveles: Los procesos se asignan a una cola hasta que el direccionamiento real sobrepase memoria, generalmente a partir de alguna propiedad del proceso. Cola de multiples niveles con retroalimentación: Permite a un proceso moverse de una cola a otra, la idea es separar los procesos con diferentes características en cuanto a ráfagas de CPU.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 116,
+            "pregunta": "Enumere las distintas formas de administracion del espacio libre en disco.",
+            "respuestas": [
+                {
+                    "respuesta": "Vector de bits; Lista ligada; Agrupamiento; Recuento",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Vector de objetos; Lista ligada; Agrupamiento de procesos; Recuento",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Vector de bits; Lista enlazada; Agrupamiento; Modo direccionamiento real",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 117,
+            "pregunta": "Enumere los distintos metodos de asignacion de espacio de los archivos en disco.",
+            "respuestas": [
+                {
+                    "respuesta": "Asignación contigua; Asignación enlazada; Asignación indexada",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Asignación separada; Asignación enlazada; Asignación por promesas",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Asignación asíncrona; Asignación simétrica; Asignación indexada",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 118,
+            "pregunta": "Enumere los criterios de planificacion de la CPU.",
+            "respuestas": [
+                {
+                    "respuesta": "Utilización de la CPU; Productividad; Tiempo de retorno; Tiempo de respuesta; Tiempo de espera",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Utilización de la memoria; Productividad en E/S; Tiempo de retorno; Tiempo de respuesta; Tiempo de bloqueo",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Ninguna de las anteriores",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 119,
+            "pregunta": "Enumere los criterios de planificacion de la CPU.",
+            "respuestas": [
+                {
+                    "respuesta": "FCFS; SJF; Prioridades; Round Robin; Colas de multiples niveles; Colas de multiples niveles con realimentacion",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "CFFS; FJS; Prioridades; Red Robin; Colas de multiples niveles; Colas de multiples niveles con realimentacion",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Ninguna de las anteriores",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 120,
+            "pregunta": "Que mecanismo permite que las operaciones de CPU y E/S puedan superponerse, que metodos se usan.",
+            "respuestas": [
+                {
+                    "respuesta": "Un mecanismo que permita la desincronización y la resincronizacion de las operaciones. Métodos: a) transferencia de datos dirigida por interrupciones. b) transferencia de datos por acceso directo a memoria",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Un mecanismo que permita la sincronización y la resincronizacion de las operaciones. Métodos: a) transferencia de datos dirigida por interrupciones. b) transferencia de datos por acceso directo a memorian",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Un mecanismo que permita la asíncronia y la resincronizacion de las operaciones aritméticas de la ALU. Métodos: a) transferencia de datos dirigida por interrupciones. b) transferencia de datos por acceso directo a memoria",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 121,
+            "pregunta": "En sistemas de MA que acciones se ejecutan en Tiempo de Activacion para activar un programa de 100K, que lee un archivo de disco lo graba en cinta y lo imprime.",
+            "respuestas": [
+                {
+                    "respuesta": "Se asigna Impresora y Cinta de forma estatica. Se crea el PCB y se coloca a este en la CPI.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Se asigna Impresora y Cinta de forma dinámica. Se crea el PCB y se coloca a este en la CPI.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Se asigna Impresora y Cinta de forma que la memoria principal no esté llena. Se crea el PCB y se coloca a este en la CPI.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 122,
+            "pregunta": "Explique recurso reasignable. Mencione cual/es..",
+            "respuestas": [
+                {
+                    "respuesta": "Son aquellos recursos que pueden asignarse y desasignarse a un proceso sin alterar su lógica. CPU y memoria.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Son aquellos recursos que pueden asignarse y desasignarse a un proceso sin alterar su procesamiento. CPU y colas.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Son aquellos recursos que pueden asignarse y desasignarse a un proceso sin alterar su comportamiento indexado. CPU y buffer.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 123,
+            "pregunta": "¿Qué es un algoritmo de asignación de bloque de memoria real?",
+            "respuestas": [
+                {
+                    "respuesta": "Es un algoritmo que divide la memoria en particiones de tamaño fijo, las cuales pueden contener exactamente un proces. El nivel de multiprogramación esta limitado por el numero de particiones.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Es un algoritmo que divide la disco en particiones de tamaño fijo, las cuales pueden contener exactamente un proceso estático. El nivel de multiprogramación esta limitado por el numero de particiones.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Es un algoritmo que divide la E/S en particiones lógicas de tamaño fijo, las cuales pueden contener exactamente un proces. El nivel de multiprogramación esta limitado por el numero de particiones.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 124,
+            "pregunta": "Que es precargador o boot? Donde reside?",
+            "respuestas": [
+                {
+                    "respuesta": "Es el encargado de inicializar el sistema cuando se enciende el computador. Reside en memoria ROM.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Es el encargado de controlar el sistema cuando se enciende el computador. Reside en memoria RAM.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Es el encargado de proteger el sistema cuando se enciende el computador. Reside en memoria CAS.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 125,
+            "pregunta": "Posibles formas de administrar la memoria (tipo de compilación, particionamiento, organización) en multiprogramación básica.",
+            "respuestas": [
+                {
+                    "respuesta": "Compilación absoluta. Particiones de tamaño fijo. Asignación estática. Cada trabajo se programaba pensando en que partición iba a ser corrido.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Compilación síncrona. Particiones de tamaño dinámico. Asignación estática. Cada trabajo se programaba pensando en que partición iba a ser corrido.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Ninguna es correcta",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 126,
+            "pregunta": "En un sistema de multiprogramación básica. ¿Bajo que circunstancia se activa el OAN?",
+            "respuestas": [
+                {
+                    "respuesta": "Cuando ingresa un nuevo trabajo a la CTE o cuando termina la ejecución de un proceso activo.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Cuando ingresa un nuevo proceso a la CTE o cuando termina la ejecución de un hilo activo.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Ninguna es correcta",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 127,
+            "pregunta": "En un sistema de tiempo real ¿conviene tener toda la información en línea? De no ser asi, ¿Cuál seria la consecuencia?",
+            "respuestas": [
+                {
+                    "respuesta": "Si. Hay que tenerla. La consecuencia de no tenerla en línea es que no se podría cumplir con el objetivo de proporcionar rápidos tiempos de respuesta a sucesos.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "No. No hay que tenerla. La consecuencia de tenerla en línea es que no se podría cumplir con el objetivo de proporcionar rápidos tiempos de respuesta a sucesos.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "No. No hay que tenerla. La consecuencia de no tenerla en línea es que no se podría cumplir con el objetivo de proporcionar más memoria a los subprocesos.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 128,
+            "pregunta": "Independientemente del SO, explique cual es la utilidad de usar colas cíclicas realimentadas.",
+            "respuestas": [
+                {
+                    "respuesta": "Permite clasificar dinámicamente los programas según características intrínsecas de los mismos y tratarlos en forma diferencial, beneficiando a unos y penalizando a otros.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Permite clasificar dinámicamente los programas según características intrínsecas de los mismos y tratarlos en forma secuencial, beneficiando a unos y penalizando a otros.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Permite clasificar sincrónicamente los programas según características intrínsecas de los mismos y tratarlos en forma dinámica",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 129,
+            "pregunta": "Mecanismos/políticas de administración de recursos, definición, indicar si pertenecen o no al SO y poner un ejemplo de cada una.",
+            "respuestas": [
+                {
+                    "respuesta": "Los mecanismos determinan como realizar algo, las políticas deciden que se hara. Por ejemplo, un mecanismo para asegurar la protección de la CPU es el sistema de cronometro. La decisión de que calor se colocara en el cronometro para cada usuario es una decisión política. Pertenecen al SO.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Los mecanismos determinan como realizar algo, las políticas deciden que se hara. Por ejemplo, un mecanismo para asegurar la protección de la CPU es el sistema de planificación segmentada. La decisión de que calor se colocara en el cronometro para cada usuario es una decisión política. Pertenecen a memoria principal.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Ninguna de las anteriores",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 130,
+            "pregunta": "Planificacion de la CPU en sistemas multiprocesadores.",
+            "respuestas": [
+                {
+                    "respuesta": "Multiprocesamiento simetrico; Multiprocesamiento asimétrico: amo-esclavo",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Multiprocesamiento sincrónico; Multiprocesamiento asincrónico: amo-esclavo",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Multiprocesamiento por lotes; Multiprocesamiento canalizado: master-slave",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 131,
+            "pregunta": "¿Es posible qué la Anomalía de Belady ocurra solamente en FIFO?",
+            "respuestas": [
+                {
+                    "respuesta": "Si, solamente en FIFO",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "No, puede ocurrir en otro algoritmos",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "No,ocurre en LRU",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 132,
+            "pregunta": "¿Cuál es el proceso que tiene un gran número de páginas",
+            "respuestas": [
+                {
+                    "respuesta": "El numero total de paginas en memoria principal que posee un proceso es el CPT",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "El numero total de paginas en memoria principal que posee un proceso es el FFSC",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Ninguna de las anteriores",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 133,
+            "pregunta": "¿Puede la proteccion de memoria implantarse en sistemas con paginacion?",
+            "respuestas": [
+                {
+                    "respuesta": "No, La proteccion de memoria en un entorno paginado se logra por medio de bits de proteccion asociados a cada marco y/o un registro de longitud de tabla de paginas (PTLR)",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "No, La proteccion de memoria en un entorno paginado se logra por medio de megabytes de proteccion asociados a cada página y/o un registro de longitud de tabla de paginas (PTLR)",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Si, de hecho debe aplicarse en estos tipos de sistemas para prevenir un movimiento arriesgado del usuario",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 134,
+            "pregunta": "¿Hasta dónde barre la cabeza la planificación LOOK?",
+            "respuestas": [
+                {
+                    "respuesta": "Barre el disco solo hasta la ultima demanda.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Barre el disco solo hasta la mitad",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Barre el disco hasta el final",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 135,
+            "pregunta": "¿En una estructura QUEVE DRIVEN en función a qué son seleccionados los procesos?",
+            "respuestas": [
+                {
+                    "respuesta": "Son seleccionados en función a sus características intrínsecas por razones que hacen a la utilización del equipo.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Son seleccionados en función a la respuesta recibida por el PCB",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Son seleccionados en repuesta a un determinado evento externo.",
+                    "esCorrecta": true
+                }
+            ]
+        },
+        {
+            "id_pregunta": 136,
+            "pregunta": "¿Hasta dónde barre la cabeza la planificación LOOK?",
+            "respuestas": [
+                {
+                    "respuesta": "Barre el disco solo hasta la ultima demanda.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Barre el disco solo hasta la mitad",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Barre el disco hasta el final",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 137,
+            "pregunta": "¿Un segmento es una unidad lógica de información que puede incluir tanto código como datos?",
+            "respuestas": [
+                {
+                    "respuesta": "No es una unidad su tamaño es variable.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Si una unidad con su tamaño es variable.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "No es una unidad swapping.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 138,
+            "pregunta": "En redes de procesamiento ¿cada  nodo posee funciones particulares que combinadas brindan todo el sistema?",
+            "respuestas": [
+                {
+                    "respuesta": "En procesamiento distribuido cada nodo posee funciones particulares que combinadas brindan todo el sistema",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "En procesamiento sincrónico cada nodo posee funciones particulares que combinadas brindan todo el sistema",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "En procesamiento altamante distribuido cada nodo posee funciones particulares que combinadas brindan todo el sistema",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 139,
+            "pregunta": "El valor de un sistema de computacion ¿debería ser medido por el costo de la información que produce?",
+            "respuestas": [
+                {
+                    "respuesta": "Debera ser medido por el valor de la informacion que produce",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Debera ser medido por el valor del páginado la informacion que produce",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Debera ser medido por el valor de la informacion que produce cada error de la salida estándar",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 140,
+            "pregunta": "¿Cuál es el objetivo del procesamiento en transacciones?",
+            "respuestas": [
+                {
+                    "respuesta": "El objetivo es maximizar el tiempo de respuesta.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "El objetivo es minimizar el tiempo de respuesta.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "El objetivo es minimizar el TURN AROUND TIME",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 141,
+            "pregunta": "¿En qué consiste la técnica de SPOOLING?",
+            "respuestas": [
+                {
+                    "respuesta": "Consiste en interponer un medio de almacenamiento rápido entre memoria e impresora.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Consiste en interponer un dispositivo rapido entre CPU e impresora.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Consiste en interponer un medio de almacenamiento rápido entre CPU y la memoria auxiliar",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 142,
+            "pregunta": "¿El Alto ratio de paginación implica cambios de la vecindad de un proceso?",
+            "respuestas": [
+                {
+                    "respuesta": "El ratio de paginacion no me permite identificar si la vecindad cambia o crece, para esto necesito conocer el ratio de repaginacion.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "El ratio de paginacion no me permite identificar si la vecindad cambia o decrece, para esto necesito conocer el ratio de paginacion.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "El ratio de paginacion no me permite identificar si la vecindad cambia, para esto no necesito conocer el ratio de paginacion.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 143,
+            "pregunta": "¿Qué ocurre cuándo hay error de procesamiento?",
+            "respuestas": [
+                {
+                    "respuesta": "Se guarda el SV, se ejecuta la rutina de interrupcion y se da por terminado el proceso.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Se salva el SV, se ejecuta la rutina del SO, se repone el SV y sigue ejecutándose el proceso interrumpido.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Se guarda el SV y no se ejecuta la rutina de interrupción",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 144,
+            "pregunta": "¿Cuándo se activa el OAN?",
+            "respuestas": [
+                {
+                    "respuesta": "Se activa cuando un proceso termina o cuando cambia de estado de ejecución a espera, de ejecución  a listo; o de espera a listo.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "se activa cuando un proceso está listo para ser procesado una vez terminada su E/S",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Se activa cuando un proceso termina o cuando ingresa una nueva demanda.",
+                    "esCorrecta": true
+                }
+            ]
+        },
+        {
+            "id_pregunta": 145,
+            "pregunta": "En sistemas de procesamiento de transacciones, si el procesamiento no se completa ¿la transacción es suspendida?",
+            "respuestas": [
+                {
+                    "respuesta": "La transaccion es abortada.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "La transaccion se establece en espera.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Ninguno de los anteriores",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 146,
+            "pregunta": "¿Cómo actuá el ONI al detectar un fallo de página de un proceso en su localidad?",
+            "respuestas": [
+                {
+                    "respuesta": "El ONI le asigna un bloque libre o aplica el algoritmo en forma global.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "El ONI actúa por periodos y no ante cada falla de pagina.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "El ONI actúa solamente al detectar un fallo de página de un proceso con prioridad de sistema",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 147,
+            "pregunta": "¿Qué permite el Buffering",
+            "respuestas": [
+                {
+                    "respuesta": "Permite incrementar tanto el TROUGHPUT como el TAT ",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Permite incrementar el TROUGHPUT pero trata de bajar el TAT",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Permite incrementar el TAT pero trata de bajar el TROUGHPUT",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 148,
+            "pregunta": "La administracion de almacenamiento auxiliar, ¿mantiene un mapa que asocia direcciones de procesos con ubicaciones en memoria principal?",
+            "respuestas": [
+                {
+                    "respuesta": "No, Mantiene un mapa que asocia direcciones de procesos con ubicaciones en memoria auxiliar",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Si, Mantiene un mapa que asocia direcciones contantes de procesos con ubicaciones en memoria auxiliar",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Ninguno de los anteriores",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 149,
+            "pregunta": "¿Cómo se asigna la memoria virtual?",
+            "respuestas": [
+                {
+                    "respuesta": "Puede asignarse tanto estáticamente como dinámicamente",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "La memoria virtual se asigna de forma dinámica.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "La memoria virtual se asigna de forma estática.",
+                    "esCorrecta": true
+                }
+            ]
+        },
+        {
+            "id_pregunta": 150,
+            "pregunta": "¿Qué posibilita Segmentación?",
+            "respuestas": [
+                {
+                    "respuesta": "Posibilita el direccionamiento relativo dentro del espacio físico.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Posibilita el direccionamiento relativo dentro del espacio lógico del segmento.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Posibilita el direccionamiento absoluto dentro del espacio lógico de la página.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 151,
+            "pregunta": "En los sistemas de procesamiento de transacciones ¿el tipo de acceso es interactivo por lotes?",
+            "respuestas": [
+                {
+                    "respuesta": "Si, es interactivo para programacion.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "No, es interactivo para programacion excesiva.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Si, Es interactivo para planificar los procesos.",
+                    "esCorrecta": true
+                }
+            ]
+        },
+        {
+            "id_pregunta": 152,
+            "pregunta": "¿Dónde se encuentra el microcódigo de una Máquina Virtual?",
+            "respuestas": [
+                {
+                    "respuesta": "Se encuentra en la RAM.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Se encuentra en la ROM.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Se encuentra en la memoria auxiliar.",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 153,
+            "pregunta": "¿Qué número representa el CPT?",
+            "respuestas": [
+                {
+                    "respuesta": "Representa el tamaño de la vecindad de un proceso.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Representa el tamaño del área activa.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Representa el tamaño del area en espera",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "id_pregunta": 154,
+            "pregunta": "A mayor sofisticación del SO ¿se requiere mayor planificación OFF-LINE?",
+            "respuestas": [
+                {
+                    "respuesta": "Si, se requiere menor planificacion OFF-LINE.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "No, se requiere mayor planificacion de procesos.",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "No, se requiere planificación excesiva de hilos.",
+                    "esCorrecta": true
+                }
+            ]
+        },
+        {
+            "id_pregunta": 155,
+            "pregunta": "¿Cómo funciona el algoritmo OPT?",
+            "respuestas": [
+                {
+                    "respuesta": "Reemplaza la página que pasará menos tiempo sin ser referenciada.",
+                    "esCorrecta": true
+                },
+                {
+                    "respuesta": "Reemplaza la página que pasara más tiempo sin ser referenciada",
+                    "esCorrecta": false
+                },
+                {
+                    "respuesta": "Reemplaza la página más próxima a utilizar",
+                    "esCorrecta": false
+                }
+            ]
+        }
+    ]
+}

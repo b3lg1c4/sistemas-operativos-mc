@@ -4,6 +4,7 @@
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  z-index: -500;
 }
 
 .video-opacity {
@@ -11,4 +12,4 @@
   opacity: 0.8;
 }
 
-/*# sourceMappingURL=sobackground.css.map */
+/*# sourceMappingURL=SoBackground.css.map */

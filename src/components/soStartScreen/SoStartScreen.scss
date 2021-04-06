@@ -1,2 +1,13 @@
 @import '../../mixins';
 @import '../../variables';
+
+.SoStartScreen{
+    color:$main-color;
+    @include flex(space-around,center,column);
+    height: 90%;
+    width: 70%;
+
+    &-title{
+        font-size:40px;
+    }
+}

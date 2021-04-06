@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"soStartScreen.css"}
+{"version":3,"sourceRoot":"","sources":["SoStartScreen.scss","../../_variables.scss","../../_mixins.scss"],"names":[],"mappings":"AAGA;EACI,OCJQ;ECCR;EACA,iBFGc;EEFd,aFE2B;EED3B,gBFCkC;EAClC;EACA;;AAEA;EACI","file":"SoStartScreen.css"}

@@ -1,3 +1,14 @@
+.SoStartScreen {
+  color: #dddcdc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 90%;
+  width: 70%;
+}
+.SoStartScreen-title {
+  font-size: 40px;
+}
 
-
-/*# sourceMappingURL=soStartScreen.css.map */
+/*# sourceMappingURL=SoStartScreen.css.map */
