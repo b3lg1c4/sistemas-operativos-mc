@@ -1,0 +1,14 @@
+#video, .video-opacity {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.video-opacity {
+  background: #000000;
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=sobackground.css.map */
