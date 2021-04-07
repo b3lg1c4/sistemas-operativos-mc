@@ -1,13 +1,14 @@
 #root .SoButton {
   background: #c1de1b;
   width: 150px;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
   font-weight: 1000;
   font-size: 18px;
   color: #ffffff;
 }
 #root .SoButton:hover {
   background: #ffffff;
+  color: #c1de1b;
 }
 
 .loop {

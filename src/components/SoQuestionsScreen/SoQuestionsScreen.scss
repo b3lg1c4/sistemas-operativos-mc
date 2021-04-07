@@ -1,0 +1,9 @@
+@import '../../mixins';
+@import '../../variables';
+
+.SoQuestionsScreen{
+    @include flex(center,center);
+    flex-wrap: wrap;
+    width: 60%;
+    height: 100%;
+}

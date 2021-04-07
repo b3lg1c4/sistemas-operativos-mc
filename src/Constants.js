@@ -1,0 +1,3 @@
+const NUMERO_DE_PREGUNTAS = 15;
+
+export {NUMERO_DE_PREGUNTAS}

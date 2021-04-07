@@ -1,23 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import SoBackground from './components/SoBackground/SoBackground';
 import SoStartScreen from './components/SoStartScreen/SoStartScreen';
-import SoQuestionsScreen from './components/SoQuestionsScreen/SoQuestionsScreen';
-import SoScoreScreen from './components/SoScoreScreen/SoScoreScreen';
 import './So.css';
 
 
 const So = () => {
 
-	const [screen, setScreen] = useState("");
+	const [screen, setScreen] = useState(null);
 
-	const getSoScreen = () => {
-		return <SoStartScreen />
-	};
+	useEffect(() => {
+		setScreen(<SoStartScreen setScreen={setScreen} />);
+	}, []);
 
 	return (
 		<React.Fragment>
 			<SoBackground />
-			{getSoScreen()}
+			{screen}
 		</React.Fragment>
 	);
 };

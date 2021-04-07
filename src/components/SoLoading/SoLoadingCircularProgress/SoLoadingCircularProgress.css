@@ -1,0 +1,11 @@
+.SoLoadingCircularProgress-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.SoLoadingCircularProgress-container .SoLoadingCircularProgress {
+  color: #c1de1b;
+}
+
+/*# sourceMappingURL=soloadingcircularprogress.css.map */

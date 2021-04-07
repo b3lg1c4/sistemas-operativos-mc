@@ -1,0 +1,51 @@
+.SoQuestion-container {
+  color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid #c1de1b;
+  padding: 15px;
+  width: 100%;
+}
+.SoQuestion-container-time-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+.SoQuestion-container-time-container-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100px;
+}
+.SoQuestion-container-time-container-box-icon {
+  color: #c1de1b;
+}
+.SoQuestion-container-time-container-box-value {
+  font-size: 25px;
+}
+.SoQuestion-container-pregunta {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.SoQuestion-container-pregunta-number {
+  color: #c1de1b;
+  font-size: 25px;
+}
+.SoQuestion-container-pregunta-value {
+  margin: 10px 0;
+  width: 100%;
+  word-wrap: break-word;
+}
+.SoQuestion-container-respuestas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 50px 0;
+}
+
+/*# sourceMappingURL=SoQuestion.css.map */

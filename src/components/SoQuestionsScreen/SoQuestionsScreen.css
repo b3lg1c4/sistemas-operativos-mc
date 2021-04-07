@@ -1,3 +1,11 @@
-
+.SoQuestionsScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60%;
+  height: 100%;
+}
 
 /*# sourceMappingURL=SoQuestionsScreen.css.map */

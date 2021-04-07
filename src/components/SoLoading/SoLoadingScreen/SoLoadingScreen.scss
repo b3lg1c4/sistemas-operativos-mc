@@ -1,0 +1,19 @@
+@import "../../../mixins";
+@import "../../../variables";
+
+.SoLoadingScreen-backdrop {
+    @include flex(center, center);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    &-container {
+        @include flex(space-between, center, column);
+        height: 150px;
+        &-subtitle {
+            font-size: 25px;
+        }
+    }
+}

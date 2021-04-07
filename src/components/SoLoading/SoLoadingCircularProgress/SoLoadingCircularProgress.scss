@@ -1,0 +1,9 @@
+@import '../../../mixins';
+@import '../../../variables';
+
+.SoLoadingCircularProgress-container{
+    @include flex(center,center);
+    .SoLoadingCircularProgress{
+        color:$main-color;
+    }
+}

@@ -1,0 +1,43 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+.SoQuestion-container {
+    color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid $main-color;
+    padding:15px;
+    width: 100%;
+    &-time-container {
+        @include flex(flex-end, center);
+        &-box {
+            @include flex(space-between, center);
+            width: 100px;
+            &-icon {
+                color: $main-color;
+            }
+
+            &-value {
+                font-size: 25px;
+            }
+        }
+    }
+
+    &-pregunta {
+        @include flex(center, flex-start, column);
+        flex-wrap: wrap;
+        &-number {
+            color: $main-color;
+            font-size: 25px;
+        }
+        &-value {
+            margin:10px 0;
+            width: 100%;
+            word-wrap: break-word;
+        }
+    }
+
+    &-respuestas{
+        @include flex(space-between,center);
+        margin:50px 0;
+    }
+}

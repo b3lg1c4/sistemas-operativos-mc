@@ -4,10 +4,10 @@
 .SoStartScreen {
     text-align: center;
     color: $main-color;
-    @include flex(space-around, center, column);
-    height: 90%;
+    @include flex(space-evenly, center, column);
+    height: 88%;
     width: 70%;
-
+    transition: all 1.5s ease;
     &-title {
         font-size: 80px;
         font-weight: 500;
@@ -20,4 +20,8 @@
     .SoStartScreen {
         width: 100%;
     }
+}
+
+.SoStartScreen-transition {
+    transform: translateX(200%);
 }

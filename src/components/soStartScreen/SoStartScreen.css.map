@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["SoStartScreen.scss","../../_variables.scss","../../_mixins.scss"],"names":[],"mappings":"AAGA;EACI;EACA,OCLQ;ECCR;EACA,iBFIc;EEHd,aFG4B;EEF5B,gBFEoC;EACpC;EACA;;AAEA;EACI;EACA;EACA;EACA;;;AAIR;EACI;IACI","file":"SoStartScreen.css"}
+{"version":3,"sourceRoot":"","sources":["SoStartScreen.scss","../../_variables.scss","../../_mixins.scss"],"names":[],"mappings":"AAGA;EACI;EACA,OCLQ;ECCR;EACA,iBFIc;EEHd,aFG4B;EEF5B,gBFEoC;EACpC;EACA;EACA;;AACA;EACI;EACA;EACA;EACA;;;AAIR;EACI;IACI;;;AAIR;EACI","file":"SoStartScreen.css"}

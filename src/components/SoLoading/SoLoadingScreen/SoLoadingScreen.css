@@ -1,0 +1,24 @@
+.SoLoadingScreen-backdrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+}
+.SoLoadingScreen-backdrop-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 150px;
+}
+.SoLoadingScreen-backdrop-container-subtitle {
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=soloadingscreen.css.map */

@@ -1,10 +1,10 @@
 .SoStartScreenScore {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 60%;
+  height: 100%;
 }
 .SoStartScreenScore h1 {
   font-style: italic;
