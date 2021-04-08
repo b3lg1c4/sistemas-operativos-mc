@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './SoScoreScreen.css';
 import SoButton from '../SoButton/SoButton';
 import Progress from '@ramonak/react-progress-bar';
-import { NUMERO_SCORES, ESCALA_PUNTUACION, NUMERO_DE_PREGUNTAS, ORACIONES_RESULTADOS } from '../../Constants';
+import { NUMERO_SCORES, ESCALA_PUNTUACION, NUMERO_DE_PREGUNTAS} from '../../Constants';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import CancelIcon from '@material-ui/icons/Cancel';
 import SoScoreScreenStatistics from './SoScoreScreenStatistics/SoScoreScreenStatistics';
