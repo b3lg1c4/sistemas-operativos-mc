@@ -1,0 +1,40 @@
+@import "../../mixins";
+@import "../../variables";
+
+.SoScoreScreen {
+    @include spawn-animation(opacity, 1.5s);
+
+    @include flex(space-between, center,column);
+    
+    width: 60%;
+    height: 85%;
+
+    &-title{
+        font-size: 50px;
+        font-weight: 500;
+        letter-spacing: 15px;
+        text-shadow: 0 0 15px $main-color;
+        color:$main-color;
+    }
+
+    &-puntuacion{
+        color:#ffffff;
+        font-size:45px;
+    }
+
+    &-progress{
+        width: 100%;
+        background: none;
+        border-radius:50px;
+        box-shadow: 0 0 15px $main-color;;
+        
+    }
+
+    &-sentence{
+        font-size:31px;
+        font-weight: 600;
+    }
+    
+    
+    //transition: transform 1.5s ease;
+}

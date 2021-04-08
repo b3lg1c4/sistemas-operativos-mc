@@ -1,0 +1,30 @@
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.SoScoreScreen-statistics {
+  color: white;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px 0;
+  border-top: 2px solid #c1de1b;
+  border-bottom: 2px solid #c1de1b;
+  padding: 10px 0;
+}
+.SoScoreScreen-statistics-statistic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.SoScoreScreen-statistics-statistic-value {
+  font-size: 21px;
+  width: 100%;
+  margin: 0 10px;
+}
+
+/*# sourceMappingURL=soscorescreenstatistics.css.map */

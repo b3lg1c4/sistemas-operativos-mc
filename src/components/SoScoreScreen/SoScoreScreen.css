@@ -1,3 +1,42 @@
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.SoScoreScreen {
+  animation-name: opacity;
+  animation-duration: 1.5s;
+  animation-fill-mode: backwards;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  height: 85%;
+}
+.SoScoreScreen-title {
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 15px;
+  text-shadow: 0 0 15px #c1de1b;
+  color: #c1de1b;
+}
+.SoScoreScreen-puntuacion {
+  color: #ffffff;
+  font-size: 45px;
+}
+.SoScoreScreen-progress {
+  width: 100%;
+  background: none;
+  border-radius: 50px;
+  box-shadow: 0 0 15px #c1de1b;
+}
+.SoScoreScreen-sentence {
+  font-size: 31px;
+  font-weight: 600;
+}
 
-
-/*# sourceMappingURL=soscorescreen.css.map */
+/*# sourceMappingURL=SoScoreScreen.css.map */

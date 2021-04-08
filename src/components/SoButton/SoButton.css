@@ -1,3 +1,11 @@
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 #root .SoButton {
   background: #c1de1b;
   width: 150px;

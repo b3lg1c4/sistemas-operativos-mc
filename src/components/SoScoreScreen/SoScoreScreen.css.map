@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"soscorescreen.css"}
+{"version":3,"sourceRoot":"","sources":["../../_mixins.scss","SoScoreScreen.scss","../../_variables.scss"],"names":[],"mappings":"AAiBA;EACI;IACI;;EAEJ;IACI;;;ACnBR;EDSI,gBCRyB;EDSzB,oBCTkC;EDUlC;EAbA;EACA,iBCIc;EDHd,aCG6B;EDF7B,gBCEoC;EAEpC;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA,OChBI;;ADmBR;EACI;EACA;;AAGJ;EACI;EACA;EACA;EACA;;AAIJ;EACI;EACA","file":"SoScoreScreen.css"}

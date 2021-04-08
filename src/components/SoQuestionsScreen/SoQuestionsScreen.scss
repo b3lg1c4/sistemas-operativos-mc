@@ -1,9 +1,15 @@
-@import '../../mixins';
-@import '../../variables';
+@import "../../mixins";
+@import "../../variables";
 
-.SoQuestionsScreen{
-    @include flex(center,center);
+.SoQuestionsScreen {
+    @include flex(center, center);
     flex-wrap: wrap;
     width: 80%;
     height: 100%;
+    @include spawn-animation(opacity,1.5s);
+    transition: transform 1.5s ease;
+}
+
+.SoQuestionsScreen-transition {
+    @include translate(200%);
 }

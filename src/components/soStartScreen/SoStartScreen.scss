@@ -23,5 +23,5 @@
 }
 
 .SoStartScreen-transition {
-    transform: translateX(200%);
+    @include translate(200%);
 }

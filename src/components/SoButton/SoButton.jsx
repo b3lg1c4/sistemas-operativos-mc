@@ -2,11 +2,17 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import './SoButton.css';
 
-const SoButton = ({ label, animated, show, onClick }) => {
+const SoButton = ({ style, label, animated, show, onClick }) => {
 
     return (
-
-        <Button style={show ? {display:"block"} : {display:"none"}} onClick={onClick} className={animated ? "SoButton loop" : "SoButton"} variant="contained">{label}</Button>
+        <React.Fragment>
+            { show ? <Button
+                style={style}
+                onClick={onClick}
+                className={animated ? "SoButton loop" : "SoButton"}
+                variant="contained">{label}
+            </Button> : null}
+        </React.Fragment>
     );
 };
 

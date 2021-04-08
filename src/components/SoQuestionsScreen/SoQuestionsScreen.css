@@ -1,3 +1,11 @@
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .SoQuestionsScreen {
   display: flex;
   justify-content: center;
@@ -6,6 +14,14 @@
   flex-wrap: wrap;
   width: 80%;
   height: 100%;
+  animation-name: opacity;
+  animation-duration: 1.5s;
+  animation-fill-mode: backwards;
+  transition: transform 1.5s ease;
+}
+
+.SoQuestionsScreen-transition {
+  transform: translateX(200%);
 }
 
 /*# sourceMappingURL=SoQuestionsScreen.css.map */
