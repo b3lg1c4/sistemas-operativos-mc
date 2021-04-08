@@ -5,24 +5,13 @@ import SoButton from '../SoButton/SoButton';
 import SoQuestionsScreen from '../SoQuestionsScreen/SoQuestionsScreen';
 import json from '../../assets/preguntas.json';
 import { NUMERO_DE_PREGUNTAS } from '../../Constants';
+import {shuffle} from '../../functions/shuffle';
 
 const SoStartScreen = ({ setScreen }) => {
 
     const [click, setClick] = useState(false);
 
-    const shufflePreguntas = () => {
-        let shuffledPreguntas = [];
-        for (let index = 0; index < NUMERO_DE_PREGUNTAS; index++) {
-            let randomPregunta = getRandomPregunta();
-            shuffledPreguntas.push(randomPregunta);
-        };
 
-        return shuffledPreguntas;
-    };
-
-    const getRandomPregunta = () => {
-        return json.preguntas[Math.floor(Math.random() * json.preguntas.length)];
-    };
 
     const handleStartClick = () => {
 
@@ -33,7 +22,7 @@ const SoStartScreen = ({ setScreen }) => {
 
 
     return (
-        <section onAnimationEnd={() => { setScreen(<SoQuestionsScreen preguntas={shufflePreguntas()} />); }} className={click ? "SoStartScreen SoStartScreen-transition" : "SoStartScreen"}>
+        <section onAnimationEnd={() => { setScreen(<SoQuestionsScreen setScreen={setScreen} preguntas={shuffle(json.preguntas,NUMERO_DE_PREGUNTAS)} />); }} className={click ? "SoStartScreen SoStartScreen-transition" : "SoStartScreen"}>
             <h1 className="SoStartScreen-title">SOMC</h1>
             <SoStartScreenScore />
             <SoButton onClick={handleStartClick} animated={true} label="Comenzar" />

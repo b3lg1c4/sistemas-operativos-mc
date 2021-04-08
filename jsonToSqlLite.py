@@ -66,7 +66,7 @@ def insertRespuestas(conn, pregunta):
         )
         cur.execute(
             '''INSERT OR IGNORE INTO respuestas (id_pregunta,respuesta,esCorrecta) VALUES (?,?,?)''', queryParameters)
-        conn.commit()
+    conn.commit()
 
 
 def insertData(connection, preguntas):

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './SoQuestion.css';
 import QueryBuilderIcon from '@material-ui/icons/QueryBuilder';
 import SoButton from '../../SoButton/SoButton';
@@ -6,16 +6,40 @@ import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
-import FormLabel from '@material-ui/core/FormLabel';
+import { NUMERO_DE_PREGUNTAS } from '../../../Constants';
+import SoQuestionTimer from './SoQuestionTimer';
+import { shuffle } from '../../../functions/shuffle';
 
-const SoQuestion = () => {
-    const [value, setValue] = React.useState('female');
 
-    const handleChange = (event) => {
-        setValue(event.target.value);
+const SoQuestion = ({ pregunta, numeroPregunta }) => {
+    const [selectedOption, setSelectedOption] = useState(null);
+    const [respuestas, setRespuestas] = useState([]);
+
+    const handleChange = (e) => {
+        setSelectedOption(e.target.value);
     };
 
-    console.log(value);
+    useEffect(() => {
+        setRespuestas(shuffle(pregunta.respuestas));
+    }, []);
+
+    const getCorrectAnswer = () => {
+
+        let index = 0;
+
+        while ((index < respuestas.length)) {
+            if (respuestas[index].esCorrecta) return index.toString();
+            index += 1;
+        };
+    };
+
+    const checkAnswer = () => {
+        console.log(selectedOption, getCorrectAnswer());
+        if (selectedOption === getCorrectAnswer()) {
+
+            console.log("alto crack sos");
+        };
+    };
 
     return (
 
@@ -23,24 +47,29 @@ const SoQuestion = () => {
             <div className="SoQuestion-container-time-container">
                 <div className="SoQuestion-container-time-container-box">
                     <QueryBuilderIcon fontSize="large" className="SoQuestion-container-time-container-box-icon" />
-                    <div className="SoQuestion-container-time-container-box-value">00:30</div>
+                    <SoQuestionTimer />
                 </div>
 
             </div>
             <div className="SoQuestion-container-pregunta">
-                <div className="SoQuestion-container-pregunta-number">Pregunta 5/15</div>
-                <div className="SoQuestion-container-pregunta-value">uio123iu12gyu12g4u12yg4uy124213123213123123132yu12iv4uy912gf4y12949uy12g124uyg21yu4g1u2yg4u21</div>
+                <div className="SoQuestion-container-pregunta-number">Pregunta {numeroPregunta + 1}/{NUMERO_DE_PREGUNTAS}</div>
+                <div className="SoQuestion-container-pregunta-value">{pregunta.pregunta}</div>
             </div>
             <div className="SoQuestion-container-respuestas">
                 <FormControl component="fieldset">
-                    <RadioGroup aria-label="gender" name="gender1" value={value} onChange={handleChange}>
-                        <FormControlLabel value="xd" control={<Radio />} label="321kj3b12u312iy3g12uyg3uy12g3g123123123213" />
-                        <FormControlLabel value="q" control={<Radio />} label="321kj3b12u312iy3g12uyg3uy12g3g123123123213" />
-                        <FormControlLabel value="x" control={<Radio />} label="321kj3b12u312iy3g12uyg3uy12g3g123123123213" />
+                    <RadioGroup aria-label="gender" name="gender1" value={selectedOption} onChange={handleChange}>
+                        {respuestas.map((respuesta, index) => (
+                            <FormControlLabel key={index} value={index.toString()} control={<Radio />} label={respuesta.respuesta} />
+                        )
+                        )}
                     </RadioGroup>
                 </FormControl>
-                <SoButton label="Corregir" />
+
             </div>
+            <div className="SoQuestion-container-button-container">
+                <SoButton onClick={checkAnswer} label="Corregir" />
+            </div>
+
         </div>
 
     );
