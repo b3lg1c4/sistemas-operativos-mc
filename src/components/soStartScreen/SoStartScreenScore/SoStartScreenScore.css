@@ -35,11 +35,17 @@
   color: #ffffff;
   font-size: 17px;
 }
+.SoStartScreenScore-table .SoStartScreenScore-table-puntuacion {
+  font-weight: 600;
+}
 .SoStartScreenScore-table .SoStartScreenScore-table-puntuacion:nth-child(2),
 .SoStartScreenScore-table .SoStartScreenScore-table-timestamp:first-child {
   font-size: 25px;
   color: #c1de1b;
   font-weight: 600;
+}
+.SoStartScreenScore-advise {
+  font-size: 20px;
 }
 
 @media (max-width: 960px) {

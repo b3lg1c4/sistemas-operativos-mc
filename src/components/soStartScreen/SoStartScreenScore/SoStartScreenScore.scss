@@ -25,12 +25,20 @@
             font-size:17px;
         }
 
+        .SoStartScreenScore-table-puntuacion{
+            font-weight: 600;
+        }
+
         .SoStartScreenScore-table-puntuacion:nth-child(2),
         .SoStartScreenScore-table-timestamp:first-child {
             font-size: 25px;
             color:$main-color;
             font-weight: 600;
         }
+    }
+
+    &-advise{
+        font-size: 20px;
     }
 }
 

@@ -1,6 +1,6 @@
-const NUMERO_DE_PREGUNTAS = 1;
+const NUMERO_DE_PREGUNTAS = 20;
 const NUMERO_SCORES = 3;
-const TIMER = 1000 * 20 // está en milisegundos(ms) , recomendado menos de 60 minutos
+const TIMER = 1000 * 90 // está en milisegundos(ms) , recomendado menos de 60 minutos
 const ESCALA_PUNTUACION = 100;
 const ORACIONES_RESULTADOS = {
 

@@ -6,9 +6,8 @@ import { NUMERO_SCORES, ESCALA_PUNTUACION, NUMERO_DE_PREGUNTAS, ORACIONES_RESULT
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import CancelIcon from '@material-ui/icons/Cancel';
 import SoScoreScreenStatistics from './SoScoreScreenStatistics/SoScoreScreenStatistics';
-import { shuffle } from '../../functions/shuffle';
 import SoStartScreen from '../SoStartScreen/SoStartScreen';
-import { getTimestamp } from '../../functions/getTimestamp';
+import {getResultsStylesOrSentence} from '../../functions/getResultsStylesOrSentence';
 
 
 const SoScoreScreen = ({ resultado, setScreen }) => {
@@ -23,25 +22,6 @@ const SoScoreScreen = ({ resultado, setScreen }) => {
         return resultado.puntaje * 100 / ESCALA_PUNTUACION;
     };
 
-
-    const getResultsStylesOrSentence = () => {
-        console.log(resultado.puntaje);
-
-        if (getPuntuacionPorcentaje() < 40)
-            return { sentence: shuffle(ORACIONES_RESULTADOS.menorA40, 1, "simple"), color: "#d62d2d" };
-
-        if (getPuntuacionPorcentaje() >= 40 && getPuntuacionPorcentaje() < 60)
-            return { sentence: shuffle(ORACIONES_RESULTADOS.entre40Y50, 1, "simple"), color: "#DDDD3E" };
-
-        if (getPuntuacionPorcentaje() >= 60 && getPuntuacionPorcentaje() <= 70)
-            return { sentence: shuffle(ORACIONES_RESULTADOS.entre60Y70, 1, "simple"), color: "80DD52" };
-
-        if (getPuntuacionPorcentaje() >= 80 && getPuntuacionPorcentaje() <= 90)
-            return { sentence: shuffle(ORACIONES_RESULTADOS.entre80Y90, 1, "simple"), color: "5FDB20" };
-
-        if (getPuntuacionPorcentaje() === 100)
-            return { sentence: shuffle(ORACIONES_RESULTADOS.un100, 1, "simple"), color: "#c1de1b" };
-    };
 
     const handleAnimationEnds = () => {
         if (click) {
@@ -63,10 +43,32 @@ const SoScoreScreen = ({ resultado, setScreen }) => {
         localStorage.setItem("puntajes", JSON.stringify(auxArray));
     };
 
-    const reOrderLocalStoragePuntajes = (puntajesArray, scoreObject) => {
+    const getIntegerTimes = (puntajesArray) => {
+        let dates = [];
         puntajesArray.forEach(puntaje => {
-            
+            dates.push((new Date(puntaje.date)).getTime());
         });
+        return dates;
+    };
+
+    const getGreatestDate = (integerTimes) => {
+        let greatest = 0;
+        for (let index = 1; index < integerTimes.length; index++) {
+            if (integerTimes[greatest] > integerTimes[index]) greatest = index;
+        };
+
+        return greatest;
+    };
+
+    const reOrderLocalStoragePuntajes = (puntajesArray, scoreObject) => {
+        console.log(puntajesArray);
+        const auxArray = [...puntajesArray];
+        const integerTimes = getIntegerTimes(puntajesArray);
+        const greatestDate = getGreatestDate(integerTimes);
+        auxArray[greatestDate] = scoreObject;
+
+        localStorage.setItem("puntajes", JSON.stringify(auxArray));
+
     };
 
     const storePuntaje = () => {
@@ -75,7 +77,8 @@ const SoScoreScreen = ({ resultado, setScreen }) => {
 
         const scoreObject = {
             date: currentDate,
-            puntaje: resultado.puntaje
+            puntaje: resultado.puntaje,
+            escala: ESCALA_PUNTUACION
         };
 
         const currentLocalStorage = localStorage.getItem("puntajes");
@@ -95,9 +98,9 @@ const SoScoreScreen = ({ resultado, setScreen }) => {
     return (
         <section onAnimationEnd={handleAnimationEnds} className={click ? "SoScoreScreen SoScoreScreen-transition" : "SoScoreScreen"}>
             <h1 className="SoScoreScreen-title">PUNTUACIÓN</h1>
-            <p style={{ color: getResultsStylesOrSentence().color }} className="SoScoreScreen-sentence">{getResultsStylesOrSentence().sentence}</p>
-            <h2 style={{ color: getResultsStylesOrSentence().color }} className="SoScoreScreen-puntuacion">{Math.floor(resultado.puntaje)}/{ESCALA_PUNTUACION}</h2>
-            <Progress bgColor={getResultsStylesOrSentence().color} className="SoScoreScreen-progress" isLabelVisible={false} completed={getPuntuacionPorcentaje()} />
+            <p style={{ color: getResultsStylesOrSentence(getPuntuacionPorcentaje()).color }} className="SoScoreScreen-sentence">{getResultsStylesOrSentence(getPuntuacionPorcentaje()).sentence}</p>
+            <h2 style={{ color: getResultsStylesOrSentence(getPuntuacionPorcentaje()).color }} className="SoScoreScreen-puntuacion">{Math.floor(resultado.puntaje)}/{ESCALA_PUNTUACION}</h2>
+            <Progress bgColor={getResultsStylesOrSentence(getPuntuacionPorcentaje()).color} className="SoScoreScreen-progress" isLabelVisible={false} completed={getPuntuacionPorcentaje()} />
             <SoScoreScreenStatistics
                 statistics={[{
                     icon: <CheckCircleIcon fontSize="large"
