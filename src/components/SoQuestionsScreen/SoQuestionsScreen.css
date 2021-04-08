@@ -20,6 +20,11 @@
   transition: transform 1.5s ease;
 }
 
+@media (max-width: 500px) {
+  .SoQuestionsScreen {
+    width: 100%;
+  }
+}
 .SoQuestionsScreen-transition {
   transform: translateX(200%);
 }

@@ -14,8 +14,13 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  text-align: center;
+  transition: transform 1.5s ease;
   width: 60%;
   height: 85%;
+}
+.SoScoreScreen .MuiButtonBase-root {
+  width: 60% !important;
 }
 .SoScoreScreen-title {
   font-size: 50px;
@@ -35,8 +40,36 @@
   box-shadow: 0 0 15px #c1de1b;
 }
 .SoScoreScreen-sentence {
-  font-size: 31px;
+  font-size: 27px;
   font-weight: 600;
+}
+
+.SoScoreScreen-transition {
+  transform: translateX(200%);
+}
+
+@media (max-width: 600px) {
+  .SoScoreScreen {
+    width: 100%;
+  }
+}
+@media (max-width: 470px) {
+  .SoScoreScreen-title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 355px) {
+  .SoScoreScreen .MuiButtonBase-root {
+    width: 100% !important;
+  }
+  .SoScoreScreen .SoScoreScreen-title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 270px) {
+  .SoScoreScreen {
+    height: 100%;
+  }
 }
 
 /*# sourceMappingURL=SoScoreScreen.css.map */

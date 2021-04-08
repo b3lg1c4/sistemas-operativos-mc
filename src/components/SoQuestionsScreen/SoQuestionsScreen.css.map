@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../_mixins.scss","SoQuestionsScreen.scss"],"names":[],"mappings":"AAiBA;EACI;IACI;;EAEJ;IACI;;;ACnBR;EDFI;EACA,iBCEc;EDDd,aCCsB;EDAtB,gBAJsC;ECKtC;EACA;EACA;EDKA,gBCJyB;EDKzB,oBCLiC;EDMjC;ECLA;;;AAGJ;EDJI","file":"SoQuestionsScreen.css"}
+{"version":3,"sourceRoot":"","sources":["../../_mixins.scss","SoQuestionsScreen.scss"],"names":[],"mappings":"AAiBA;EACI;IACI;;EAEJ;IACI;;;ACnBR;EDFI;EACA,iBCEc;EDDd,aCCsB;EDAtB,gBAJsC;ECKtC;EACA;EACA;EDKA,gBCJyB;EDKzB,oBCLiC;EDMjC;ECLA;;;AAGJ;EACI;IACI;;;AAIR;EDVI","file":"SoQuestionsScreen.css"}

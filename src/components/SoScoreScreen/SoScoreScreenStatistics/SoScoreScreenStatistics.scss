@@ -9,6 +9,7 @@
     border-top:2px solid $main-color;
     border-bottom:2px solid $main-color;
     padding: 10px 0;
+    
 
     &-statistic{
         @include flex(center,center);

@@ -3,38 +3,69 @@
 
 .SoScoreScreen {
     @include spawn-animation(opacity, 1.5s);
-
-    @include flex(space-between, center,column);
-    
+    @include flex(space-between, center, column);
+    text-align: center;
+    transition: transform 1.5s ease;
     width: 60%;
     height: 85%;
-
-    &-title{
+    .MuiButtonBase-root {
+        width: 60% !important;
+    }
+    &-title {
         font-size: 50px;
         font-weight: 500;
         letter-spacing: 15px;
         text-shadow: 0 0 15px $main-color;
-        color:$main-color;
+        color: $main-color;
     }
 
-    &-puntuacion{
-        color:#ffffff;
-        font-size:45px;
+    &-puntuacion {
+        color: #ffffff;
+        font-size: 45px;
     }
 
-    &-progress{
+    &-progress {
         width: 100%;
         background: none;
-        border-radius:50px;
-        box-shadow: 0 0 15px $main-color;;
-        
+        border-radius: 50px;
+        box-shadow: 0 0 15px $main-color;
     }
 
-    &-sentence{
-        font-size:31px;
+    &-sentence {
+        font-size: 27px;
         font-weight: 600;
     }
-    
-    
-    //transition: transform 1.5s ease;
+}
+
+.SoScoreScreen-transition {
+    @include translate(200%);
+}
+
+@media (max-width: 600px) {
+    .SoScoreScreen {
+        width: 100%;
+    }
+}
+
+@media (max-width: 470px) {
+    .SoScoreScreen-title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 355px) {
+    .SoScoreScreen {
+        .MuiButtonBase-root {
+            width: 100% !important;
+        }
+        .SoScoreScreen-title {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 270px) {
+    .SoScoreScreen {
+        height: 100%;
+    }
 }

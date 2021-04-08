@@ -1,4 +1,4 @@
-const shuffle = (array, returnedElements = array.length) => {
+const shuffle = (array, returnedElements = array.length, returnType) => {
 
     let shuffledArray = [...array];
     let temp;
@@ -15,8 +15,17 @@ const shuffle = (array, returnedElements = array.length) => {
     };
 
     if (returnedElements === array.length) return shuffledArray;
+    if (returnedElements === 1) return getOneRandomElement(shuffledArray, returnType);
     return getGroupOfRandomElements(returnedElements, shuffledArray);
 
+};
+
+const getOneRandomElement = (shuffledArray, returnType) => {
+
+    const randomIndex = Math.floor(Math.random() * shuffledArray.length);
+
+    if (returnType === "simple") return shuffledArray[randomIndex];
+    return [shuffledArray[randomIndex]]; 
 };
 
 

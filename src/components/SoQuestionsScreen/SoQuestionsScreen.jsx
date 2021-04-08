@@ -27,7 +27,7 @@ const SoQuestionsScreen = ({ preguntas, setScreen }) => {
 
     const handleAnimationEnd = () => {
         if ((numeroPregunta === NUMERO_DE_PREGUNTAS - 1) && transition) {
-            setScreen(<SoScoreScreen resultado={resultado} />);
+            setScreen(<SoScoreScreen setScreen={setScreen} resultado={resultado} />);
         };
 
     };
