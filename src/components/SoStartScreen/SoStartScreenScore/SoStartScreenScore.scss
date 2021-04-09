@@ -1,0 +1,61 @@
+@import "../../../mixins";
+@import "../../../variables";
+
+.SoStartScreenScore {
+    @include flex(space-evenly, center, column);
+    width: 100%;
+    height: 100%;
+    h1 {
+        font-style: italic;
+        font-size: 50px;
+    }
+
+    &-table {
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .SoStartScreenScore-table-puntuacion,
+        .SoStartScreenScore-table-timestamp {
+            @include flex(center, center);
+            margin-bottom: 15px;
+            border-bottom: 1px solid $main-color;
+            padding-bottom: 10px;
+            color:#ffffff;
+            font-size:17px;
+        }
+
+        .SoStartScreenScore-table-puntuacion{
+            font-weight: 600;
+        }
+
+        .SoStartScreenScore-table-puntuacion:nth-child(2),
+        .SoStartScreenScore-table-timestamp:first-child {
+            font-size: 25px;
+            color:$main-color;
+            font-weight: 600;
+        }
+    }
+
+    &-advise{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:960px){
+    .SoStartScreenScore-table{
+        width: 70%;
+    }
+}
+
+@media(max-width:720px){
+    .SoStartScreenScore-table{
+        width: 90%;
+    }
+}
+
+@media(max-width:560px){
+    .SoStartScreenScore-table{
+        width: 100%;
+    }
+} 
