@@ -24,5 +24,5 @@ Pon a prueba tus "conocimientos" de Sistemas Operativos basado en los apuntes de
 
 ## Advertencia
 
-Encontrarás errores de ortografía, no nos pertenecen, son del muchacho que hizo el Word con las mismas, si les incómoda, pueden ir al *preguntas.json* y corregirlas. 
+Encontrarás errores de ortografía, no nos pertenecen, son del muchacho que hizo el Word con las mismas, si les incomoda, pueden ir al *preguntas.json* y corregirlas. 
 
