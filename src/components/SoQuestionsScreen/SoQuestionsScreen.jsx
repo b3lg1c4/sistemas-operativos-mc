@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './SoQuestionsScreen.css';
 import SoQuestion from './SoQuestion/SoQuestion';
 import SoScoreScreen from '../SoScoreScreen/SoScoreScreen';
@@ -25,15 +25,16 @@ const SoQuestionsScreen = ({ preguntas, setScreen }) => {
         return pr;
     };
 
-    const handleAnimationEnd = () => {
-        if ((numeroPregunta === NUMERO_DE_PREGUNTAS - 1) && transition) {
+
+    useEffect(() => {
+        if (transition) {
             setScreen(<SoScoreScreen setScreen={setScreen} resultado={resultado} />);
         };
+    }, [transition]);
 
-    };
 
     return (
-        <section onAnimationEnd={handleAnimationEnd} className={transition ? "SoQuestionsScreen SoQuestionsScreen-transition" : "SoQuestionsScreen"}>
+        <section className="SoQuestionsScreen">
             {getPreguntas()}
         </section>
     );

@@ -44,10 +44,6 @@
   font-weight: 600;
 }
 
-.SoScoreScreen-transition {
-  transform: translateX(200%);
-}
-
 @media (max-width: 600px) {
   .SoScoreScreen {
     width: 100%;

@@ -91,7 +91,7 @@ const SoQuestion = ({ show, setNumeroPregunta, pregunta, numeroPregunta, setResu
         </div>
         <div className="SoQuestion-container-respuestas">
             <FormControl component="fieldset">
-                <RadioGroup aria-label="gender" name="gender1" value={selectedOption} onChange={handleChange}>
+                <RadioGroup aria-label="answer" name="answer1" value={selectedOption} onChange={handleChange}>
                     {respuestas.map((respuesta, index) => (
                         <div key={index} className="SoQuestion-container-respuestas-respuesta">
                             <FormControlLabel disabled={corregida} value={index.toString()} control={<Radio />} label={respuesta.respuesta} />

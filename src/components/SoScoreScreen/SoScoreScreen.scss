@@ -37,9 +37,6 @@
     }
 }
 
-.SoScoreScreen-transition {
-    @include translate(200%);
-}
 
 @media (max-width: 600px) {
     .SoScoreScreen {

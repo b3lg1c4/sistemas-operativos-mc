@@ -2,33 +2,26 @@ import React, { useState, useEffect } from 'react';
 import './SoScoreScreen.css';
 import SoButton from '../SoButton/SoButton';
 import Progress from '@ramonak/react-progress-bar';
-import { NUMERO_SCORES, ESCALA_PUNTUACION, NUMERO_DE_PREGUNTAS} from '../../Constants';
+import { NUMERO_SCORES, ESCALA_PUNTUACION, NUMERO_DE_PREGUNTAS } from '../../Constants';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import CancelIcon from '@material-ui/icons/Cancel';
 import SoScoreScreenStatistics from './SoScoreScreenStatistics/SoScoreScreenStatistics';
 import SoStartScreen from '../SoStartScreen/SoStartScreen';
-import {getResultsStylesOrSentence} from '../../functions/getResultsStylesOrSentence';
+import { getResultsStylesOrSentence } from '../../functions/getResultsStylesOrSentence';
 
 
 const SoScoreScreen = ({ resultado, setScreen }) => {
 
-    const [click, setClick] = useState(false);
+
 
     const handleClick = () => {
-        setClick(true);
+        setScreen(<SoStartScreen setScreen={setScreen} />);
     };
 
     const getPuntuacionPorcentaje = () => {
         return resultado.puntaje * 100 / ESCALA_PUNTUACION;
     };
 
-
-    const handleAnimationEnds = () => {
-        if (click) {
-            setScreen(<SoStartScreen setScreen={setScreen} />);
-        };
-
-    };
 
     const createLocalStorageToStorePuntajes = (scoreObject) => {
 
@@ -65,6 +58,7 @@ const SoScoreScreen = ({ resultado, setScreen }) => {
         const auxArray = [...puntajesArray];
         const integerTimes = getIntegerTimes(puntajesArray);
         const greatestDate = getGreatestDate(integerTimes);
+        console.log(greatestDate);
         auxArray[greatestDate] = scoreObject;
 
         localStorage.setItem("puntajes", JSON.stringify(auxArray));
@@ -96,7 +90,7 @@ const SoScoreScreen = ({ resultado, setScreen }) => {
     useEffect(storePuntaje, []);
 
     return (
-        <section onAnimationEnd={handleAnimationEnds} className={click ? "SoScoreScreen SoScoreScreen-transition" : "SoScoreScreen"}>
+        <section className="SoScoreScreen">
             <h1 className="SoScoreScreen-title">PUNTUACIÓN</h1>
             <p style={{ color: getResultsStylesOrSentence(getPuntuacionPorcentaje()).color }} className="SoScoreScreen-sentence">{getResultsStylesOrSentence(getPuntuacionPorcentaje()).sentence}</p>
             <h2 style={{ color: getResultsStylesOrSentence(getPuntuacionPorcentaje()).color }} className="SoScoreScreen-puntuacion">{Math.floor(resultado.puntaje)}/{ESCALA_PUNTUACION}</h2>

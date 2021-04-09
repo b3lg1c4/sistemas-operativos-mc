@@ -9,30 +9,17 @@ import { shuffle } from '../../functions/shuffle';
 
 const SoStartScreen = ({ setScreen }) => {
 
-    const [click, setClick] = useState(false);
-
-
 
     const handleStartClick = () => {
 
-        setClick(true);
+        setScreen(<SoQuestionsScreen setScreen={setScreen}
+            preguntas={shuffle(json.preguntas, NUMERO_DE_PREGUNTAS, "array")} />);
 
     };
-
-    const handleAnimationEnds = () => {
-
-        if (click) {
-            setScreen(<SoQuestionsScreen setScreen={setScreen}
-                preguntas={shuffle(json.preguntas, NUMERO_DE_PREGUNTAS, "array")} />);
-        };
-
-    };
-
 
 
     return (
-        <section onAnimationEnd={handleAnimationEnds} className={click ? "SoStartScreen SoStartScreen-transition" : "SoStartScreen"
-        }>
+        <section className="SoStartScreen">
             <h1 className="SoStartScreen-title">SOMC</h1>
             <SoStartScreenScore />
             <SoButton onClick={handleStartClick} animated={true} label="Comenzar" />
